@@ -1,0 +1,27 @@
+# Environment
+.env
+.env.local
+*.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+dist/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Node / Expo
+node_modules/
+.expo/
+dist/
+.next/
+
+# Supabase
+supabase/.temp/
+
+# OS
+.DS_Store
+Thumbs.db
