@@ -9,17 +9,36 @@ class ExerciseRepository(BaseRepository):
     def __init__(self, supabase_client):
         super().__init__(supabase_client, "exercises")
 
-    async def list_all(self):
-        """List all available exercises."""
-        # Stub: query exercises WHERE is_active = true
-        return []
+    def list_active(self) -> list[dict]:
+        result = (
+            self.client.table(self.table_name)
+            .select("*")
+            .eq("is_active", True)
+            .order("name_en")
+            .execute()
+        )
+        return result.data or []
 
-    async def get_by_id(self, exercise_id: str):
-        """Get a single exercise by ID."""
-        # Stub: fetch from Supabase
-        return None
+    def get_by_id(self, exercise_id: str) -> dict | None:
+        result = (
+            self.client.table(self.table_name)
+            .select("*")
+            .eq("id", exercise_id)
+            .eq("is_active", True)
+            .maybe_single()
+            .execute()
+        )
+        return result.data
 
-    async def get_by_ids(self, exercise_ids: list):
-        """Get multiple exercises by IDs."""
-        # Stub: query WHERE id IN (...)
-        return []
+    def get_by_ids(self, exercise_ids: list[str]) -> list[dict]:
+        if not exercise_ids:
+            return []
+
+        result = (
+            self.client.table(self.table_name)
+            .select("*")
+            .in_("id", exercise_ids)
+            .eq("is_active", True)
+            .execute()
+        )
+        return result.data or []

@@ -1,0 +1,3430 @@
+[
+    {
+      "name": "The Hundred",
+      "aliases": [
+        "Hundred",
+        "Hundreds",
+        "The 100"
+      ],
+      "description": "תרגיל נשימה וסבולת לבטן בשכיבה על הגב, כשהגו בכפיפה, הרגליים מוחזקות בשליטה והזרועות מבצעות פעימות קצביות.",
+      "difficulty_level": "intermediate",
+      "body_focus": [
+        "core",
+        "abdominals",
+        "hip_flexors",
+        "shoulder_stabilizers"
+      ],
+      "position": "supine",
+      "intensity": 3,
+      "min_duration_seconds": 60,
+      "max_duration_seconds": 90,
+      "min_reps": 100,
+      "max_reps": 100,
+      "teaching_cues": [
+        "אספו את שרירי הבטן פנימה ושמרו על אגן יציב.",
+        "הרחיקו את הרגליים רק עד הגובה שבו ניתן לשמור על שליטה בגו ובאגן.",
+        "בצעו את פעימות הזרועות ממפרקי הכתפיים תוך שמירה על צוואר ארוך.",
+        "תאמו חמש פעימות זרועות עם השאיפה וחמש עם הנשיפה."
+      ],
+      "common_mistakes": [
+        "איבוד תמיכת הבטן והקשתה של הגב התחתון.",
+        "מתח בכתפיים או משיכת הסנטר אל בית החזה.",
+        "הורדת הרגליים מעבר לטווח שבו ניתן לשמור על שליטה."
+      ],
+      "pilates_principles": [
+        "breathing",
+        "centering",
+        "control",
+        "precision"
+      ],
+      "restrictions": [
+        {
+          "key": "neck_sensitivity",
+          "compatibility": "modify",
+          "modification": "השאירו את הראש נתמך או הורידו אותו למזרן והפחיתו את כפיפת הצוואר."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "השאירו את הרגליים גבוהות יותר או כפופות במנח tabletop כדי לקצר את המנוף."
+        },
+        {
+          "key": "pregnancy",
+          "compatibility": "modify",
+          "modification": "בשלבים מתקדמים של היריון ייתכן שיש צורך להימנע משכיבה ממושכת על הגב ולעבור למנח חלופי בהתאם להנחיית המדריכה."
+        }
+      ],
+      "progressions": [
+        "הורידו את הרגליים הישרות נמוך יותר תוך שמירה על שליטה בגו ובאגן.",
+        "הוסיפו אביזר קל, כגון חישוק פילאטיס או כדור קטן, מבלי לשנות את היישור."
+      ],
+      "regressions": [
+        "השאירו את הראש על המזרן.",
+        "החזיקו את הרגליים ב-tabletop או השאירו את כפות הרגליים נתמכות.",
+        "קצרו את מקטעי הנשימה והפעימות."
+      ],
+      "alternatives": [
+        "Single Leg Stretch",
+        "Chest-lift breathing preparation"
+      ],
+      "possible_equipment": [
+        "mat",
+        "small_ball",
+        "magic_circle",
+        "resistance_band",
+        "fitball"
+      ]
+    },
+    {
+      "name": "Roll Up",
+      "aliases": [
+        "The Roll Up"
+      ],
+      "description": "ארטיקולציה מבוקרת של עמוד השדרה משכיבה לישיבה ובחזרה, תוך שימוש בשרירי הבטן לגלגול הדרגתי של החוליות במקום בתנופה.",
+      "difficulty_level": "intermediate",
+      "body_focus": [
+        "abdominals",
+        "spine",
+        "hamstrings"
+      ],
+      "position": "supine_to_seated",
+      "intensity": 3,
+      "min_duration_seconds": 45,
+      "max_duration_seconds": 75,
+      "min_reps": 3,
+      "max_reps": 5,
+      "teaching_cues": [
+        "התחילו מהפעלת הבטן וגלגלו חוליה אחר חוליה.",
+        "שמרו על הרגליים ארוכות ומעוגנות ללא אחיזה מיותרת.",
+        "בנקודה העליונה התארכו קדימה דרך קודקוד הראש.",
+        "שלטו בירידה חזרה במקום לצנוח אל המזרן."
+      ],
+      "common_mistakes": [
+        "שימוש בתנופה כדי לעלות לישיבה.",
+        "הרמת כפות הרגליים מהמזרן.",
+        "קריסה של הכתפיים או משיכה חזקה של הזרועות קדימה."
+      ],
+      "pilates_principles": [
+        "centering",
+        "control",
+        "flow",
+        "precision"
+      ],
+      "restrictions": [
+        {
+          "key": "spinal_flexion_restriction",
+          "compatibility": "avoid",
+          "modification": "השתמשו בחלופה מאושרת בעמוד שדרה ניטרלי במקום כפיפה עמוסה של עמוד השדרה."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "הקטינו את הטווח או השתמשו בעזרה כגון רצועה, והימנעו מכפיית הגלגול."
+        },
+        {
+          "key": "hamstring_tightness",
+          "compatibility": "modify",
+          "modification": "כופפו מעט את הברכיים או הגביהו את האגן לפי הצורך."
+        }
+      ],
+      "progressions": [
+        "האטו את הארטיקולציה והפחיתו את עזרת התנופה מהזרועות.",
+        "בצעו חלק גדול יותר מהטווח כשהזרועות מעל הראש."
+      ],
+      "regressions": [
+        "Half Roll Back.",
+        "השתמשו בגומיית התנגדות סביב כפות הרגליים לעזרה.",
+        "כופפו מעט את הברכיים."
+      ],
+      "alternatives": [
+        "Spine Stretch Forward",
+        "Half Roll Back"
+      ],
+      "possible_equipment": [
+        "mat",
+        "resistance_band",
+        "small_ball",
+        "towel"
+      ]
+    },
+    {
+      "name": "Roll Over",
+      "aliases": [
+        "The Roll Over"
+      ],
+      "description": "תרגיל היפוך מתקדם משכיבה על הגב, שבו האגן ועמוד השדרה מתגלגלים מעל הראש תוך שמירה על שליטת בטן ואורך ברגליים.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "abdominals",
+        "spine",
+        "hamstrings",
+        "shoulder_stabilizers"
+      ],
+      "position": "inverted",
+      "intensity": 4,
+      "min_duration_seconds": 45,
+      "max_duration_seconds": 75,
+      "min_reps": 3,
+      "max_reps": 3,
+      "teaching_cues": [
+        "הרימו מהבטן במקום לבעוט את הרגליים מעל הראש.",
+        "שמרו את המשקל על חגורת הכתפיים ולא על הצוואר.",
+        "האריכו את הרגליים הרחק בזמן שעמוד השדרה מתגלגל בחזרה למזרן.",
+        "בצעו את כל הגלגול בשליטה."
+      ],
+      "common_mistakes": [
+        "גלגול משקל אל הצוואר.",
+        "שימוש בתנופה או זריקת הרגליים.",
+        "קריסה של בית החזה או איבוד תמיכת הבטן."
+      ],
+      "pilates_principles": [
+        "centering",
+        "control",
+        "precision",
+        "flow"
+      ],
+      "restrictions": [
+        {
+          "key": "neck_or_cervical_sensitivity",
+          "compatibility": "avoid",
+          "modification": "בחרו תרגיל בטן ללא היפוך אלא אם קיימת התאמה מקצועית ואישור מתאים."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "modify",
+          "modification": "אם חגורת הכתפיים אינה יכולה לתמוך במנח, השתמשו בחלופה ללא היפוך."
+        },
+        {
+          "key": "spinal_flexion_restriction",
+          "compatibility": "avoid",
+          "modification": "השתמשו בחלופה מאושרת בעמוד שדרה ניטרלי."
+        }
+      ],
+      "progressions": [
+        "הגדילו את הדיוק בדפוס הפתיחה והסגירה של הרגליים תוך שמירה על התמיכה בכתפיים."
+      ],
+      "regressions": [
+        "הרמת אגן ללא העברת הרגליים במלואן מעל הראש.",
+        "הכנה נתמכת ל-Roll Over."
+      ],
+      "alternatives": [
+        "Jackknife preparation",
+        "Double Straight Leg Stretch"
+      ],
+      "possible_equipment": [
+        "mat"
+      ]
+    },
+    {
+      "name": "Single Leg Circles",
+      "aliases": [
+        "Single Leg Circle",
+        "One Leg Circle",
+        "Leg Circles"
+      ],
+      "description": "תרגיל ניידות ירך בשכיבה על הגב, שבו רגל אחת מציירת מעגל ממפרק הירך בעוד האגן והגו נשארים יציבים.",
+      "difficulty_level": "beginner",
+      "body_focus": [
+        "hips",
+        "core",
+        "adductors",
+        "hamstrings"
+      ],
+      "position": "supine",
+      "intensity": 2,
+      "min_duration_seconds": 45,
+      "max_duration_seconds": 75,
+      "min_reps": 3,
+      "max_reps": 5,
+      "teaching_cues": [
+        "שמרו את שני צדי האגן כבדים ומאוזנים על המזרן.",
+        "הניעו את הרגל ממפרק הירך ולא מהברך.",
+        "בצעו מעגל גדול רק במידה שניתן לשמור על יציבות האגן.",
+        "שמרו את הרגל התומכת פעילה וארוכה."
+      ],
+      "common_mistakes": [
+        "נדנוד האגן מצד לצד.",
+        "ביצוע מעגל גדול מדי.",
+        "מתח בכתפיים או כיפוף לא מכוון של הברך הנעה."
+      ],
+      "pilates_principles": [
+        "control",
+        "precision",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "hip_sensitivity",
+          "compatibility": "modify",
+          "modification": "הקטינו את גודל המעגל ושמרו על תנועה נוחה."
+        },
+        {
+          "key": "hamstring_tightness",
+          "compatibility": "modify",
+          "modification": "כופפו מעט את הברך הנעה או השתמשו ברצועה."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "השאירו את הרגל שאינה עובדת כפופה עם כף הרגל על המזרן לפי הצורך."
+        }
+      ],
+      "progressions": [
+        "השאירו את הרגל שאינה עובדת ישרה לחלוטין והגדילו את המעגל רק ללא תנועה באגן."
+      ],
+      "regressions": [
+        "מעגלים עם ברך כפופה.",
+        "מעגלים קטנים יותר.",
+        "השתמשו ברצועה לתמיכת ההמסטרינג."
+      ],
+      "alternatives": [
+        "Knee Circles",
+        "Side Kicks - Circles"
+      ],
+      "possible_equipment": [
+        "mat",
+        "resistance_band",
+        "small_ball"
+      ]
+    },
+    {
+      "name": "Rolling Like a Ball",
+      "aliases": [
+        "Rolling Like A Ball",
+        "Rolling Back"
+      ],
+      "description": "תרגיל גלגול ושיווי משקל בישיבה, השומר על צורת C קומפקטית בזמן גלגול אל השכמות וחזרה לאיזון ללא הנחת כפות הרגליים.",
+      "difficulty_level": "beginner",
+      "body_focus": [
+        "abdominals",
+        "spine",
+        "balance"
+      ],
+      "position": "seated",
+      "intensity": 2,
+      "min_duration_seconds": 40,
+      "max_duration_seconds": 70,
+      "min_reps": 5,
+      "max_reps": 10,
+      "teaching_cues": [
+        "שמרו על אותה צורה מעוגלת לאורך כל הגלגול.",
+        "יזמו את החזרה בעזרת שרירי הבטן ולא בבעיטה של הרגליים.",
+        "התגלגלו עד השכמות ולא אל הצוואר.",
+        "התאזנו מאחורי עצמות הישיבה מבלי להניח את כפות הרגליים."
+      ],
+      "common_mistakes": [
+        "זריקת הראש או הרגליים כדי ליצור תנופה.",
+        "יישור עמוד השדרה במהלך הגלגול.",
+        "גלגול על הצוואר."
+      ],
+      "pilates_principles": [
+        "control",
+        "flow",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "neck_sensitivity",
+          "compatibility": "modify",
+          "modification": "הקטינו את טווח הגלגול והימנעו מהעמסת עמוד השדרה הצווארי."
+        },
+        {
+          "key": "spinal_flexion_restriction",
+          "compatibility": "avoid",
+          "modification": "בחרו תרגיל שיווי משקל בעמוד שדרה ניטרלי."
+        },
+        {
+          "key": "balance_difficulty",
+          "compatibility": "modify",
+          "modification": "תרגלו רק את האיזון במנח ההתחלה או נדנוד קטן."
+        }
+      ],
+      "progressions": [
+        "הפחיתו את התמיכה בידיים תוך שמירה על הצורה הקומפקטית.",
+        "עברו ישירות לסדרת הבטן."
+      ],
+      "regressions": [
+        "נדנוד קטן.",
+        "אחזו מאחורי הירכיים במקום בשוקיים."
+      ],
+      "alternatives": [
+        "Open Leg Rocker",
+        "Seated balance preparation"
+      ],
+      "possible_equipment": [
+        "mat",
+        "small_ball"
+      ]
+    },
+    {
+      "name": "Single Leg Stretch",
+      "aliases": [
+        "One Leg Stretch"
+      ],
+      "description": "תרגיל מסדרת הבטן בשכיבה על הגב, שבו ברך אחת מתקרבת לחזה בעוד הרגל השנייה מתארכת קדימה והגו נשאר בכפיפה.",
+      "difficulty_level": "beginner",
+      "body_focus": [
+        "abdominals",
+        "hip_flexors",
+        "core"
+      ],
+      "position": "supine",
+      "intensity": 3,
+      "min_duration_seconds": 40,
+      "max_duration_seconds": 70,
+      "min_reps": 5,
+      "max_reps": 10,
+      "teaching_cues": [
+        "שמרו על אגן יציב בזמן החלפת הרגליים.",
+        "האריכו את הרגל היוצאת קדימה במקום רק להוריד אותה.",
+        "שמרו את הכתפיים מורמות מבלי לקצר את הצוואר.",
+        "החליפו רגליים בצורה חלקה ובהתאמה לנשימה."
+      ],
+      "common_mistakes": [
+        "נדנוד האגן.",
+        "משיכה אגרסיבית של הברך.",
+        "הקשתת הגב התחתון כאשר הרגל מתרחקת."
+      ],
+      "pilates_principles": [
+        "centering",
+        "flow",
+        "control",
+        "breathing"
+      ],
+      "restrictions": [
+        {
+          "key": "neck_sensitivity",
+          "compatibility": "modify",
+          "modification": "תמכו בראש או הורידו אותו למזרן."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "השאירו את הרגל המתארכת גבוהה יותר או קצרו את המנוף."
+        },
+        {
+          "key": "hip_flexor_sensitivity",
+          "compatibility": "modify",
+          "modification": "הקטינו את טווח הרגל והתמקדו בשליטת הבטן."
+        }
+      ],
+      "progressions": [
+        "הורידו את הרגל המתארכת תוך שמירה על שליטת האגן.",
+        "הגבירו את הזרימה מבלי לאבד דיוק."
+      ],
+      "regressions": [
+        "ראש על המזרן.",
+        "השאירו את הרגל המתארכת כפופה או גבוהה יותר."
+      ],
+      "alternatives": [
+        "Double Leg Stretch",
+        "The Hundred"
+      ],
+      "possible_equipment": [
+        "mat",
+        "small_ball",
+        "magic_circle"
+      ]
+    },
+    {
+      "name": "Double Leg Stretch",
+      "aliases": [
+        "Double Leg Stretch"
+      ],
+      "description": "תרגיל מסדרת הבטן בשכיבה על הגב, שבו שתי הידיים ושתי הרגליים מתארכות הרחק מהמרכז וחוזרות במעגל תוך שמירה על גו יציב.",
+      "difficulty_level": "intermediate",
+      "body_focus": [
+        "abdominals",
+        "hip_flexors",
+        "shoulders",
+        "core"
+      ],
+      "position": "supine",
+      "intensity": 3,
+      "min_duration_seconds": 40,
+      "max_duration_seconds": 70,
+      "min_reps": 5,
+      "max_reps": 10,
+      "teaching_cues": [
+        "שמרו על מנח הגו ללא שינוי בזמן שהגפיים מתארכות.",
+        "האריכו את הידיים והרגליים לפני החזרה במעגל.",
+        "הורידו את הרגליים רק עד הטווח שבו הבטן יכולה לשמור על שליטה.",
+        "שמרו על כתפיים רחבות וצוואר ארוך."
+      ],
+      "common_mistakes": [
+        "הקשתת הגב התחתון בזמן ההתארכות.",
+        "נפילת הראש והכתפיים.",
+        "תנועה מהירה מדי שמסתירה איבוד שליטה."
+      ],
+      "pilates_principles": [
+        "centering",
+        "control",
+        "flow",
+        "breathing"
+      ],
+      "restrictions": [
+        {
+          "key": "neck_sensitivity",
+          "compatibility": "modify",
+          "modification": "השאירו את הראש נתמך או על המזרן."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "האריכו את הרגליים בזווית גבוהה יותר או השאירו ברכיים כפופות."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "modify",
+          "modification": "הגבילו את טווח הידיים מעל הראש."
+        }
+      ],
+      "progressions": [
+        "האריכו את מנוף הידיים והרגליים והורידו את זווית הרגליים תוך שמירה על שליטת הגו."
+      ],
+      "regressions": [
+        "הניעו ידיים ורגליים בנפרד.",
+        "השאירו ברכיים כפופות.",
+        "ראש על המזרן."
+      ],
+      "alternatives": [
+        "Single Leg Stretch",
+        "The Hundred"
+      ],
+      "possible_equipment": [
+        "mat",
+        "small_ball",
+        "magic_circle",
+        "resistance_band"
+      ]
+    },
+    {
+      "name": "Single Straight Leg Stretch",
+      "aliases": [
+        "Single Straight Leg Stretch",
+        "Scissors - Low"
+      ],
+      "description": "תרגיל מסדרת הבטן בשכיבה על הגב, שבו רגליים ישרות מתחלפות בתנועת מספריים תוך שמירה על כפיפת הגו ויציבות האגן.",
+      "difficulty_level": "intermediate",
+      "body_focus": [
+        "abdominals",
+        "hamstrings",
+        "hip_flexors"
+      ],
+      "position": "supine",
+      "intensity": 3,
+      "min_duration_seconds": 40,
+      "max_duration_seconds": 70,
+      "min_reps": 5,
+      "max_reps": 10,
+      "teaching_cues": [
+        "שמרו את שתי הרגליים ארוכות והחליפו מהמפרקים בירכיים.",
+        "שמרו על אגן מעוגן ועל כפיפת גו יציבה.",
+        "בצעו פולס כפול עדין בלי למשוך את הרגל בכוח.",
+        "השאירו את הרגל התחתונה רק בגובה שבו ניתן לשמור על שליטה."
+      ],
+      "common_mistakes": [
+        "כיפוף לא מכוון של הברכיים.",
+        "משיכת הרגל העליונה בעזרת הידיים.",
+        "הקשתת הגב התחתון כשהרגל התחתונה יורדת."
+      ],
+      "pilates_principles": [
+        "control",
+        "centering",
+        "flow",
+        "precision"
+      ],
+      "restrictions": [
+        {
+          "key": "hamstring_tightness",
+          "compatibility": "modify",
+          "modification": "כופפו מעט את הברכיים או הקטינו את הטווח."
+        },
+        {
+          "key": "neck_sensitivity",
+          "compatibility": "modify",
+          "modification": "תמכו בראש או הורידו אותו."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "השאירו את הרגל התחתונה גבוהה יותר."
+        }
+      ],
+      "progressions": [
+        "הגדילו את הפישוק תוך שמירה על אגן יציב.",
+        "הפחיתו את העזרה מהידיים."
+      ],
+      "regressions": [
+        "גרסה עם ברכיים כפופות.",
+        "פישוק קטן יותר.",
+        "ראש על המזרן."
+      ],
+      "alternatives": [
+        "High Scissors",
+        "Single Leg Stretch"
+      ],
+      "possible_equipment": [
+        "mat",
+        "resistance_band"
+      ]
+    },
+    {
+      "name": "Double Straight Leg Stretch",
+      "aliases": [
+        "Double Straight Leg Lower/Lift",
+        "Double Leg Lower Lift"
+      ],
+      "description": "תרגיל בטן בשכיבה על הגב, שבו שתי הרגליים הישרות יורדות ועולות יחד תוך שמירה על יציבות הגו והאגן.",
+      "difficulty_level": "intermediate",
+      "body_focus": [
+        "abdominals",
+        "hip_flexors",
+        "core"
+      ],
+      "position": "supine",
+      "intensity": 4,
+      "min_duration_seconds": 35,
+      "max_duration_seconds": 65,
+      "min_reps": 5,
+      "max_reps": 10,
+      "teaching_cues": [
+        "שמרו את האגן ובית החזה יציבים בזמן הורדת הרגליים.",
+        "הורידו רק עד הנקודה שלפני שהגב מתחיל להתקשת.",
+        "האריכו את הרגליים הרחק ממפרקי הירך.",
+        "השתמשו בנשיפה כדי לתמוך בעלייה חזרה."
+      ],
+      "common_mistakes": [
+        "הורדת הרגליים נמוך מדי.",
+        "פתיחת הצלעות או הקשתת הגב.",
+        "שימוש בתנופה בעלייה."
+      ],
+      "pilates_principles": [
+        "centering",
+        "control",
+        "precision",
+        "breathing"
+      ],
+      "restrictions": [
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "הקטינו את טווח ההורדה או כופפו את הברכיים."
+        },
+        {
+          "key": "neck_sensitivity",
+          "compatibility": "modify",
+          "modification": "השאירו את הראש על המזרן או נתמך."
+        },
+        {
+          "key": "hip_flexor_sensitivity",
+          "compatibility": "modify",
+          "modification": "קצרו את המנוף או השתמשו בברכיים כפופות."
+        }
+      ],
+      "progressions": [
+        "הורידו את הרגליים נמוך יותר תוך שמירה על שליטה.",
+        "הוסיפו חישוק פילאטיס קל בין הקרסוליים."
+      ],
+      "regressions": [
+        "הורדה עם ברכיים כפופות.",
+        "הורדת רגל אחת בכל פעם.",
+        "ראש על המזרן."
+      ],
+      "alternatives": [
+        "The Hundred",
+        "Double Leg Stretch"
+      ],
+      "possible_equipment": [
+        "mat",
+        "small_ball",
+        "magic_circle"
+      ]
+    },
+    {
+      "name": "Criss Cross",
+      "aliases": [
+        "Criss-Cross",
+        "Criss Cross"
+      ],
+      "description": "תרגיל בטן ברוטציה, שבו בית החזה מסתובב לסירוגין לכיוון הברך הכפופה בעוד הרגל הנגדית מתארכת.",
+      "difficulty_level": "intermediate",
+      "body_focus": [
+        "obliques",
+        "abdominals",
+        "hip_flexors",
+        "thoracic_spine"
+      ],
+      "position": "supine",
+      "intensity": 4,
+      "min_duration_seconds": 40,
+      "max_duration_seconds": 70,
+      "min_reps": 5,
+      "max_reps": 10,
+      "teaching_cues": [
+        "סובבו את בית החזה ולא רק את המרפק.",
+        "שמרו על אגן יציב בזמן החלפת הרגליים.",
+        "האריכו את הרגל הנגדית קדימה.",
+        "שמרו על מרפקים רחבים ועל צוואר נתמך באמצעות עבודת הגו."
+      ],
+      "common_mistakes": [
+        "משיכה בצוואר.",
+        "הנעת המרפקים בלבד במקום סיבוב הגו.",
+        "נדנוד האגן או החלפות מהירות מדי."
+      ],
+      "pilates_principles": [
+        "centering",
+        "control",
+        "precision",
+        "flow"
+      ],
+      "restrictions": [
+        {
+          "key": "neck_sensitivity",
+          "compatibility": "modify",
+          "modification": "תמכו בראש או הקטינו את הרמת הגו."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "השאירו את הרגל המתארכת גבוהה יותר והקטינו את הטווח."
+        },
+        {
+          "key": "spinal_rotation_restriction",
+          "compatibility": "avoid",
+          "modification": "השתמשו בחלופת בטן ללא רוטציה."
+        }
+      ],
+      "progressions": [
+        "האטו את הרוטציה והאריכו יותר את הרגל.",
+        "עצרו לרגע בכל מנח מסובב."
+      ],
+      "regressions": [
+        "השאירו את הרגליים ב-tabletop עם טווח קטן יותר.",
+        "ראש נתמך.",
+        "הקטינו את טווח הרוטציה."
+      ],
+      "alternatives": [
+        "Single Leg Stretch",
+        "Spine Twist"
+      ],
+      "possible_equipment": [
+        "mat",
+        "small_ball"
+      ]
+    },
+    {
+      "name": "Spine Stretch Forward",
+      "aliases": [
+        "Spine Stretch",
+        "Spine Stretch Forward"
+      ],
+      "description": "תרגיל בישיבה המשלב כפיפת עמוד שדרה והתארכות צירית קדימה מעל רגליים ישרות, תוך שמירה על עצמות ישיבה מעוגנות.",
+      "difficulty_level": "beginner",
+      "body_focus": [
+        "spine",
+        "hamstrings",
+        "abdominals",
+        "back"
+      ],
+      "position": "seated",
+      "intensity": 2,
+      "min_duration_seconds": 35,
+      "max_duration_seconds": 65,
+      "min_reps": 3,
+      "max_reps": 5,
+      "teaching_cues": [
+        "התארכו לגובה לפני תחילת הגלגול קדימה.",
+        "שמרו את עצמות הישיבה מעוגנות בזמן שעימוד השדרה מתעגל.",
+        "הגיעו קדימה דרך קודקוד הראש במקום לקרוס.",
+        "חזרו לישיבה זקופה תוך ערימה מבוקרת של החוליות."
+      ],
+      "common_mistakes": [
+        "כפיפה ממפרקי הירך במקום ארטיקולציה של עמוד השדרה.",
+        "הרמת הכתפיים לכיוון האוזניים.",
+        "כיפוף מוגזם של הברכיים בגלל מתח."
+      ],
+      "pilates_principles": [
+        "breathing",
+        "control",
+        "precision",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "spinal_flexion_restriction",
+          "compatibility": "avoid",
+          "modification": "השתמשו בהטיה קדימה בישיבה עם עמוד שדרה ניטרלי או בתרגיל התארכות צירית מאושר."
+        },
+        {
+          "key": "hamstring_tightness",
+          "compatibility": "modify",
+          "modification": "כופפו מעט את הברכיים או שבו על הגבהה קטנה."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "הקטינו את הטווח והתמקדו בהתארכות צירית."
+        }
+      ],
+      "progressions": [
+        "הגדילו את הארטיקולציה וההגעה קדימה תוך שמירה על אגן מעוגן."
+      ],
+      "regressions": [
+        "שבו על כרית או בלוק.",
+        "כופפו מעט את הברכיים.",
+        "הקטינו את הטווח קדימה."
+      ],
+      "alternatives": [
+        "Saw",
+        "Seated axial-length breathing"
+      ],
+      "possible_equipment": [
+        "mat",
+        "small_ball",
+        "yoga_block",
+        "resistance_band"
+      ]
+    },
+    {
+      "name": "Open Leg Rocker",
+      "aliases": [
+        "Rocker with Open Legs",
+        "Open Leg Rocker"
+      ],
+      "description": "תרגיל גלגול ושיווי משקל עם שתי רגליים ישרות בצורת V, תוך שמירה על שליטת גו וחזרה לאותה נקודת איזון.",
+      "difficulty_level": "intermediate",
+      "body_focus": [
+        "abdominals",
+        "balance",
+        "hamstrings",
+        "spine"
+      ],
+      "position": "seated",
+      "intensity": 3,
+      "min_duration_seconds": 45,
+      "max_duration_seconds": 70,
+      "min_reps": 6,
+      "max_reps": 6,
+      "teaching_cues": [
+        "שמרו על היחס בין הגו לרגליים לאורך הגלגול.",
+        "התגלגלו עד השכמות ולא אל הצוואר.",
+        "השתמשו בבטן כדי לעצור ולהתאזן בחלק העליון.",
+        "שמרו על רגליים פעילות ובמרחק שווה."
+      ],
+      "common_mistakes": [
+        "זריקת הרגליים כדי ליצור תנופה.",
+        "קריסת בית החזה בנקודת האיזון.",
+        "גלגול על הצוואר."
+      ],
+      "pilates_principles": [
+        "control",
+        "balance",
+        "flow",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "neck_sensitivity",
+          "compatibility": "modify",
+          "modification": "הקטינו את טווח הגלגול והימנעו מהעמסת הצוואר."
+        },
+        {
+          "key": "spinal_flexion_restriction",
+          "compatibility": "avoid",
+          "modification": "השתמשו בחלופת שיווי משקל בישיבה ללא גלגול."
+        },
+        {
+          "key": "hamstring_tightness",
+          "compatibility": "modify",
+          "modification": "השאירו את הברכיים מעט כפופות."
+        }
+      ],
+      "progressions": [
+        "יישרו את הברכיים במלואן והפחיתו את התלות בידיים."
+      ],
+      "regressions": [
+        "איזון ברגליים פתוחות עם ברכיים כפופות.",
+        "טווח נדנוד קטן."
+      ],
+      "alternatives": [
+        "Rolling Like a Ball",
+        "Teaser 1"
+      ],
+      "possible_equipment": [
+        "mat",
+        "resistance_band"
+      ]
+    },
+    {
+      "name": "Corkscrew w/Hips over",
+      "aliases": [
+        "Corkscrew",
+        "Corkscrew with Hips Over"
+      ],
+      "description": "תרגיל מתקדם בשכיבה/היפוך המשלב מעגלי רגליים, שליטת בטן, ארטיקולציה של עמוד השדרה והרמת אגן מבוקרת.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "abdominals",
+        "obliques",
+        "spine",
+        "hips"
+      ],
+      "position": "inverted",
+      "intensity": 5,
+      "min_duration_seconds": 45,
+      "max_duration_seconds": 75,
+      "min_reps": 3,
+      "max_reps": 5,
+      "teaching_cues": [
+        "שמרו את הכתפיים מעוגנות ואת הצוואר ללא לחץ.",
+        "סובבו את הרגליים ממקום של גו יציב והרימו את האגן בעזרת הבטן.",
+        "שמרו על מעגלים שווים לשני הצדדים.",
+        "גלגלו את עמוד השדרה חזרה למזרן בשליטה."
+      ],
+      "common_mistakes": [
+        "העברת משקל אל הצוואר.",
+        "שימוש בתנופה להרמת האגן.",
+        "ביצוע מעגל גדול יותר מיכולת השליטה של הגו."
+      ],
+      "pilates_principles": [
+        "control",
+        "precision",
+        "centering",
+        "flow"
+      ],
+      "restrictions": [
+        {
+          "key": "neck_or_cervical_sensitivity",
+          "compatibility": "avoid",
+          "modification": "השתמשו בגרסת Corkscrew ללא היפוך."
+        },
+        {
+          "key": "spinal_flexion_restriction",
+          "compatibility": "avoid",
+          "modification": "בחרו חלופה עם עמוד שדרה ניטרלי."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "בצעו Low Corkscrew ללא הרמת האגן."
+        }
+      ],
+      "progressions": [
+        "הגדילו את גודל המעגל רק כל עוד נשמרים תמיכת הכתפיים והסימטריה."
+      ],
+      "regressions": [
+        "Low Corkscrew כשהאגן נשאר על המזרן.",
+        "מעגלי ירכיים עם ברכיים כפופות."
+      ],
+      "alternatives": [
+        "Hip Circles",
+        "Single Leg Circles"
+      ],
+      "possible_equipment": [
+        "mat"
+      ]
+    },
+    {
+      "name": "Saw",
+      "aliases": [
+        "The Saw"
+      ],
+      "description": "תרגיל בישיבה המשלב רוטציה של בית החזה עם הגעה קדימה וכפיפת עמוד השדרה מעל רגליים ישרות.",
+      "difficulty_level": "intermediate",
+      "body_focus": [
+        "obliques",
+        "spine",
+        "hamstrings",
+        "shoulders"
+      ],
+      "position": "seated",
+      "intensity": 2,
+      "min_duration_seconds": 40,
+      "max_duration_seconds": 70,
+      "min_reps": 4,
+      "max_reps": 4,
+      "teaching_cues": [
+        "התארכו לגובה לפני הרוטציה.",
+        "שמרו את שתי עצמות הישיבה מעוגנות בזמן ההגעה קדימה.",
+        "סובבו דרך בית החזה ולא באמצעות הזזת האגן.",
+        "הגיעו עם היד הנגדית לכיוון החלק החיצוני של כף הרגל בלי לקרוס."
+      ],
+      "common_mistakes": [
+        "הזזת האגן בזמן הרוטציה.",
+        "עיגול הכתפיים במקום ארטיקולציה של עמוד השדרה.",
+        "כפיית ההגעה באמצעות הזרועות."
+      ],
+      "pilates_principles": [
+        "control",
+        "precision",
+        "breathing",
+        "flow"
+      ],
+      "restrictions": [
+        {
+          "key": "spinal_rotation_restriction",
+          "compatibility": "avoid",
+          "modification": "השתמשו בתרגיל ניידות בישיבה ללא רוטציה."
+        },
+        {
+          "key": "hamstring_tightness",
+          "compatibility": "modify",
+          "modification": "כופפו מעט את הברכיים או שבו על הגבהה קטנה."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "הקטינו את הרוטציה ואת הטווח קדימה."
+        }
+      ],
+      "progressions": [
+        "הגדילו את הרוטציה וההגעה תוך שמירה על אגן מעוגן."
+      ],
+      "regressions": [
+        "רוטציה קטנה יותר.",
+        "ברכיים כפופות.",
+        "Spine Twist ללא כפיפה קדימה."
+      ],
+      "alternatives": [
+        "Spine Twist",
+        "Spine Stretch Forward"
+      ],
+      "possible_equipment": [
+        "mat",
+        "yoga_block",
+        "resistance_band"
+      ]
+    },
+    {
+      "name": "Neck Roll/Swan",
+      "aliases": [
+        "Neck Roll",
+        "Swan",
+        "Swan with Neck Roll"
+      ],
+      "description": "רצף פשיטת עמוד שדרה בשכיבה על הבטן, שבו בית החזה עולה באמצעות זוקפי הגב וניתן להוסיף רוטציה עדינה של הצוואר בחלק העליון.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "back_extensors",
+        "glutes",
+        "thoracic_spine",
+        "shoulder_stabilizers"
+      ],
+      "position": "prone",
+      "intensity": 4,
+      "min_duration_seconds": 40,
+      "max_duration_seconds": 70,
+      "min_reps": 3,
+      "max_reps": 5,
+      "teaching_cues": [
+        "התארכו דרך עמוד השדרה לפני העלייה לפשיטה.",
+        "שמרו על תמיכת הבטן ועל אגן מאורגן.",
+        "חלקו את הפשיטה לאורך עמוד השדרה החזי ולא רק בגב התחתון.",
+        "אם מוסיפים Neck Roll, שמרו על תנועה חלקה וללא כאב."
+      ],
+      "common_mistakes": [
+        "קריסה אל עמוד השדרה המותני.",
+        "הרמת הכתפיים לכיוון האוזניים.",
+        "זריקת הראש לאחור או כפיית רוטציה בצוואר."
+      ],
+      "pilates_principles": [
+        "control",
+        "precision",
+        "centering",
+        "breathing"
+      ],
+      "restrictions": [
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "בצעו Swan Prep בטווח פשיטה קטן יותר."
+        },
+        {
+          "key": "neck_sensitivity",
+          "compatibility": "modify",
+          "modification": "וותרו על גלגול הצוואר ושמרו על עמוד שדרה צווארי ארוך."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "modify",
+          "modification": "השתמשו בתמיכה על האמות או הפחיתו עומס מהידיים."
+        }
+      ],
+      "progressions": [
+        "עברו ל-Swan Dive כאשר קיימת שליטה מספקת בפשיטה."
+      ],
+      "regressions": [
+        "Swan Prep.",
+        "פשיטה חזית נתמכת על האמות."
+      ],
+      "alternatives": [
+        "Swimming",
+        "Single Leg Kicks"
+      ],
+      "possible_equipment": [
+        "mat",
+        "small_ball",
+        "towel"
+      ]
+    },
+    {
+      "name": "Single Leg Kicks",
+      "aliases": [
+        "Single Leg Kick",
+        "One Leg Kick"
+      ],
+      "description": "תרגיל בשכיבה על הבטן עם תמיכה על האמות, שבו הברכיים מתכופפות לסירוגין בעוד הגו נשאר מורם ויציב.",
+      "difficulty_level": "beginner",
+      "body_focus": [
+        "hamstrings",
+        "glutes",
+        "back_extensors",
+        "shoulder_stabilizers"
+      ],
+      "position": "prone",
+      "intensity": 3,
+      "min_duration_seconds": 35,
+      "max_duration_seconds": 60,
+      "min_reps": 5,
+      "max_reps": 5,
+      "teaching_cues": [
+        "לחצו את האמות למזרן והרימו את בית החזה הרחק ממנו.",
+        "שמרו על האגן יציב בזמן שהעקב מתקרב לישבן.",
+        "האריכו את קדמת הירכיים.",
+        "שמרו על צוואר ארוך ועל עצמות בריח רחבות."
+      ],
+      "common_mistakes": [
+        "שקיעה לתוך הכתפיים.",
+        "נדנוד האגן בכל בעיטה.",
+        "פשיטת יתר בגב התחתון."
+      ],
+      "pilates_principles": [
+        "control",
+        "precision",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "knee_sensitivity",
+          "compatibility": "modify",
+          "modification": "הקטינו את טווח כפיפת הברך והימנעו מבעיטה חזקה."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "הנמיכו את בית החזה או השתמשו בפשיטה קטנה יותר."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "modify",
+          "modification": "הפחיתו את דרישת התמיכה או השתמשו בהכנה לבעיטות בשכיבה על הבטן."
+        }
+      ],
+      "progressions": [
+        "הגדילו את הרמת הגו תוך שמירה על אגן שקט."
+      ],
+      "regressions": [
+        "כפיפת ברך אחת בשכיבה על הבטן עם בית חזה נמוך יותר.",
+        "טווח בעיטה קטן יותר."
+      ],
+      "alternatives": [
+        "Double Leg Kicks",
+        "Swimming"
+      ],
+      "possible_equipment": [
+        "mat",
+        "small_ball"
+      ]
+    },
+    {
+      "name": "Double Leg Kicks",
+      "aliases": [
+        "Double Leg Kick"
+      ],
+      "description": "תרגיל בשכיבה על הבטן המשלב שלוש בעיטות עקבים לכיוון הישבן עם פתיחת בית החזה לפשיטה והארכת הזרועות לאחור.",
+      "difficulty_level": "intermediate",
+      "body_focus": [
+        "hamstrings",
+        "glutes",
+        "back_extensors",
+        "shoulders",
+        "chest"
+      ],
+      "position": "prone",
+      "intensity": 3,
+      "min_duration_seconds": 40,
+      "max_duration_seconds": 65,
+      "min_reps": 3,
+      "max_reps": 3,
+      "teaching_cues": [
+        "שמרו על האגן מעוגן בזמן ששתי הברכיים מתכופפות.",
+        "השתמשו בשרשרת האחורית להרמת בית החזה במקום לזרוק את הראש לאחור.",
+        "האריכו את הזרועות לאחור בזמן הפשיטה.",
+        "החליפו את צד הלחי המונחת בלי לדחוס את הצוואר."
+      ],
+      "common_mistakes": [
+        "הרמת האגן בזמן הבעיטות.",
+        "פשיטת יתר של הצוואר או הגב התחתון.",
+        "הרמת הכתפיים בזמן הושטת הזרועות."
+      ],
+      "pilates_principles": [
+        "control",
+        "flow",
+        "precision",
+        "breathing"
+      ],
+      "restrictions": [
+        {
+          "key": "knee_sensitivity",
+          "compatibility": "modify",
+          "modification": "הקטינו את כפיפת הברכיים ואת עוצמת הבעיטה."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "השתמשו בהרמת חזה קטנה יותר או ותרו על הפשיטה."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "modify",
+          "modification": "השאירו את הזרועות נמוכות יותר או הפרידו את תנועת הידיים."
+        }
+      ],
+      "progressions": [
+        "הגדילו את הרמת בית החזה והושטת הזרועות תוך שמירה על תמיכת הבטן."
+      ],
+      "regressions": [
+        "Single Leg Kicks.",
+        "הרמת חזה בשכיבה על הבטן ללא בעיטות."
+      ],
+      "alternatives": [
+        "Single Leg Kicks",
+        "Swimming"
+      ],
+      "possible_equipment": [
+        "mat",
+        "resistance_band",
+        "towel"
+      ]
+    },
+    {
+      "name": "Neck Pull",
+      "aliases": [
+        "The Neck Pull"
+      ],
+      "description": "וריאציה מתקדמת של Roll Up עם הידיים מאחורי הראש, הדורשת שליטת בטן חזקה, ארטיקולציה של עמוד השדרה והטיה מבוקרת ממפרקי הירך.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "abdominals",
+        "spine",
+        "back_extensors",
+        "hamstrings"
+      ],
+      "position": "supine_to_seated",
+      "intensity": 4,
+      "min_duration_seconds": 45,
+      "max_duration_seconds": 75,
+      "min_reps": 3,
+      "max_reps": 5,
+      "teaching_cues": [
+        "השאירו את הידיים קלות ואל תמשכו את הראש קדימה.",
+        "גלגלו את עמוד השדרה בעזרת שרירי הבטן בדומה ל-Roll Up.",
+        "שבו זקוף לפני הטיה לאחור כיחידה ארוכה אחת.",
+        "שלטו בירידה דרך עמוד השדרה."
+      ],
+      "common_mistakes": [
+        "משיכה בצוואר.",
+        "שימוש בתנופה כדי לעלות.",
+        "קריסה של הגב התחתון בזמן ההטיה."
+      ],
+      "pilates_principles": [
+        "control",
+        "centering",
+        "precision",
+        "flow"
+      ],
+      "restrictions": [
+        {
+          "key": "neck_sensitivity",
+          "compatibility": "modify",
+          "modification": "השתמשו ב-Roll Up או השאירו את הידיים קדימה במקום מאחורי הראש."
+        },
+        {
+          "key": "spinal_flexion_restriction",
+          "compatibility": "avoid",
+          "modification": "בחרו חלופה עם עמוד שדרה ניטרלי."
+        },
+        {
+          "key": "hamstring_tightness",
+          "compatibility": "modify",
+          "modification": "כופפו מעט את הברכיים או הקטינו את הטווח קדימה."
+        }
+      ],
+      "progressions": [
+        "הגדילו את טווח ההטיה תוך שמירה על עמוד שדרה ארוך וחזרה מבוקרת."
+      ],
+      "regressions": [
+        "Roll Up.",
+        "ידיים מוצלבות על החזה או מושטות קדימה."
+      ],
+      "alternatives": [
+        "Roll Up",
+        "Spine Stretch Forward"
+      ],
+      "possible_equipment": [
+        "mat",
+        "resistance_band"
+      ]
+    },
+    {
+      "name": "High Scissors",
+      "aliases": [
+        "Scissors",
+        "High Scissors"
+      ],
+      "description": "תרגיל היפוך בתמיכת הכתפיים, שבו רגל ישרה אחת מתארכת לכיוון המזרן והשנייה לכיוון הגוף לסירוגין בעוד האגן נשאר מורם.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "abdominals",
+        "hips",
+        "hamstrings",
+        "shoulder_stabilizers"
+      ],
+      "position": "inverted",
+      "intensity": 4,
+      "min_duration_seconds": 40,
+      "max_duration_seconds": 65,
+      "min_reps": 3,
+      "max_reps": 5,
+      "teaching_cues": [
+        "תמכו באגן עם הידיים תוך שמירת המשקל מחוץ לצוואר.",
+        "שמרו את האגן גבוה ויציב בזמן החלפת הרגליים.",
+        "האריכו את שתי הרגליים בכיוונים מנוגדים.",
+        "שמרו על מרחב רחב באזור עצמות הבריח."
+      ],
+      "common_mistakes": [
+        "העמסת עמוד השדרה הצווארי.",
+        "ירידת האגן בזמן החלפת הרגליים.",
+        "כיפוף הברכיים או תנועת מספריים מהירה מדי."
+      ],
+      "pilates_principles": [
+        "control",
+        "precision",
+        "centering",
+        "flow"
+      ],
+      "restrictions": [
+        {
+          "key": "neck_or_cervical_sensitivity",
+          "compatibility": "avoid",
+          "modification": "השתמשו ב-Single Straight Leg Stretch נמוך במקום בתרגיל ההפוך."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "modify",
+          "modification": "בחרו חלופה ללא היפוך."
+        },
+        {
+          "key": "hamstring_tightness",
+          "compatibility": "modify",
+          "modification": "הקטינו את הפישוק בין הרגליים."
+        }
+      ],
+      "progressions": [
+        "הגדילו את הפישוק מבלי להוריד את האגן.",
+        "עברו בצורה חלקה ל-High Bicycle."
+      ],
+      "regressions": [
+        "Single Straight Leg Stretch.",
+        "מספריים נתמכות בטווח קטן יותר."
+      ],
+      "alternatives": [
+        "Single Straight Leg Stretch",
+        "High Bicycle"
+      ],
+      "possible_equipment": [
+        "mat"
+      ]
+    },
+    {
+      "name": "High Bicycle",
+      "aliases": [
+        "Bicycle",
+        "High Bicycle"
+      ],
+      "description": "דפוס רכיבה בהיפוך ובתמיכת הכתפיים, שבו תנועות הירך והברך מתחלפות בעוד האגן נשאר מורם ויציב.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "abdominals",
+        "hips",
+        "hamstrings",
+        "glutes",
+        "shoulder_stabilizers"
+      ],
+      "position": "inverted",
+      "intensity": 4,
+      "min_duration_seconds": 40,
+      "max_duration_seconds": 65,
+      "min_reps": 3,
+      "max_reps": 5,
+      "teaching_cues": [
+        "שמרו את האגן נתמך ומורם לאורך כל תנועת הרכיבה.",
+        "האריכו כל רגל דרך החלק התחתון של המעגל.",
+        "נועו בצורה חלקה ממפרקי הירך בלי לנדנד את הגו.",
+        "שמרו את המשקל על הכתפיים ולא על הצוואר."
+      ],
+      "common_mistakes": [
+        "ירידת האגן.",
+        "מעגלים קטנים ומהירים עם כפות הרגליים.",
+        "העמסת הצוואר או קריסת בית החזה."
+      ],
+      "pilates_principles": [
+        "flow",
+        "control",
+        "precision",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "neck_or_cervical_sensitivity",
+          "compatibility": "avoid",
+          "modification": "השתמשו בגרסת Bicycle נמוכה או בתרגיל רגליים ללא היפוך."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "modify",
+          "modification": "בחרו חלופה ללא היפוך."
+        },
+        {
+          "key": "hip_sensitivity",
+          "compatibility": "modify",
+          "modification": "הקטינו את טווח הרכיבה."
+        }
+      ],
+      "progressions": [
+        "הגדילו את אורך תנועת הרגל ואת הזרימה תוך שמירה על אגן יציב."
+      ],
+      "regressions": [
+        "High Scissors.",
+        "Bicycle נמוך כשהאגן על המזרן."
+      ],
+      "alternatives": [
+        "High Scissors",
+        "Side Kicks - Bicycle"
+      ],
+      "possible_equipment": [
+        "mat"
+      ]
+    },
+    {
+      "name": "Shoulder Bridge",
+      "aliases": [
+        "Shoulder Bridge Kicks",
+        "Bridge with Leg Kicks"
+      ],
+      "description": "גשר בשכיבה על הגב המוחזק באמצעות השרשרת האחורית, בזמן שרגל אחת מתארכת ומבצעת בעיטות מבוקרות בלי שהאגן ירד או יסתובב.",
+      "difficulty_level": "intermediate",
+      "body_focus": [
+        "glutes",
+        "hamstrings",
+        "core",
+        "spine"
+      ],
+      "position": "supine",
+      "intensity": 3,
+      "min_duration_seconds": 40,
+      "max_duration_seconds": 70,
+      "min_reps": 3,
+      "max_reps": 5,
+      "teaching_cues": [
+        "שמרו על אגן מאוזן בזמן שרגל אחת מתרוממת.",
+        "לחצו באופן שווה דרך כף הרגל התומכת וחגורת הכתפיים.",
+        "האריכו את הרגל הנעה מתוך מפרק הירך.",
+        "שמרו את הצלעות מאורגנות ולא פתוחות כלפי מעלה."
+      ],
+      "common_mistakes": [
+        "ירידה או רוטציה של האגן.",
+        "הקשתת יתר של הגב התחתון.",
+        "דחיפה אל הצוואר במקום אל הגב העליון."
+      ],
+      "pilates_principles": [
+        "control",
+        "centering",
+        "precision"
+      ],
+      "restrictions": [
+        {
+          "key": "neck_sensitivity",
+          "compatibility": "modify",
+          "modification": "השאירו את הגשר נמוך יותר והימנעו מלחץ על עמוד השדרה הצווארי."
+        },
+        {
+          "key": "knee_sensitivity",
+          "compatibility": "modify",
+          "modification": "התאימו את מיקום כף הרגל ואת גובה הגשר לטווח נוח."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "השתמשו בגשר קטן יותר או ב-Pelvic Curl בסיסי."
+        }
+      ],
+      "progressions": [
+        "הגדילו את האתגר ברגל אחת תוך שמירה על יישור האגן."
+      ],
+      "regressions": [
+        "Basic Bridge / Pelvic Curl.",
+        "גשר ללא בעיטות רגל."
+      ],
+      "alternatives": [
+        "High Bridge",
+        "Pelvic Curl"
+      ],
+      "possible_equipment": [
+        "mat",
+        "small_ball",
+        "magic_circle",
+        "resistance_band"
+      ]
+    },
+    {
+      "name": "High Bridge",
+      "aliases": [
+        "High Shoulder Bridge",
+        "High Bridge"
+      ],
+      "description": "וריאציית גשר גבוהה ומתקדמת עם דרישה גדולה יותר לפשיטת הירך ועמוד השדרה, תוך תמיכה חזקה של השרשרת האחורית והכתפיים.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "glutes",
+        "hamstrings",
+        "back_extensors",
+        "shoulder_stabilizers"
+      ],
+      "position": "supine",
+      "intensity": 5,
+      "min_duration_seconds": 20,
+      "max_duration_seconds": 45,
+      "min_reps": 1,
+      "max_reps": 1,
+      "teaching_cues": [
+        "הרימו דרך הירכיים תוך שמירה על בית חזה פתוח וצוואר ללא עומס.",
+        "חלקו את המשקל באופן שווה בין שתי כפות הרגליים והכתפיים.",
+        "האריכו את הברכיים הרחק מהכתפיים.",
+        "שמרו על תנועה מבוקרת ואל תכפו גובה."
+      ],
+      "common_mistakes": [
+        "דחיסה של הצוואר.",
+        "הקשתה בעיקר דרך הגב המותני.",
+        "סטייה של כפות הרגליים או הברכיים מהיישור."
+      ],
+      "pilates_principles": [
+        "control",
+        "precision",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "neck_or_cervical_sensitivity",
+          "compatibility": "avoid",
+          "modification": "השתמשו בגרסת גשר נמוכה יותר."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "modify",
+          "modification": "השתמשו ב-Shoulder Bridge או בגשר בסיסי."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "הקטינו את טווח הפשיטה."
+        }
+      ],
+      "progressions": [
+        "החזיקו את המנח לאורך זמן רב יותר עם שליטה ואקטיבציה אחידה של השרשרת האחורית."
+      ],
+      "regressions": [
+        "Shoulder Bridge.",
+        "Basic Bridge / Pelvic Curl."
+      ],
+      "alternatives": [
+        "Shoulder Bridge",
+        "Rocking"
+      ],
+      "possible_equipment": [
+        "mat"
+      ]
+    },
+    {
+      "name": "Spine Twist",
+      "aliases": [
+        "The Spine Twist",
+        "Spine Twist"
+      ],
+      "description": "תרגיל רוטציה צירית בישיבה עם רגליים ישרות ואגן מעוגן, שבו הגו מסתובב סביב ציר אנכי ארוך.",
+      "difficulty_level": "intermediate",
+      "body_focus": [
+        "obliques",
+        "thoracic_spine",
+        "back_extensors",
+        "posture"
+      ],
+      "position": "seated",
+      "intensity": 2,
+      "min_duration_seconds": 35,
+      "max_duration_seconds": 60,
+      "min_reps": 3,
+      "max_reps": 3,
+      "teaching_cues": [
+        "התארכו לגובה לפני הרוטציה וגם במהלכה.",
+        "שמרו על שתי עצמות הישיבה מעוגנות ועל הרגליים שקטות.",
+        "סובבו דרך בית החזה במקום לנופף בזרועות.",
+        "שמרו על צוואר ארוך וניטרלי."
+      ],
+      "common_mistakes": [
+        "הזזת הירכיים.",
+        "הובלת התנועה עם הידיים במקום עם הגו.",
+        "קריסה או הישענות לאחור."
+      ],
+      "pilates_principles": [
+        "precision",
+        "control",
+        "breathing",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "spinal_rotation_restriction",
+          "compatibility": "avoid",
+          "modification": "עבדו על התארכות צירית ללא רוטציה."
+        },
+        {
+          "key": "hamstring_tightness",
+          "compatibility": "modify",
+          "modification": "כופפו מעט את הברכיים או שבו על הגבהה קטנה."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "הקטינו את טווח הרוטציה."
+        }
+      ],
+      "progressions": [
+        "הגדילו את הרוטציה תוך שמירה על אגן שקט לחלוטין."
+      ],
+      "regressions": [
+        "רוטציה בישיבה עם ברכיים כפופות.",
+        "טווח רוטציה קטן יותר."
+      ],
+      "alternatives": [
+        "Saw",
+        "Mermaid"
+      ],
+      "possible_equipment": [
+        "mat",
+        "yoga_block",
+        "small_ball"
+      ]
+    },
+    {
+      "name": "Jackknife",
+      "aliases": [
+        "Jack Knife",
+        "The Jackknife"
+      ],
+      "description": "תרגיל היפוך מתקדם שבו הרגליים מתגלגלות מעל הראש ולאחר מכן עולות אנכית לפני גלגול מבוקר של עמוד השדרה חזרה למזרן.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "abdominals",
+        "spine",
+        "hamstrings",
+        "shoulder_stabilizers"
+      ],
+      "position": "inverted",
+      "intensity": 5,
+      "min_duration_seconds": 30,
+      "max_duration_seconds": 55,
+      "min_reps": 3,
+      "max_reps": 3,
+      "teaching_cues": [
+        "התגלגלו מעל הראש בשליטת הבטן ורק לאחר מכן הרימו את הרגליים כלפי מעלה.",
+        "שמרו את המשקל על הכתפיים והגב העליון ולא על הצוואר.",
+        "האריכו את הרגליים מעלה בזמן שהאגן מתרומם.",
+        "גלגלו את עמוד השדרה מטה באיטיות."
+      ],
+      "common_mistakes": [
+        "בעיטת הרגליים כדי להגיע מעל הראש.",
+        "העמסת הצוואר.",
+        "הורדת עמוד השדרה במהירות בחזרה."
+      ],
+      "pilates_principles": [
+        "control",
+        "precision",
+        "centering",
+        "flow"
+      ],
+      "restrictions": [
+        {
+          "key": "neck_or_cervical_sensitivity",
+          "compatibility": "avoid",
+          "modification": "בחרו תרגיל בטן ללא היפוך."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "modify",
+          "modification": "השתמשו בהכנת Roll Over ברמה נמוכה יותר."
+        },
+        {
+          "key": "spinal_flexion_restriction",
+          "compatibility": "avoid",
+          "modification": "בחרו חלופה עם עמוד שדרה ניטרלי."
+        }
+      ],
+      "progressions": [
+        "הגדילו את ההרמה האנכית ואת השליטה מבלי לשנות את תמיכת הכתפיים."
+      ],
+      "regressions": [
+        "Roll Over.",
+        "הכנה להרמת אגן."
+      ],
+      "alternatives": [
+        "Roll Over",
+        "Control Balance"
+      ],
+      "possible_equipment": [
+        "mat"
+      ]
+    },
+    {
+      "name": "Side Kicks - Front/Back",
+      "aliases": [
+        "Side Kick Front/Back",
+        "Front and Back"
+      ],
+      "description": "תרגיל ירך בשכיבה על הצד שבו הרגל העליונה נעה קדימה ואחורה בזמן שהגו והאגן נשארים יציבים.",
+      "difficulty_level": "beginner",
+      "body_focus": [
+        "hips",
+        "glutes",
+        "hamstrings",
+        "core"
+      ],
+      "position": "side_lying",
+      "intensity": 3,
+      "min_duration_seconds": 30,
+      "max_duration_seconds": 60,
+      "min_reps": 3,
+      "max_reps": 10,
+      "teaching_cues": [
+        "שמרו על אגן מסודר ועל המותן התחתונה מורמת.",
+        "הניעו את הרגל בחופשיות ממפרק הירך בלי להזיז את הגו.",
+        "האריכו דרך העקב או הבהונות.",
+        "השתמשו בשליטת הבטן כדי להגביל את התנועה לאחור."
+      ],
+      "common_mistakes": [
+        "נדנוד האגן.",
+        "קריסה לתוך המותן התחתונה.",
+        "הקשתת הגב התחתון בתנועה לאחור."
+      ],
+      "pilates_principles": [
+        "control",
+        "precision",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "hip_sensitivity",
+          "compatibility": "modify",
+          "modification": "הקטינו את טווח התנופה ושמרו על תנועה נוחה."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "הגבילו את הטווח לאחור וייצבו את האגן."
+        },
+        {
+          "key": "balance_difficulty",
+          "compatibility": "modify",
+          "modification": "הגדילו את התמיכה עם היד או הזרוע התחתונה."
+        }
+      ],
+      "progressions": [
+        "הגדילו את הטווח תוך שמירה על גו שקט לחלוטין."
+      ],
+      "regressions": [
+        "תנופה קדימה/אחורה בטווח קטן יותר.",
+        "כופפו את הרגל התומכת ליציבות."
+      ],
+      "alternatives": [
+        "Kneeling Side Kicks",
+        "Side Kicks - Circles"
+      ],
+      "possible_equipment": [
+        "mat",
+        "small_ball",
+        "ankle_weights"
+      ]
+    },
+    {
+      "name": "Side Kicks - Up/Down",
+      "aliases": [
+        "Side Kick Up/Down",
+        "Side Kick Lift/Lower"
+      ],
+      "description": "הרמת רגל והורדה מבוקרת בשכיבה על הצד, בדגש על כוח צידי של הירך, התארכות ויציבות האגן.",
+      "difficulty_level": "beginner",
+      "body_focus": [
+        "hip_abductors",
+        "glutes",
+        "inner_thighs",
+        "core"
+      ],
+      "position": "side_lying",
+      "intensity": 3,
+      "min_duration_seconds": 30,
+      "max_duration_seconds": 55,
+      "min_reps": 3,
+      "max_reps": 10,
+      "teaching_cues": [
+        "שמרו על אגן מסודר בזמן שהרגל העליונה עולה.",
+        "האריכו את הרגל הרחק ממפרק הירך לאורך כל התנועה.",
+        "שלטו בירידה ואל תתנו לרגל ליפול.",
+        "שמרו את המותן התחתונה מורמת."
+      ],
+      "common_mistakes": [
+        "הרמת האגן העליון לכיוון הצלעות.",
+        "גלגול האגן לאחור.",
+        "שימוש בתנופה להרמת הרגל."
+      ],
+      "pilates_principles": [
+        "control",
+        "precision",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "hip_sensitivity",
+          "compatibility": "modify",
+          "modification": "השתמשו בטווח הרמה קטן יותר."
+        },
+        {
+          "key": "balance_difficulty",
+          "compatibility": "modify",
+          "modification": "הגדילו את התמיכה עם היד או כופפו את הברך התחתונה."
+        }
+      ],
+      "progressions": [
+        "הוסיפו התנגדות תוך שמירה על יישור האגן."
+      ],
+      "regressions": [
+        "הרמה קטנה יותר.",
+        "ברך תחתונה כפופה ליציבות."
+      ],
+      "alternatives": [
+        "Side Kicks - Circles",
+        "Inner Thigh Lifts, Beats & Circles"
+      ],
+      "possible_equipment": [
+        "mat",
+        "small_ball",
+        "resistance_band",
+        "ankle_weights"
+      ]
+    },
+    {
+      "name": "Side Kicks - Circles",
+      "aliases": [
+        "Side Leg Circles",
+        "Side Kick Circles"
+      ],
+      "description": "מעגלים קטנים או בינוניים של הרגל העליונה בשכיבה על הצד, הנוצרים ממפרק הירך תוך שמירה על גו יציב.",
+      "difficulty_level": "intermediate",
+      "body_focus": [
+        "hips",
+        "glutes",
+        "core"
+      ],
+      "position": "side_lying",
+      "intensity": 3,
+      "min_duration_seconds": 30,
+      "max_duration_seconds": 55,
+      "min_reps": 3,
+      "max_reps": 10,
+      "teaching_cues": [
+        "ציירו מעגלים נקיים ממפרק הירך.",
+        "שמרו את האגן שקט ומסודר.",
+        "שמרו על אורך ברגל העובדת.",
+        "בצעו את שני כיווני המעגל באותה רמת שליטה."
+      ],
+      "common_mistakes": [
+        "יצירת המעגל מהברך או מכף הרגל.",
+        "הזזת האגן יחד עם הרגל.",
+        "מעגלים גדולים מדי."
+      ],
+      "pilates_principles": [
+        "precision",
+        "control",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "hip_sensitivity",
+          "compatibility": "modify",
+          "modification": "הקטינו את גודל המעגל."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "שמרו את הגו יציב ובצעו מעגל קטן."
+        }
+      ],
+      "progressions": [
+        "הגדילו את המעגל ללא תנועה באגן.",
+        "הוסיפו התנגדות קלה בקרסול."
+      ],
+      "regressions": [
+        "מעגלים קטנים.",
+        "Single Leg Circles בשכיבה על הגב."
+      ],
+      "alternatives": [
+        "Single Leg Circles",
+        "Side Kicks - Up/Down"
+      ],
+      "possible_equipment": [
+        "mat",
+        "small_ball",
+        "ankle_weights"
+      ]
+    },
+    {
+      "name": "Side Kicks - Bicycle",
+      "aliases": [
+        "Side Bicycle",
+        "Side Kick Bicycle"
+      ],
+      "description": "דפוס Bicycle בשכיבה על הצד המשלב כפיפת ירך, כפיפת ברך, פשיטת ירך והארכת הרגל תוך שמירה על אגן יציב.",
+      "difficulty_level": "intermediate",
+      "body_focus": [
+        "hips",
+        "glutes",
+        "hamstrings",
+        "quadriceps",
+        "core"
+      ],
+      "position": "side_lying",
+      "intensity": 4,
+      "min_duration_seconds": 35,
+      "max_duration_seconds": 60,
+      "min_reps": 3,
+      "max_reps": 10,
+      "teaching_cues": [
+        "שמרו על אגן מסודר בזמן שהרגל עוברת במסלול הרכיבה.",
+        "האריכו את הרגל לאורך שלבי היישור.",
+        "נועו ממפרקי הירך והברך בלי להזיז את הגו.",
+        "הפכו את כיוון הדפוס באותה רמת שליטה."
+      ],
+      "common_mistakes": [
+        "גלגול האגן.",
+        "קיצור המותן העליונה.",
+        "מעבר מהיר מדי בשלב הקשה של התנועה לאחור."
+      ],
+      "pilates_principles": [
+        "flow",
+        "control",
+        "precision"
+      ],
+      "restrictions": [
+        {
+          "key": "hip_sensitivity",
+          "compatibility": "modify",
+          "modification": "הקטינו את גודל מסלול הרכיבה."
+        },
+        {
+          "key": "knee_sensitivity",
+          "compatibility": "modify",
+          "modification": "השתמשו בטווח כפיפת ברך נוח."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "הגבילו את פשיטת הירך לאחור."
+        }
+      ],
+      "progressions": [
+        "הגדילו את מסלול התנועה תוך שמירה על יציבות האגן."
+      ],
+      "regressions": [
+        "Side Kicks - Front/Back.",
+        "Bicycle קטן יותר עם ברך כפופה."
+      ],
+      "alternatives": [
+        "High Bicycle",
+        "Side Kicks - Front/Back"
+      ],
+      "possible_equipment": [
+        "mat"
+      ]
+    },
+    {
+      "name": "Inner Thigh Lifts, Beats & Circles",
+      "aliases": [
+        "Inner Thigh Series",
+        "Inner Thigh Lifts and Beats",
+        "Inner Thigh Circles"
+      ],
+      "description": "סדרת ירך פנימית בשכיבה על הצד, שבה הרגל התחתונה עולה, מבצעת פעימות/נגיעות ומעגלים בעוד הרגל העליונה משמשת לתמיכה.",
+      "difficulty_level": "intermediate",
+      "body_focus": [
+        "adductors",
+        "inner_thighs",
+        "core",
+        "hips"
+      ],
+      "position": "side_lying",
+      "intensity": 3,
+      "min_duration_seconds": 45,
+      "max_duration_seconds": 90,
+      "min_reps": 3,
+      "max_reps": 10,
+      "teaching_cues": [
+        "האריכו את הרגל התחתונה לפני ההרמה.",
+        "שמרו על אגן מסודר וגו שקט.",
+        "יזמו את התנועה מהירך הפנימית ולא מכף הרגל.",
+        "שמרו את המעגלים קטנים ומבוקרים."
+      ],
+      "common_mistakes": [
+        "גלגול האגן לאחור.",
+        "כיפוף הברך העובדת.",
+        "שימוש בפלג הגוף העליון כדי ליצור את ההרמה."
+      ],
+      "pilates_principles": [
+        "control",
+        "precision",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "hip_sensitivity",
+          "compatibility": "modify",
+          "modification": "הקטינו את טווח ההרמה והמעגל."
+        },
+        {
+          "key": "knee_sensitivity",
+          "compatibility": "modify",
+          "modification": "התאימו את מנח התמיכה של הרגל העליונה כדי להימנע מעומס על הברך."
+        }
+      ],
+      "progressions": [
+        "הוסיפו פעימות ומעגלים קטנים בשליטה בלי לאבד יישור."
+      ],
+      "regressions": [
+        "בצעו רק הרמות ירך פנימית.",
+        "טווח קטן יותר עם תמיכה גדולה יותר של פלג הגוף העליון."
+      ],
+      "alternatives": [
+        "Side Kicks - Up/Down",
+        "Side Kicks - Circles"
+      ],
+      "possible_equipment": [
+        "mat",
+        "small_ball",
+        "ankle_weights"
+      ]
+    },
+    {
+      "name": "Side Kicks - Big Circles",
+      "aliases": [
+        "Big Circles",
+        "Grande Ronde Jambe",
+        "Side Kick Big Circles"
+      ],
+      "description": "מעגלי רגל גדולים ומתקדמים בשכיבה על הצד, הדורשים ניידות ירך גבוהה ויציבות גו חזקה לאורך טווח גדול.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "hips",
+        "glutes",
+        "adductors",
+        "core"
+      ],
+      "position": "side_lying",
+      "intensity": 4,
+      "min_duration_seconds": 35,
+      "max_duration_seconds": 65,
+      "min_reps": 3,
+      "max_reps": 10,
+      "teaching_cues": [
+        "שמרו על אגן מסודר בזמן שהרגל נעה במעגל הגדול.",
+        "האריכו את הרגל ברציפות מתוך מפרק הירך.",
+        "שלטו במיוחד בחלק האחורי והתחתון של המעגל.",
+        "בצעו את הכיוון ההפוך באותה רמת דיוק."
+      ],
+      "common_mistakes": [
+        "גלגול האגן כדי להגדיל טווח.",
+        "כיפוף הברך.",
+        "נפילת הרגל בחלק התחתון של המעגל."
+      ],
+      "pilates_principles": [
+        "control",
+        "precision",
+        "flow"
+      ],
+      "restrictions": [
+        {
+          "key": "hip_sensitivity",
+          "compatibility": "modify",
+          "modification": "השתמשו במעגלים קטנים יותר של Side Kicks."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "הקטינו את החלק האחורי של המעגל."
+        }
+      ],
+      "progressions": [
+        "הגדילו את המעגל תוך שמירה על יציבות מלאה של הגו."
+      ],
+      "regressions": [
+        "Side Kicks - Circles.",
+        "Side Kicks - Up/Down."
+      ],
+      "alternatives": [
+        "Side Kicks - Circles",
+        "Single Leg Circles"
+      ],
+      "possible_equipment": [
+        "mat"
+      ]
+    },
+    {
+      "name": "Side Kicks - Hot Potato",
+      "aliases": [
+        "Hot Potato",
+        "Side Kick Hot Potato"
+      ],
+      "description": "דפוס רגל מהיר אך מבוקר בשכיבה על הצד, שבו כף הרגל נוגעת לסירוגין לפני ואחרי הרגל התומכת תוך שמירה על גו מורם ויציב.",
+      "difficulty_level": "intermediate",
+      "body_focus": [
+        "hips",
+        "glutes",
+        "core",
+        "coordination"
+      ],
+      "position": "side_lying",
+      "intensity": 4,
+      "min_duration_seconds": 30,
+      "max_duration_seconds": 55,
+      "min_reps": 3,
+      "max_reps": 10,
+      "teaching_cues": [
+        "שמרו על האגן והגו שקטים בזמן שהרגל נעה במהירות.",
+        "הרימו את הרגל העובדת ממפרק הירך ולא מכף הרגל.",
+        "שמרו על אורך במותן התחתונה.",
+        "שמרו את הנגיעות קלות ומבוקרות."
+      ],
+      "common_mistakes": [
+        "נדנוד האגן עם הנגיעות.",
+        "קריסת הגו אל המזרן.",
+        "שימוש במהירות במקום בשליטה."
+      ],
+      "pilates_principles": [
+        "flow",
+        "control",
+        "precision"
+      ],
+      "restrictions": [
+        {
+          "key": "hip_sensitivity",
+          "compatibility": "modify",
+          "modification": "הפחיתו מהירות וטווח."
+        },
+        {
+          "key": "balance_difficulty",
+          "compatibility": "modify",
+          "modification": "השתמשו בתמיכה נוספת של היד."
+        }
+      ],
+      "progressions": [
+        "הגדילו את הקצב רק אם יציבות האגן נשמרת."
+      ],
+      "regressions": [
+        "נגיעות קדימה/אחורה בקצב איטי.",
+        "Side Kicks - Front/Back."
+      ],
+      "alternatives": [
+        "Side Kicks - Front/Back",
+        "Side Kicks - Big Scissors"
+      ],
+      "possible_equipment": [
+        "mat"
+      ]
+    },
+    {
+      "name": "Side Kicks - Big Scissors",
+      "aliases": [
+        "Big Scissors",
+        "Side Kick Big Scissors"
+      ],
+      "description": "תנועת מספריים מתקדמת בשכיבה על הצד שבה שתי הרגליים נעות בכיוונים מנוגדים, ודורשת שליטה צידית חזקה בגו וניידות ירך.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "hips",
+        "glutes",
+        "hamstrings",
+        "core",
+        "balance"
+      ],
+      "position": "side_lying",
+      "intensity": 5,
+      "min_duration_seconds": 30,
+      "max_duration_seconds": 55,
+      "min_reps": 3,
+      "max_reps": 10,
+      "teaching_cues": [
+        "שמרו על גו ארוך ויציב בזמן ששתי הרגליים נעות.",
+        "האריכו את הרגליים הרחק זו מזו במקום לכפות טווח.",
+        "שמרו על יישור האגן לאורך הפישוק.",
+        "שלטו בחזרה דרך המרכז."
+      ],
+      "common_mistakes": [
+        "גלגול האגן.",
+        "קריסת המותן.",
+        "שימוש בתנופה כדי ליצור את הפישוק."
+      ],
+      "pilates_principles": [
+        "control",
+        "precision",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "hip_sensitivity",
+          "compatibility": "modify",
+          "modification": "השתמשו ב-Side Kicks עם רגל אחת במקום."
+        },
+        {
+          "key": "hamstring_tightness",
+          "compatibility": "modify",
+          "modification": "הקטינו את טווח הפישוק."
+        },
+        {
+          "key": "balance_difficulty",
+          "compatibility": "modify",
+          "modification": "השתמשו בגרסה בשכיבה על הצד עם יותר תמיכה."
+        }
+      ],
+      "progressions": [
+        "הגדילו את הפישוק ואת הקצב ללא תנועה בגו."
+      ],
+      "regressions": [
+        "Side Kicks - Front/Back.",
+        "מספריים צידיות עם רגל אחת."
+      ],
+      "alternatives": [
+        "Side Kicks - Hot Potato",
+        "Single Straight Leg Stretch"
+      ],
+      "possible_equipment": [
+        "mat"
+      ]
+    },
+    {
+      "name": "Teaser 1",
+      "aliases": [
+        "Teaser I",
+        "The Teaser 1"
+      ],
+      "description": "תרגיל V-sit מתקדם שבו הרגליים נשארות מורמות בזמן שהגו מתגלגל לישיבה מאוזנת וחוזר בשליטה.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "abdominals",
+        "hip_flexors",
+        "balance",
+        "spine"
+      ],
+      "position": "supine_to_seated",
+      "intensity": 4,
+      "min_duration_seconds": 30,
+      "max_duration_seconds": 55,
+      "min_reps": 3,
+      "max_reps": 3,
+      "teaching_cues": [
+        "האריכו את הרגליים ושמרו עליהן יציבות בזמן שעימוד השדרה מתגלגל למעלה.",
+        "הרימו את בית החזה בנקודת האיזון בלי לאבד תמיכת בטן.",
+        "התאזנו מאחורי עצמות הישיבה במקום לקרוס לגב התחתון.",
+        "גלגלו מטה באותה שליטה שבה עליתם."
+      ],
+      "common_mistakes": [
+        "זריקת הידיים או הרגליים כדי ליצור תנופה.",
+        "קריסה של הגב המותני בנקודת האיזון.",
+        "עצירת הנשימה."
+      ],
+      "pilates_principles": [
+        "centering",
+        "control",
+        "balance",
+        "flow"
+      ],
+      "restrictions": [
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "השתמשו בברכיים כפופות או בהכנת Teaser בסיסית יותר."
+        },
+        {
+          "key": "spinal_flexion_restriction",
+          "compatibility": "avoid",
+          "modification": "בחרו חלופת שיווי משקל בעמוד שדרה ניטרלי."
+        },
+        {
+          "key": "hip_flexor_sensitivity",
+          "compatibility": "modify",
+          "modification": "השתמשו ב-tabletop או בברכיים כפופות."
+        }
+      ],
+      "progressions": [
+        "Teaser 2.",
+        "Teaser 3."
+      ],
+      "regressions": [
+        "Teaser עם ברכיים כפופות.",
+        "Teaser עם רגל אחת.",
+        "איזון של Open Leg Rocker."
+      ],
+      "alternatives": [
+        "Open Leg Rocker",
+        "Roll Up"
+      ],
+      "possible_equipment": [
+        "mat",
+        "small_ball",
+        "magic_circle",
+        "resistance_band"
+      ]
+    },
+    {
+      "name": "Teaser 2",
+      "aliases": [
+        "Teaser II",
+        "The Teaser 2"
+      ],
+      "description": "וריאציית Teaser שבה הגו נשאר ב-V-sit בזמן שהרגליים הישרות יורדות ועולות בשליטה.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "abdominals",
+        "hip_flexors",
+        "balance",
+        "core"
+      ],
+      "position": "seated",
+      "intensity": 5,
+      "min_duration_seconds": 25,
+      "max_duration_seconds": 50,
+      "min_reps": 3,
+      "max_reps": 3,
+      "teaching_cues": [
+        "שמרו את הגו מורם ושקט בזמן שהרגליים יורדות.",
+        "הורידו את הרגליים רק עד הטווח שבו נשמרים האיזון ושליטת הגו.",
+        "האריכו דרך הרגליים במקום לאחוז בכופפי הירך.",
+        "שמרו על בית חזה פתוח וכתפיים משוחררות."
+      ],
+      "common_mistakes": [
+        "הישענות הגו לאחור בזמן שהרגליים יורדות.",
+        "הורדת הרגליים נמוך מדי.",
+        "מתח בצוואר ובכתפיים."
+      ],
+      "pilates_principles": [
+        "control",
+        "centering",
+        "precision",
+        "balance"
+      ],
+      "restrictions": [
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "השתמשו ב-Teaser 1 או בברכיים כפופות."
+        },
+        {
+          "key": "hip_flexor_sensitivity",
+          "compatibility": "modify",
+          "modification": "הקטינו את טווח הורדת הרגליים."
+        },
+        {
+          "key": "spinal_flexion_restriction",
+          "compatibility": "avoid",
+          "modification": "בחרו חלופת שיווי משקל בעמוד שדרה ניטרלי."
+        }
+      ],
+      "progressions": [
+        "Teaser 3."
+      ],
+      "regressions": [
+        "Teaser 1.",
+        "הורדת רגליים עם ברכיים כפופות במנח Teaser."
+      ],
+      "alternatives": [
+        "Teaser 1",
+        "Double Straight Leg Stretch"
+      ],
+      "possible_equipment": [
+        "mat",
+        "small_ball",
+        "magic_circle"
+      ]
+    },
+    {
+      "name": "Teaser 3",
+      "aliases": [
+        "Teaser III",
+        "The Teaser 3"
+      ],
+      "description": "וריאציית Teaser מלאה שבה הזרועות, הגו והרגליים יורדים ועולים יחד כיחידה מתואמת אחת.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "abdominals",
+        "hip_flexors",
+        "balance",
+        "spine"
+      ],
+      "position": "supine_to_seated",
+      "intensity": 5,
+      "min_duration_seconds": 30,
+      "max_duration_seconds": 55,
+      "min_reps": 3,
+      "max_reps": 3,
+      "teaching_cues": [
+        "הניעו את הגו והרגליים יחד בלי לאבד את צורת ה-V הארוכה.",
+        "השתמשו בשרירי הבטן לשליטה בשני כיווני התנועה.",
+        "האריכו דרך הגפיים בזמן הירידה והעלייה.",
+        "הימנעו מקריסה בגב התחתון בנקודת האיזון."
+      ],
+      "common_mistakes": [
+        "תנועה של הרגליים והגו במהירויות שונות.",
+        "שימוש בתנופה כדי לחזור.",
+        "עצירת הנשימה או מתח בצוואר."
+      ],
+      "pilates_principles": [
+        "control",
+        "flow",
+        "centering",
+        "precision"
+      ],
+      "restrictions": [
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "השתמשו ב-Teaser 1 או ב-Teaser עם ברכיים כפופות."
+        },
+        {
+          "key": "spinal_flexion_restriction",
+          "compatibility": "avoid",
+          "modification": "בחרו חלופה בעמוד שדרה ניטרלי."
+        },
+        {
+          "key": "hip_flexor_sensitivity",
+          "compatibility": "modify",
+          "modification": "קצרו את מנוף הרגליים."
+        }
+      ],
+      "progressions": [
+        "הוסיפו וריאציות זרועות או אביזרים בשליטה מבלי לשנות את יציבות הגו."
+      ],
+      "regressions": [
+        "Teaser 2.",
+        "Teaser 1.",
+        "Teaser עם ברכיים כפופות."
+      ],
+      "alternatives": [
+        "Teaser 1",
+        "Open Leg Rocker"
+      ],
+      "possible_equipment": [
+        "mat",
+        "small_ball",
+        "magic_circle"
+      ]
+    },
+    {
+      "name": "Hip Circles",
+      "aliases": [
+        "Hip Circle",
+        "Hip Circles"
+      ],
+      "description": "תרגיל בישיבה עם תמיכת הזרועות שבו שתי הרגליים נעות יחד במעגלים בעוד הגו נשאר מורם ויציב.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "abdominals",
+        "obliques",
+        "hips",
+        "shoulder_stabilizers"
+      ],
+      "position": "seated",
+      "intensity": 5,
+      "min_duration_seconds": 30,
+      "max_duration_seconds": 55,
+      "min_reps": 3,
+      "max_reps": 3,
+      "teaching_cues": [
+        "לחצו את הידיים למזרן כדי לשמור על בית חזה מורם.",
+        "סובבו את שתי הרגליים יחד ממפרקי הירך.",
+        "שמרו את הגו שקט ככל האפשר.",
+        "בצעו את המעגל ההפוך באותו גודל ובאותה שליטה."
+      ],
+      "common_mistakes": [
+        "קריסה לתוך הכתפיים.",
+        "נדנוד הגו יחד עם הרגליים.",
+        "הפרדה או כיפוף של הרגליים."
+      ],
+      "pilates_principles": [
+        "control",
+        "precision",
+        "centering",
+        "flow"
+      ],
+      "restrictions": [
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "modify",
+          "modification": "השתמשו בגרסה זקופה יותר או נתמכת על האמות."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "הקטינו את גודל המעגל או כופפו את הברכיים."
+        },
+        {
+          "key": "hip_sensitivity",
+          "compatibility": "modify",
+          "modification": "השתמשו במעגלים קטנים יותר."
+        }
+      ],
+      "progressions": [
+        "הגדילו את המעגל ללא תנועה בגו."
+      ],
+      "regressions": [
+        "מעגלי ירך עם ברכיים כפופות.",
+        "Low Corkscrew."
+      ],
+      "alternatives": [
+        "Corkscrew w/Hips over",
+        "Single Leg Circles"
+      ],
+      "possible_equipment": [
+        "mat"
+      ]
+    },
+    {
+      "name": "Swimming",
+      "aliases": [
+        "Swimming"
+      ],
+      "description": "דפוס לסירוגין של הרמת יד ורגל נגדית בשכיבה על הבטן, המדגיש פשיטה ארוכה של עמוד השדרה, סבולת השרשרת האחורית וקואורדינציה קצבית.",
+      "difficulty_level": "intermediate",
+      "body_focus": [
+        "back_extensors",
+        "glutes",
+        "shoulders",
+        "posterior_chain"
+      ],
+      "position": "prone",
+      "intensity": 4,
+      "min_duration_seconds": 30,
+      "max_duration_seconds": 60,
+      "min_reps": 3,
+      "max_reps": 3,
+      "teaching_cues": [
+        "האריכו את הגפיים לפני שמרימים אותן.",
+        "שמרו על תמיכת הבטן ועל אגן יציב.",
+        "החליפו יד ורגל נגדית בקצב אחיד.",
+        "שמרו על צוואר ארוך ומבט למטה."
+      ],
+      "common_mistakes": [
+        "הקשתת יתר של הגב התחתון.",
+        "הרמת הראש גבוה מדי.",
+        "תנועה מהמרפקים ומהברכיים במקום מהכתפיים וממפרקי הירך."
+      ],
+      "pilates_principles": [
+        "flow",
+        "control",
+        "breathing",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "הרימו גפה אחת בכל פעם או שמרו על טווח קטן."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "modify",
+          "modification": "הקטינו את הרמת היד או השאירו את הידיים לצד הגוף."
+        },
+        {
+          "key": "neck_sensitivity",
+          "compatibility": "modify",
+          "modification": "השאירו את המצח קרוב יותר למזרן ואת הצוואר ניטרלי."
+        }
+      ],
+      "progressions": [
+        "הגדילו את הקצב ואת אורך הגפיים בלי לאבד יציבות בגו."
+      ],
+      "regressions": [
+        "הרימו זוג יד-רגל נגדית בכל פעם.",
+        "בצעו הרמות ידיים או רגליים בנפרד בשכיבה על הבטן."
+      ],
+      "alternatives": [
+        "Single Leg Kicks",
+        "Neck Roll/Swan"
+      ],
+      "possible_equipment": [
+        "mat",
+        "small_ball"
+      ]
+    },
+    {
+      "name": "Leg Pull Front",
+      "aliases": [
+        "Leg Pull Front",
+        "Front Leg Pull"
+      ],
+      "description": "תרגיל במנח פלאנק שבו מרימים לסירוגין רגל ישרה תוך שמירה על גו ארוך ויציב וחגורת כתפיים מאורגנת.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "core",
+        "shoulders",
+        "glutes",
+        "hamstrings",
+        "triceps"
+      ],
+      "position": "plank",
+      "intensity": 5,
+      "min_duration_seconds": 30,
+      "max_duration_seconds": 55,
+      "min_reps": 3,
+      "max_reps": 3,
+      "teaching_cues": [
+        "שמרו על קו ארוך אחד מהראש ועד העקבים.",
+        "דחפו את הרצפה הרחק דרך חגורת הכתפיים.",
+        "הרימו את הרגל ממפרק הירך בלי לסובב את האגן.",
+        "שמרו על בטן פעילה בזמן החלפת הרגליים."
+      ],
+      "common_mistakes": [
+        "שקיעת האגן או הרמתו לפייק.",
+        "קריסה לתוך הכתפיים.",
+        "רוטציה של האגן בזמן הרמת הרגל."
+      ],
+      "pilates_principles": [
+        "control",
+        "centering",
+        "precision"
+      ],
+      "restrictions": [
+        {
+          "key": "wrist_sensitivity",
+          "compatibility": "modify",
+          "modification": "השתמשו בתמיכה על האמות או בגרסה ניטרלית לשורש כף היד."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "modify",
+          "modification": "הפחיתו עומס או השתמשו בהושטת רגל בעמידת שש."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "השתמשו בפלאנק על הברכיים או בעמידת שש."
+        }
+      ],
+      "progressions": [
+        "הגדילו את הרמת הרגל או הוסיפו נדנוד מבוקר בלי לאבד את יישור הפלאנק."
+      ],
+      "regressions": [
+        "פלאנק על הברכיים עם הושטת רגל.",
+        "הושטת רגל בעמידת שש."
+      ],
+      "alternatives": [
+        "Push Ups",
+        "Swimming"
+      ],
+      "possible_equipment": [
+        "mat",
+        "small_ball"
+      ]
+    },
+    {
+      "name": "Leg Pull Back",
+      "aliases": [
+        "Leg Pull Back",
+        "Back Leg Pull"
+      ],
+      "description": "תרגיל בתמיכה אחורית שבו מרימים לסירוגין רגל ישרה אחת תוך שמירה על אגן מורם וחגורת כתפיים התומכת בגו.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "glutes",
+        "hamstrings",
+        "shoulders",
+        "triceps",
+        "core"
+      ],
+      "position": "reverse_support",
+      "intensity": 5,
+      "min_duration_seconds": 30,
+      "max_duration_seconds": 55,
+      "min_reps": 3,
+      "max_reps": 3,
+      "teaching_cues": [
+        "דחפו את הרצפה הרחק ושמרו על בית חזה פתוח.",
+        "שמרו על גובה האגן בזמן שרגל אחת מתרוממת.",
+        "האריכו דרך הרגל התומכת והעקב.",
+        "שמרו על צוואר ניטרלי ואל תפילו את הראש לאחור."
+      ],
+      "common_mistakes": [
+        "ירידת האגן בזמן הרמת הרגל.",
+        "קריסה לתוך הכתפיים או שורשי כפות הידיים.",
+        "פשיטת יתר של הצוואר."
+      ],
+      "pilates_principles": [
+        "control",
+        "precision",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "wrist_sensitivity",
+          "compatibility": "modify",
+          "modification": "השתמשו בפלאנק אחורי על האמות או בתרגיל אחר לשרשרת האחורית."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "modify",
+          "modification": "השתמשו ב-Shoulder Bridge במקום."
+        },
+        {
+          "key": "neck_sensitivity",
+          "compatibility": "modify",
+          "modification": "שמרו את הראש ניטרלי והפחיתו את דרישת התמיכה."
+        }
+      ],
+      "progressions": [
+        "הגדילו את הרמת הרגל או החזיקו את התמיכה האחורית זמן רב יותר."
+      ],
+      "regressions": [
+        "Reverse Tabletop עם ברכיים כפופות.",
+        "Shoulder Bridge."
+      ],
+      "alternatives": [
+        "Shoulder Bridge",
+        "Leg Pull Front"
+      ],
+      "possible_equipment": [
+        "mat"
+      ]
+    },
+    {
+      "name": "Kneeling Side Kicks",
+      "aliases": [
+        "Kneeling Side Kick",
+        "Kneeling Side Kicks"
+      ],
+      "description": "תרגיל תמיכת צד בכריעה שבו הרגל החופשית נעה קדימה/אחורה או מעלה/מטה בעוד הגו נשאר יציב מעל יד וברך תומכות.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "hips",
+        "glutes",
+        "obliques",
+        "shoulder_stabilizers",
+        "core"
+      ],
+      "position": "kneeling",
+      "intensity": 5,
+      "min_duration_seconds": 35,
+      "max_duration_seconds": 65,
+      "min_reps": 4,
+      "max_reps": 4,
+      "teaching_cues": [
+        "לחצו היטב את היד והברך התומכות למזרן.",
+        "שמרו על גו ארוך ומורם הרחק מהכתף התומכת.",
+        "הניעו את הרגל החופשית ממפרק הירך בלי להזיז את האגן.",
+        "שמרו על קו צד יציב של הגוף."
+      ],
+      "common_mistakes": [
+        "קריסה לתוך הכתף התומכת.",
+        "רוטציה של האגן.",
+        "הטיית הגו כדי להגדיל את טווח הרגל."
+      ],
+      "pilates_principles": [
+        "control",
+        "precision",
+        "centering",
+        "balance"
+      ],
+      "restrictions": [
+        {
+          "key": "wrist_sensitivity",
+          "compatibility": "modify",
+          "modification": "השתמשו בתמיכה על האמה או בגרסה בשכיבה על הצד."
+        },
+        {
+          "key": "knee_sensitivity",
+          "compatibility": "modify",
+          "modification": "רפדו את הברך התומכת או השתמשו ב-Side Kicks בשכיבה על הצד."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "modify",
+          "modification": "השתמשו ב-Side Kicks בשכיבה על הצד."
+        }
+      ],
+      "progressions": [
+        "הגדילו את טווח הרגל ואת הקצב בלי לשנות את יישור הגו."
+      ],
+      "regressions": [
+        "Side Kicks - Front/Back.",
+        "הושטת רגל בעמידת שש."
+      ],
+      "alternatives": [
+        "Side Kicks - Front/Back",
+        "Side Bend"
+      ],
+      "possible_equipment": [
+        "mat",
+        "small_ball"
+      ]
+    },
+    {
+      "name": "Mermaid",
+      "aliases": [
+        "Mermaid Stretch",
+        "Mermaid"
+      ],
+      "description": "תרגיל כפיפה צידית בישיבה המדגיש ניידות צידית של עמוד השדרה, התארכות צירית וחזרה מבוקרת ממנח הכפיפה הצידית.",
+      "difficulty_level": "intermediate",
+      "body_focus": [
+        "side_body",
+        "spine",
+        "obliques",
+        "shoulders"
+      ],
+      "position": "seated",
+      "intensity": 2,
+      "min_duration_seconds": 30,
+      "max_duration_seconds": 60,
+      "min_reps": 3,
+      "max_reps": 3,
+      "teaching_cues": [
+        "התארכו לגובה לפני הכניסה לכפיפה הצידית.",
+        "שמרו על אורך בשני צדי המותן בזמן יצירת הקשת.",
+        "עיגנו את האגן ככל שמנח הרגליים מאפשר.",
+        "חזרו דרך התארכות צירית במקום לקרוס."
+      ],
+      "common_mistakes": [
+        "ביצוע רוטציה במקום כפיפה צידית.",
+        "הרמת הכתף לכיוון האוזן.",
+        "כפיית הירך מטה על חשבון אורך עמוד השדרה."
+      ],
+      "pilates_principles": [
+        "breathing",
+        "control",
+        "precision",
+        "flow"
+      ],
+      "restrictions": [
+        {
+          "key": "knee_or_hip_sensitivity",
+          "compatibility": "modify",
+          "modification": "בחרו מנח רגליים נוח יותר בישיבה או שבו על תמיכה."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "modify",
+          "modification": "השאירו את הזרוע העליונה נמוכה יותר."
+        },
+        {
+          "key": "spinal_side_bend_restriction",
+          "compatibility": "avoid",
+          "modification": "עבדו על נשימה והתארכות צירית ללא כפיפה צידית."
+        }
+      ],
+      "progressions": [
+        "הוסיפו מעבר עמוק יותר לתמיכת צד כאשר הדבר מתאים."
+      ],
+      "regressions": [
+        "כפיפה צידית בישיבה מזרחית.",
+        "הקטינו את טווח הכפיפה הצידית."
+      ],
+      "alternatives": [
+        "Side Bend",
+        "Spine Twist"
+      ],
+      "possible_equipment": [
+        "mat",
+        "small_ball",
+        "yoga_block"
+      ]
+    },
+    {
+      "name": "Side Bend",
+      "aliases": [
+        "Side Bend",
+        "Side Lift"
+      ],
+      "description": "תרגיל תמיכת צד מתקדם שבו האגן עולה לקשת צידית ארוכה ויורד בשליטה.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "obliques",
+        "shoulders",
+        "hips",
+        "side_body",
+        "core"
+      ],
+      "position": "side_support",
+      "intensity": 5,
+      "min_duration_seconds": 25,
+      "max_duration_seconds": 50,
+      "min_reps": 3,
+      "max_reps": 3,
+      "teaching_cues": [
+        "לחצו היטב את היד התומכת למזרן.",
+        "הרימו את המותן התחתונה והאגן כקו מחובר אחד.",
+        "האריכו דרך הזרוע העליונה והרגליים כדי ליצור אורך.",
+        "הורידו בשליטה בלי לקרוס לתוך הכתף."
+      ],
+      "common_mistakes": [
+        "שקיעה לתוך הכתף התומכת.",
+        "רוטציה של הירכיים.",
+        "שימוש בתנופה כדי לעלות."
+      ],
+      "pilates_principles": [
+        "control",
+        "precision",
+        "centering",
+        "balance"
+      ],
+      "restrictions": [
+        {
+          "key": "wrist_sensitivity",
+          "compatibility": "modify",
+          "modification": "השתמשו בתמיכת צד על האמה או ב-Mermaid."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "modify",
+          "modification": "השתמשו ב-Mermaid או בכפיפה צידית נתמכת."
+        },
+        {
+          "key": "balance_difficulty",
+          "compatibility": "modify",
+          "modification": "השאירו ברך אחת על המזרן או השתמשו בגרסה בישיבה."
+        }
+      ],
+      "progressions": [
+        "הגדילו את הקשת והוסיפו מעברים מבוקרים ל-Twist."
+      ],
+      "regressions": [
+        "Mermaid.",
+        "פלאנק צד על הברך."
+      ],
+      "alternatives": [
+        "Mermaid",
+        "Snake/Twist"
+      ],
+      "possible_equipment": [
+        "mat"
+      ]
+    },
+    {
+      "name": "Snake/Twist",
+      "aliases": [
+        "Snake Twist",
+        "Snake and Twist",
+        "Snake/Twist"
+      ],
+      "description": "רצף מתקדם בתמיכת צד המשלב Pike, פשיטה דמוית פלאנק, רוטציה ושליטה בצדי הגוף.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "core",
+        "obliques",
+        "shoulders",
+        "spine",
+        "hips"
+      ],
+      "position": "side_support",
+      "intensity": 5,
+      "min_duration_seconds": 35,
+      "max_duration_seconds": 70,
+      "min_reps": 3,
+      "max_reps": 3,
+      "teaching_cues": [
+        "לחצו בחוזקה דרך שתי נקודות התמיכה לפני תחילת התנועה.",
+        "הרימו את האגן מהמרכז ושמרו על חגורת כתפיים מאורגנת.",
+        "בצעו את הרוטציה דרך הגו במקום לכפות אותה באמצעות הזרוע.",
+        "עברו בין Pike, פשיטה ו-Twist בשליטה."
+      ],
+      "common_mistakes": [
+        "קריסה לתוך הכתף או שורש כף היד התומכים.",
+        "רוטציה של האגן ללא שליטת גו.",
+        "מעבר מהיר מדי בין השלבים."
+      ],
+      "pilates_principles": [
+        "control",
+        "flow",
+        "precision",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "wrist_sensitivity",
+          "compatibility": "modify",
+          "modification": "השתמשו בהכנה על האמה או ב-Side Bend/Mermaid."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "avoid",
+          "modification": "בחרו תרגיל צידי בעומס נמוך יותר אלא אם קיימת התאמה מקצועית מתאימה."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "הקטינו את טווח הפשיטה והרוטציה."
+        }
+      ],
+      "progressions": [
+        "הגדילו את הזרימה ואת הטווח תוך שמירה על שליטת הכתפיים והגו."
+      ],
+      "regressions": [
+        "Side Bend.",
+        "Mermaid.",
+        "הכנת Snake עם ברך נתמכת."
+      ],
+      "alternatives": [
+        "Side Bend",
+        "Mermaid"
+      ],
+      "possible_equipment": [
+        "mat"
+      ]
+    },
+    {
+      "name": "Boomerang",
+      "aliases": [
+        "The Boomerang"
+      ],
+      "description": "רצף מתקדם וזורם המשלב Roll Over, הצלבת רגליים, איזון Teaser, סחיפת זרועות וכפיפה קדימה של עמוד השדרה.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "abdominals",
+        "spine",
+        "hamstrings",
+        "shoulders",
+        "balance"
+      ],
+      "position": "seated_to_inverted",
+      "intensity": 5,
+      "min_duration_seconds": 45,
+      "max_duration_seconds": 80,
+      "min_reps": 3,
+      "max_reps": 3,
+      "teaching_cues": [
+        "שמרו על רצף תנועה מתמשך אך נשלט.",
+        "השתמשו בשרירי הבטן לגלגול מעל הראש במקום בתנופה.",
+        "מצאו Teaser יציב לפני תנועת הזרועות.",
+        "שמרו על הצלבת רגליים סימטרית ועל ארטיקולציה של עמוד השדרה."
+      ],
+      "common_mistakes": [
+        "מהירות יתר במעברים.",
+        "העמסת הצוואר בזמן ה-Roll Over.",
+        "איבוד שיווי משקל בשלב ה-Teaser."
+      ],
+      "pilates_principles": [
+        "flow",
+        "control",
+        "precision",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "neck_or_cervical_sensitivity",
+          "compatibility": "avoid",
+          "modification": "השתמשו ברצף זורם ללא היפוך."
+        },
+        {
+          "key": "spinal_flexion_restriction",
+          "compatibility": "avoid",
+          "modification": "בחרו רצף בעמוד שדרה ניטרלי."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "modify",
+          "modification": "הקטינו או פשטו את תנועת הזרועות."
+        }
+      ],
+      "progressions": [
+        "הגדילו את הרציפות והדיוק בין שלבי התנועה."
+      ],
+      "regressions": [
+        "תרגלו Roll Over ו-Teaser בנפרד.",
+        "Boomerang מפושט ללא Roll Over מלא."
+      ],
+      "alternatives": [
+        "Teaser 1",
+        "Roll Over"
+      ],
+      "possible_equipment": [
+        "mat"
+      ]
+    },
+    {
+      "name": "Seal",
+      "aliases": [
+        "The Seal"
+      ],
+      "description": "תרגיל גלגול בישיבה בצורה מעוגלת עם כפות רגליים יחד, הכולל מחיאות מבוקרות לפני הגלגול לאחור והחזרה לאיזון.",
+      "difficulty_level": "intermediate",
+      "body_focus": [
+        "abdominals",
+        "spine",
+        "balance",
+        "hips"
+      ],
+      "position": "seated",
+      "intensity": 3,
+      "min_duration_seconds": 35,
+      "max_duration_seconds": 65,
+      "min_reps": 6,
+      "max_reps": 6,
+      "teaching_cues": [
+        "שמרו על הצורה המעוגלת ועל איזון מאחורי עצמות הישיבה.",
+        "מחאו עם כפות הרגליים בלי לאבד את מנח הגו.",
+        "התגלגלו עד השכמות ולא אל הצוואר.",
+        "חזרו לאותה צורת איזון באמצעות שליטת הבטן."
+      ],
+      "common_mistakes": [
+        "זריקת הרגליים כדי ליצור תנופה.",
+        "גלגול על הצוואר.",
+        "איבוד צורת ה-C בזמן המחיאות."
+      ],
+      "pilates_principles": [
+        "flow",
+        "control",
+        "centering",
+        "balance"
+      ],
+      "restrictions": [
+        {
+          "key": "neck_sensitivity",
+          "compatibility": "modify",
+          "modification": "השתמשו בטווח גלגול קטן יותר."
+        },
+        {
+          "key": "spinal_flexion_restriction",
+          "compatibility": "avoid",
+          "modification": "בחרו תרגיל שיווי משקל ללא גלגול."
+        },
+        {
+          "key": "hip_or_knee_sensitivity",
+          "compatibility": "modify",
+          "modification": "התאימו את מנח הרגליים אם צורת היהלום אינה נוחה."
+        }
+      ],
+      "progressions": [
+        "עברו לעמידה מהחזרה האחרונה כאשר הדבר מתאים לרצף."
+      ],
+      "regressions": [
+        "Rolling Like a Ball.",
+        "איזון Seal ללא גלגול."
+      ],
+      "alternatives": [
+        "Rolling Like a Ball",
+        "Crab"
+      ],
+      "possible_equipment": [
+        "mat"
+      ]
+    },
+    {
+      "name": "Crab",
+      "aliases": [
+        "The Crab"
+      ],
+      "description": "תרגיל גלגול מתקדם עם רגליים מוצלבות המשלב גלגול עמוד שדרה, החלפת הצלבת הרגליים והעברת משקל מבוקרת לכיוון קודקוד הראש.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "abdominals",
+        "spine",
+        "balance",
+        "hips"
+      ],
+      "position": "seated",
+      "intensity": 4,
+      "min_duration_seconds": 35,
+      "max_duration_seconds": 65,
+      "min_reps": 3,
+      "max_reps": 6,
+      "teaching_cues": [
+        "שמרו על צורה מעוגלת וקומפקטית לאורך הגלגול.",
+        "החליפו את הצלבת הרגליים בשליטה ולא בתנופה.",
+        "הגנו על עמוד השדרה הצווארי וחלקו את המשקל בזהירות.",
+        "השתמשו בשרירי הבטן כדי לחזור לאיזון."
+      ],
+      "common_mistakes": [
+        "העברת משקל רב מדי לראש או לצוואר.",
+        "איבוד הצורה הקומפקטית.",
+        "מהירות יתר בהחלפת הצלבת הרגליים."
+      ],
+      "pilates_principles": [
+        "control",
+        "precision",
+        "flow",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "neck_or_cervical_sensitivity",
+          "compatibility": "avoid",
+          "modification": "השתמשו ב-Seal או Rolling Like a Ball במקום."
+        },
+        {
+          "key": "spinal_flexion_restriction",
+          "compatibility": "avoid",
+          "modification": "בחרו חלופה ללא גלגול."
+        },
+        {
+          "key": "knee_or_hip_sensitivity",
+          "compatibility": "modify",
+          "modification": "השתמשו במנח רגליים נוח או החליפו ל-Seal."
+        }
+      ],
+      "progressions": [
+        "שפרו את חלקות החלפת הרגליים והמעברים תוך שמירה על בטיחות הצוואר."
+      ],
+      "regressions": [
+        "Seal.",
+        "Rolling Like a Ball."
+      ],
+      "alternatives": [
+        "Seal",
+        "Rolling Like a Ball"
+      ],
+      "possible_equipment": [
+        "mat"
+      ]
+    },
+    {
+      "name": "Rocking",
+      "aliases": [
+        "The Rocking",
+        "Rocking"
+      ],
+      "description": "תרגיל פשיטה מתקדם בשכיבה על הבטן, שבו אוחזים בקרסוליים ומתנדנדים על הבטן תוך שמירה על צורת קשת חזקה.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "back_extensors",
+        "glutes",
+        "hamstrings",
+        "shoulders",
+        "quadriceps"
+      ],
+      "position": "prone",
+      "intensity": 5,
+      "min_duration_seconds": 30,
+      "max_duration_seconds": 55,
+      "min_reps": 5,
+      "max_reps": 5,
+      "teaching_cues": [
+        "דחפו את כפות הרגליים אל הידיים כדי לפתוח את בית החזה וליצור את הקשת.",
+        "התארכו דרך עמוד השדרה במקום לדחוס את הגב התחתון.",
+        "מנעו פתיחה מוגזמת של הברכיים לצדדים.",
+        "אפשרו לנדנוד להיווצר משינוי נקודת האיזון של צורת הקשת."
+      ],
+      "common_mistakes": [
+        "כפיית פשיטה מותנית.",
+        "משיכת כפות הרגליים בידיים במקום לדחוף אותן אל הידיים.",
+        "פתיחה רחבה מדי של הברכיים."
+      ],
+      "pilates_principles": [
+        "control",
+        "flow",
+        "centering",
+        "breathing"
+      ],
+      "restrictions": [
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "השתמשו ב-Swan או בפשיטה קטנה יותר בשכיבה על הבטן."
+        },
+        {
+          "key": "knee_sensitivity",
+          "compatibility": "modify",
+          "modification": "הקטינו את כפיפת הברך או השתמשו ברצועה; אל תכפו אחיזה בקרסול."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "modify",
+          "modification": "השתמשו ברצועה או עברו ל-Swan/Swimming."
+        }
+      ],
+      "progressions": [
+        "הגדילו את טווח הנדנוד בצורה חלקה בלי לשנות את צורת הקשת."
+      ],
+      "regressions": [
+        "הכנת Rocking עם רגל אחת.",
+        "Swan.",
+        "Double Leg Kicks."
+      ],
+      "alternatives": [
+        "Neck Roll/Swan",
+        "Swimming"
+      ],
+      "possible_equipment": [
+        "mat",
+        "resistance_band"
+      ]
+    },
+    {
+      "name": "Control Balance",
+      "aliases": [
+        "Balance Control",
+        "Roll Over Balance Control",
+        "Control Balance"
+      ],
+      "description": "תרגיל שיווי משקל מתקדם בהיפוך, העובר ממנח מעל הראש להחלפת רגליים ארוכות תוך שמירה על אגן מורם ונתמך בכתפיים.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "abdominals",
+        "hamstrings",
+        "hips",
+        "shoulder_stabilizers",
+        "balance"
+      ],
+      "position": "inverted",
+      "intensity": 5,
+      "min_duration_seconds": 30,
+      "max_duration_seconds": 55,
+      "min_reps": 3,
+      "max_reps": 3,
+      "teaching_cues": [
+        "שמרו את המשקל על הכתפיים והגב העליון ולעולם לא על הצוואר.",
+        "שמרו על אגן מורם בזמן החלפת הרגליים.",
+        "האריכו רגל אחת לכיוון המזרן בעוד השנייה מתארכת כלפי מעלה.",
+        "החליפו את הרגליים בשליטה ולא בתנופה."
+      ],
+      "common_mistakes": [
+        "העמסת עמוד השדרה הצווארי.",
+        "ירידת האגן בזמן ההחלפה.",
+        "אחיזה או משיכה אגרסיבית של הרגל."
+      ],
+      "pilates_principles": [
+        "control",
+        "precision",
+        "balance",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "neck_or_cervical_sensitivity",
+          "compatibility": "avoid",
+          "modification": "השתמשו בחלופה ללא היפוך."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "avoid",
+          "modification": "בחרו Low Scissors או תרגיל אחר ללא היפוך."
+        },
+        {
+          "key": "hamstring_tightness",
+          "compatibility": "modify",
+          "modification": "הקטינו את הפישוק בין הרגליים."
+        }
+      ],
+      "progressions": [
+        "הגדילו את הטווח ואת הזרימה תוך שמירה על יציבות בתמיכת הכתפיים."
+      ],
+      "regressions": [
+        "High Scissors.",
+        "Roll Over."
+      ],
+      "alternatives": [
+        "High Scissors",
+        "Jackknife"
+      ],
+      "possible_equipment": [
+        "mat"
+      ]
+    },
+    {
+      "name": "Push Ups",
+      "aliases": [
+        "Push Up",
+        "Push-Ups",
+        "Pilates Push Up"
+      ],
+      "description": "רצף מעמידה לפלאנק הכולל גלגול מטה, הליכת ידיים לפלאנק, שכיבות סמיכה במרפקים צרים וחזרה לעמידה דרך ארטיקולציה של עמוד השדרה.",
+      "difficulty_level": "intermediate",
+      "body_focus": [
+        "triceps",
+        "chest",
+        "shoulders",
+        "core",
+        "spine"
+      ],
+      "position": "standing_to_plank",
+      "intensity": 4,
+      "min_duration_seconds": 40,
+      "max_duration_seconds": 80,
+      "min_reps": 3,
+      "max_reps": 10,
+      "teaching_cues": [
+        "גלגלו את עמוד השדרה בשליטה בירידה ובעלייה.",
+        "הלכו עם הידיים לפלאנק יציב כשהכתפיים מעל שורשי כפות הידיים.",
+        "שמרו את המרפקים בכיוון הצלעות בזמן שכיבת הסמיכה.",
+        "שמרו על קו גו ארוך בלי לשקוע או להרים את האגן לפייק."
+      ],
+      "common_mistakes": [
+        "קריסה לתוך הכתפיים.",
+        "שקיעת האגן בזמן שכיבות הסמיכה.",
+        "שימוש בתנופה ב-Roll Up לעמידה."
+      ],
+      "pilates_principles": [
+        "control",
+        "flow",
+        "precision",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "wrist_sensitivity",
+          "compatibility": "modify",
+          "modification": "השתמשו בידיים מוגבהות, ידיות או חלופה על האמות."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "modify",
+          "modification": "הקטינו את עומק שכיבת הסמיכה או השתמשו בברכיים על המזרן/תמיכה מוגבהת."
+        },
+        {
+          "key": "spinal_flexion_restriction",
+          "compatibility": "modify",
+          "modification": "השתמשו בהטיה ממפרקי הירך או עברו לפלאנק ללא גלגול עמוס של עמוד השדרה."
+        }
+      ],
+      "progressions": [
+        "הגדילו את מספר שכיבות הסמיכה או הפחיתו תמיכה תוך שמירה על יישור."
+      ],
+      "regressions": [
+        "שכיבת סמיכה על הברכיים.",
+        "שכיבת סמיכה מוגבהת.",
+        "Walkout ללא שכיבות סמיכה."
+      ],
+      "alternatives": [
+        "Leg Pull Front",
+        "Standing roll down"
+      ],
+      "possible_equipment": [
+        "mat",
+        "yoga_block"
+      ]
+    }
+  ]

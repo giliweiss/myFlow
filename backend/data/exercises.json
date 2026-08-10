@@ -1,0 +1,3430 @@
+[
+    {
+      "name": "The Hundred",
+      "aliases": [
+        "Hundred",
+        "Hundreds",
+        "The 100"
+      ],
+      "description": "Supine breathing and abdominal endurance exercise with the trunk curled, legs held in a controlled position, and the arms pumping rhythmically.",
+      "difficulty_level": "intermediate",
+      "body_focus": [
+        "core",
+        "abdominals",
+        "hip_flexors",
+        "shoulder_stabilizers"
+      ],
+      "position": "supine",
+      "possiple_equipment": [
+        "mat",
+        "small_ball",
+        "magic_circle",
+        "resistance_band",
+        "fitball"
+      ],
+      "intensity": 3,
+      "min_duration_seconds": 60,
+      "max_duration_seconds": 90,
+      "min_reps": 100,
+      "max_reps": 100,
+      "teaching_cues": [
+        "Draw the abdominals inward and keep the pelvis stable.",
+        "Reach the legs away only as low as trunk control allows.",
+        "Pump the arms from the shoulders while keeping the neck long.",
+        "Coordinate five arm pumps with the inhale and five with the exhale."
+      ],
+      "common_mistakes": [
+        "Losing abdominal support and arching the lower back.",
+        "Tensing the shoulders or pulling the chin into the chest.",
+        "Lowering the legs beyond the point of control."
+      ],
+      "pilates_principles": [
+        "breathing",
+        "centering",
+        "control",
+        "precision"
+      ],
+      "restrictions": [
+        {
+          "key": "neck_sensitivity",
+          "compatibility": "modify",
+          "modification": "Keep the head supported or lower it to the mat and reduce cervical flexion."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "Keep the legs higher or bent in tabletop to reduce the lever."
+        },
+        {
+          "key": "pregnancy",
+          "compatibility": "modify",
+          "modification": "Later-pregnancy supine work may need an alternative position and instructor-specific modification."
+        }
+      ],
+      "progressions": [
+        "Lower the straight legs while maintaining trunk and pelvic control.",
+        "Add a light prop such as a magic circle or small ball without changing alignment."
+      ],
+      "regressions": [
+        "Keep the head down.",
+        "Use tabletop legs or feet supported.",
+        "Shorten the breathing/pumping sets."
+      ],
+      "alternatives": [
+        "Single Leg Stretch",
+        "Chest-lift breathing preparation"
+      ]
+    },
+    {
+      "name": "Roll Up",
+      "aliases": [
+        "The Roll Up"
+      ],
+      "description": "Controlled spinal articulation from supine to seated and back, using the abdominals to sequence the spine rather than momentum.",
+      "difficulty_level": "intermediate",
+      "body_focus": [
+        "abdominals",
+        "spine",
+        "hamstrings"
+      ],
+      "position": "supine_to_seated",
+      "possiple_equipment": [
+        "mat",
+        "resistance_band",
+        "small_ball",
+        "towel"
+      ],
+      "intensity": 3,
+      "min_duration_seconds": 45,
+      "max_duration_seconds": 75,
+      "min_reps": 3,
+      "max_reps": 5,
+      "teaching_cues": [
+        "Initiate from the abdominals and articulate one spinal segment at a time.",
+        "Keep the legs long and grounded without gripping.",
+        "Reach forward through the crown of the head at the top.",
+        "Control the return instead of dropping to the mat."
+      ],
+      "common_mistakes": [
+        "Using momentum to sit up.",
+        "Feet lifting from the mat.",
+        "Collapsing the shoulders or yanking the arms forward."
+      ],
+      "pilates_principles": [
+        "centering",
+        "control",
+        "flow",
+        "precision"
+      ],
+      "restrictions": [
+        {
+          "key": "spinal_flexion_restriction",
+          "compatibility": "avoid",
+          "modification": "Use an approved neutral-spine alternative instead of loaded spinal flexion."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "Use a smaller range or assistance such as a strap and avoid forcing the roll."
+        },
+        {
+          "key": "hamstring_tightness",
+          "compatibility": "modify",
+          "modification": "Slightly bend the knees or elevate the hips if needed."
+        }
+      ],
+      "progressions": [
+        "Slow the articulation and reduce arm momentum.",
+        "Perform with arms overhead through more of the range."
+      ],
+      "regressions": [
+        "Half Roll Back.",
+        "Use a resistance band around the feet for assistance.",
+        "Bend the knees slightly."
+      ],
+      "alternatives": [
+        "Spine Stretch Forward",
+        "Half Roll Back"
+      ]
+    },
+    {
+      "name": "Roll Over",
+      "aliases": [
+        "The Roll Over"
+      ],
+      "description": "Advanced supine inversion that rolls the pelvis and spine overhead while maintaining abdominal control and length through the legs.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "abdominals",
+        "spine",
+        "hamstrings",
+        "shoulder_stabilizers"
+      ],
+      "position": "inverted",
+      "possiple_equipment": [
+        "mat"
+      ],
+      "intensity": 4,
+      "min_duration_seconds": 45,
+      "max_duration_seconds": 75,
+      "min_reps": 3,
+      "max_reps": 3,
+      "teaching_cues": [
+        "Lift from the abdominals rather than kicking the legs overhead.",
+        "Keep weight on the shoulder girdle, not the neck.",
+        "Lengthen the legs away as the spine articulates back to the mat.",
+        "Move with control through the entire rollover."
+      ],
+      "common_mistakes": [
+        "Rolling onto the neck.",
+        "Using momentum or throwing the legs.",
+        "Collapsing the chest or losing abdominal support."
+      ],
+      "pilates_principles": [
+        "centering",
+        "control",
+        "precision",
+        "flow"
+      ],
+      "restrictions": [
+        {
+          "key": "neck_or_cervical_sensitivity",
+          "compatibility": "avoid",
+          "modification": "Choose a non-inverted abdominal exercise unless specifically cleared and supervised."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "modify",
+          "modification": "Use a non-inverted alternative if the shoulder girdle cannot support the position."
+        },
+        {
+          "key": "spinal_flexion_restriction",
+          "compatibility": "avoid",
+          "modification": "Use an approved neutral-spine alternative."
+        }
+      ],
+      "progressions": [
+        "Increase precision of the leg opening/closing pattern while maintaining the shoulder-supported position."
+      ],
+      "regressions": [
+        "Hip lift without taking the legs fully overhead.",
+        "Supported rollover preparation."
+      ],
+      "alternatives": [
+        "Jackknife preparation",
+        "Double Straight Leg Stretch"
+      ]
+    },
+    {
+      "name": "Single Leg Circles",
+      "aliases": [
+        "Single Leg Circle",
+        "One Leg Circle",
+        "Leg Circles"
+      ],
+      "description": "Supine hip-mobility exercise in which one leg circles from the hip while the pelvis and trunk remain stable.",
+      "difficulty_level": "beginner",
+      "body_focus": [
+        "hips",
+        "core",
+        "adductors",
+        "hamstrings"
+      ],
+      "position": "supine",
+      "possiple_equipment": [
+        "mat",
+        "resistance_band",
+        "small_ball"
+      ],
+      "intensity": 2,
+      "min_duration_seconds": 45,
+      "max_duration_seconds": 75,
+      "min_reps": 3,
+      "max_reps": 5,
+      "teaching_cues": [
+        "Keep both sides of the pelvis heavy and level.",
+        "Move the leg from the hip socket rather than the knee.",
+        "Make the circle only as large as pelvic stability allows.",
+        "Keep the supporting leg active and long."
+      ],
+      "common_mistakes": [
+        "Rocking the pelvis side to side.",
+        "Making the circle too large.",
+        "Tensing the shoulders or bending the moving knee unintentionally."
+      ],
+      "pilates_principles": [
+        "control",
+        "precision",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "hip_sensitivity",
+          "compatibility": "modify",
+          "modification": "Reduce the circle size and keep the motion comfortable."
+        },
+        {
+          "key": "hamstring_tightness",
+          "compatibility": "modify",
+          "modification": "Slightly bend the moving knee or use a strap."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "Keep the non-working leg bent with the foot on the mat if needed."
+        }
+      ],
+      "progressions": [
+        "Keep the non-working leg fully extended and increase the circle only without pelvic movement."
+      ],
+      "regressions": [
+        "Bent-knee circles.",
+        "Smaller circles.",
+        "Use a strap for hamstring support."
+      ],
+      "alternatives": [
+        "Knee Circles",
+        "Side Kicks - Circles"
+      ]
+    },
+    {
+      "name": "Rolling Like a Ball",
+      "aliases": [
+        "Rolling Like A Ball",
+        "Rolling Back"
+      ],
+      "description": "Balanced seated rolling exercise that maintains a compact C-curve while rolling to the shoulder blades and returning without using the feet.",
+      "difficulty_level": "beginner",
+      "body_focus": [
+        "abdominals",
+        "spine",
+        "balance"
+      ],
+      "position": "seated",
+      "possiple_equipment": [
+        "mat",
+        "small_ball"
+      ],
+      "intensity": 2,
+      "min_duration_seconds": 40,
+      "max_duration_seconds": 70,
+      "min_reps": 5,
+      "max_reps": 10,
+      "teaching_cues": [
+        "Maintain the same rounded shape throughout the roll.",
+        "Initiate the return from the abdominals rather than kicking the legs.",
+        "Roll to the shoulder blades, not onto the neck.",
+        "Balance behind the sit bones without letting the feet touch down."
+      ],
+      "common_mistakes": [
+        "Throwing the head or legs to create momentum.",
+        "Flattening the spine during the roll.",
+        "Rolling onto the neck."
+      ],
+      "pilates_principles": [
+        "control",
+        "flow",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "neck_sensitivity",
+          "compatibility": "modify",
+          "modification": "Keep the roll small and avoid rolling onto the cervical spine."
+        },
+        {
+          "key": "spinal_flexion_restriction",
+          "compatibility": "avoid",
+          "modification": "Choose a neutral-spine balance exercise instead."
+        },
+        {
+          "key": "balance_difficulty",
+          "compatibility": "modify",
+          "modification": "Practice the start-position balance or a small rocking range."
+        }
+      ],
+      "progressions": [
+        "Reduce the hand support while preserving the compact shape.",
+        "Transition directly into the abdominal series."
+      ],
+      "regressions": [
+        "Small rocking motion.",
+        "Hold behind the thighs instead of the shins."
+      ],
+      "alternatives": [
+        "Open Leg Rocker",
+        "Seated balance preparation"
+      ]
+    },
+    {
+      "name": "Single Leg Stretch",
+      "aliases": [
+        "One Leg Stretch"
+      ],
+      "description": "Supine abdominal-series exercise alternating one knee toward the chest while the opposite leg reaches away and the trunk remains curled.",
+      "difficulty_level": "beginner",
+      "body_focus": [
+        "abdominals",
+        "hip_flexors",
+        "core"
+      ],
+      "position": "supine",
+      "possiple_equipment": [
+        "mat",
+        "small_ball",
+        "magic_circle"
+      ],
+      "intensity": 3,
+      "min_duration_seconds": 40,
+      "max_duration_seconds": 70,
+      "min_reps": 5,
+      "max_reps": 10,
+      "teaching_cues": [
+        "Keep the pelvis stable while the legs alternate.",
+        "Reach the extending leg long rather than simply lowering it.",
+        "Keep the shoulders lifted without shortening the neck.",
+        "Switch the legs smoothly with the breath."
+      ],
+      "common_mistakes": [
+        "Rocking the pelvis.",
+        "Pulling on the knee aggressively.",
+        "Letting the lower back arch as the leg reaches away."
+      ],
+      "pilates_principles": [
+        "centering",
+        "flow",
+        "control",
+        "breathing"
+      ],
+      "restrictions": [
+        {
+          "key": "neck_sensitivity",
+          "compatibility": "modify",
+          "modification": "Support or lower the head."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "Keep the extending leg higher or shorten the lever."
+        },
+        {
+          "key": "hip_flexor_sensitivity",
+          "compatibility": "modify",
+          "modification": "Reduce leg reach and focus on abdominal control."
+        }
+      ],
+      "progressions": [
+        "Lower the reaching leg while maintaining pelvic control.",
+        "Increase flow without losing precision."
+      ],
+      "regressions": [
+        "Head down.",
+        "Keep the reaching leg bent or higher."
+      ],
+      "alternatives": [
+        "Double Leg Stretch",
+        "The Hundred"
+      ]
+    },
+    {
+      "name": "Double Leg Stretch",
+      "aliases": [
+        "Double Leg Stretch"
+      ],
+      "description": "Supine abdominal-series exercise extending both arms and legs away from center and circling back while the trunk remains controlled.",
+      "difficulty_level": "intermediate",
+      "body_focus": [
+        "abdominals",
+        "hip_flexors",
+        "shoulders",
+        "core"
+      ],
+      "position": "supine",
+      "possiple_equipment": [
+        "mat",
+        "small_ball",
+        "magic_circle",
+        "resistance_band"
+      ],
+      "intensity": 3,
+      "min_duration_seconds": 40,
+      "max_duration_seconds": 70,
+      "min_reps": 5,
+      "max_reps": 10,
+      "teaching_cues": [
+        "Keep the trunk position unchanged as the limbs reach away.",
+        "Reach long through the arms and legs before circling back.",
+        "Only lower the legs as far as the abdominals can control.",
+        "Keep the shoulders broad and the neck long."
+      ],
+      "common_mistakes": [
+        "Arching the lower back during the reach.",
+        "Dropping the head and shoulders.",
+        "Moving too quickly to hide loss of control."
+      ],
+      "pilates_principles": [
+        "centering",
+        "control",
+        "flow",
+        "breathing"
+      ],
+      "restrictions": [
+        {
+          "key": "neck_sensitivity",
+          "compatibility": "modify",
+          "modification": "Keep the head supported or down."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "Reach the legs higher or keep the knees bent."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "modify",
+          "modification": "Limit the overhead arm range."
+        }
+      ],
+      "progressions": [
+        "Longer arm and leg lever with a lower leg angle while maintaining trunk control."
+      ],
+      "regressions": [
+        "Move arms and legs separately.",
+        "Keep knees bent.",
+        "Head down."
+      ],
+      "alternatives": [
+        "Single Leg Stretch",
+        "The Hundred"
+      ]
+    },
+    {
+      "name": "Single Straight Leg Stretch",
+      "aliases": [
+        "Single Straight Leg Stretch",
+        "Scissors - Low"
+      ],
+      "description": "Supine abdominal-series exercise alternating straight legs in a scissoring pattern while maintaining trunk flexion and pelvic control.",
+      "difficulty_level": "intermediate",
+      "body_focus": [
+        "abdominals",
+        "hamstrings",
+        "hip_flexors"
+      ],
+      "position": "supine",
+      "possiple_equipment": [
+        "mat",
+        "resistance_band"
+      ],
+      "intensity": 3,
+      "min_duration_seconds": 40,
+      "max_duration_seconds": 70,
+      "min_reps": 5,
+      "max_reps": 10,
+      "teaching_cues": [
+        "Keep both legs long and switch from the hips.",
+        "Maintain an anchored pelvis and steady trunk curl.",
+        "Use a gentle double pulse without pulling the leg aggressively.",
+        "Keep the lower leg only as low as control allows."
+      ],
+      "common_mistakes": [
+        "Bending the knees unintentionally.",
+        "Pulling the top leg with the arms.",
+        "Arching the lower back as the lower leg descends."
+      ],
+      "pilates_principles": [
+        "control",
+        "centering",
+        "flow",
+        "precision"
+      ],
+      "restrictions": [
+        {
+          "key": "hamstring_tightness",
+          "compatibility": "modify",
+          "modification": "Bend the knees slightly or reduce the range."
+        },
+        {
+          "key": "neck_sensitivity",
+          "compatibility": "modify",
+          "modification": "Support or lower the head."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "Keep the lower leg higher."
+        }
+      ],
+      "progressions": [
+        "Increase the split while keeping the pelvis still.",
+        "Reduce hand assistance."
+      ],
+      "regressions": [
+        "Bent-knee version.",
+        "Smaller leg split.",
+        "Head down."
+      ],
+      "alternatives": [
+        "High Scissors",
+        "Single Leg Stretch"
+      ]
+    },
+    {
+      "name": "Double Straight Leg Stretch",
+      "aliases": [
+        "Double Straight Leg Lower/Lift",
+        "Double Leg Lower Lift"
+      ],
+      "description": "Supine abdominal exercise lowering and lifting both straight legs together while maintaining trunk and pelvic stability.",
+      "difficulty_level": "intermediate",
+      "body_focus": [
+        "abdominals",
+        "hip_flexors",
+        "core"
+      ],
+      "position": "supine",
+      "possiple_equipment": [
+        "mat",
+        "small_ball",
+        "magic_circle"
+      ],
+      "intensity": 4,
+      "min_duration_seconds": 35,
+      "max_duration_seconds": 65,
+      "min_reps": 5,
+      "max_reps": 10,
+      "teaching_cues": [
+        "Keep the pelvis and rib cage steady as the legs lower.",
+        "Lower only to the point before the back begins to arch.",
+        "Reach the legs long away from the hips.",
+        "Use the exhale to support the return."
+      ],
+      "common_mistakes": [
+        "Lowering the legs too far.",
+        "Flaring the ribs or arching the back.",
+        "Using momentum on the lift."
+      ],
+      "pilates_principles": [
+        "centering",
+        "control",
+        "precision",
+        "breathing"
+      ],
+      "restrictions": [
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "Reduce the lowering range or bend the knees."
+        },
+        {
+          "key": "neck_sensitivity",
+          "compatibility": "modify",
+          "modification": "Keep the head down or supported."
+        },
+        {
+          "key": "hip_flexor_sensitivity",
+          "compatibility": "modify",
+          "modification": "Shorten the lever or use bent knees."
+        }
+      ],
+      "progressions": [
+        "Lower the legs farther while maintaining neutral control.",
+        "Add a light magic circle between the ankles."
+      ],
+      "regressions": [
+        "Bent-knee lowering.",
+        "Single-leg lowering.",
+        "Head down."
+      ],
+      "alternatives": [
+        "The Hundred",
+        "Double Leg Stretch"
+      ]
+    },
+    {
+      "name": "Criss Cross",
+      "aliases": [
+        "Criss-Cross",
+        "Criss Cross"
+      ],
+      "description": "Rotational abdominal-series exercise alternating thoracic rotation toward the bent knee while the opposite leg reaches long.",
+      "difficulty_level": "intermediate",
+      "body_focus": [
+        "obliques",
+        "abdominals",
+        "hip_flexors",
+        "thoracic_spine"
+      ],
+      "position": "supine",
+      "possiple_equipment": [
+        "mat",
+        "small_ball"
+      ],
+      "intensity": 4,
+      "min_duration_seconds": 40,
+      "max_duration_seconds": 70,
+      "min_reps": 5,
+      "max_reps": 10,
+      "teaching_cues": [
+        "Rotate from the rib cage rather than pulling the elbow across.",
+        "Keep the pelvis stable as the legs switch.",
+        "Reach the opposite leg long.",
+        "Keep the elbows wide and the neck supported by the trunk."
+      ],
+      "common_mistakes": [
+        "Pulling on the neck.",
+        "Moving only the elbows instead of rotating the torso.",
+        "Rocking the pelvis or rushing the switches."
+      ],
+      "pilates_principles": [
+        "centering",
+        "control",
+        "precision",
+        "flow"
+      ],
+      "restrictions": [
+        {
+          "key": "neck_sensitivity",
+          "compatibility": "modify",
+          "modification": "Keep the head supported or reduce the trunk lift."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "Keep the reaching leg higher and reduce range."
+        },
+        {
+          "key": "spinal_rotation_restriction",
+          "compatibility": "avoid",
+          "modification": "Use a non-rotational abdominal alternative."
+        }
+      ],
+      "progressions": [
+        "Slower rotation with a longer leg reach.",
+        "Pause briefly in each rotated position."
+      ],
+      "regressions": [
+        "Feet remain in tabletop with smaller leg reach.",
+        "Head supported.",
+        "Reduce rotation range."
+      ],
+      "alternatives": [
+        "Single Leg Stretch",
+        "Spine Twist"
+      ]
+    },
+    {
+      "name": "Spine Stretch Forward",
+      "aliases": [
+        "Spine Stretch",
+        "Spine Stretch Forward"
+      ],
+      "description": "Seated spinal-flexion and axial-length exercise reaching forward over long legs while maintaining grounded sit bones.",
+      "difficulty_level": "beginner",
+      "body_focus": [
+        "spine",
+        "hamstrings",
+        "abdominals",
+        "back"
+      ],
+      "position": "seated",
+      "possiple_equipment": [
+        "mat",
+        "small_ball",
+        "yoga_block",
+        "resistance_band"
+      ],
+      "intensity": 2,
+      "min_duration_seconds": 35,
+      "max_duration_seconds": 65,
+      "min_reps": 3,
+      "max_reps": 5,
+      "teaching_cues": [
+        "Grow tall before initiating the forward articulation.",
+        "Keep the sit bones grounded as the spine rounds.",
+        "Reach forward through the crown of the head rather than collapsing.",
+        "Stack the spine with control to return."
+      ],
+      "common_mistakes": [
+        "Hinging from the hips instead of articulating the spine.",
+        "Shrugging the shoulders.",
+        "Allowing the knees to bend excessively from tension."
+      ],
+      "pilates_principles": [
+        "breathing",
+        "control",
+        "precision",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "spinal_flexion_restriction",
+          "compatibility": "avoid",
+          "modification": "Use an approved neutral-spine seated hinge or axial-length exercise."
+        },
+        {
+          "key": "hamstring_tightness",
+          "compatibility": "modify",
+          "modification": "Bend the knees slightly or sit on a small elevation."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "Use a smaller range and focus on axial length."
+        }
+      ],
+      "progressions": [
+        "Increase articulation and reach while keeping the pelvis grounded."
+      ],
+      "regressions": [
+        "Sit on a cushion or block.",
+        "Slightly bend the knees.",
+        "Reduce the forward range."
+      ],
+      "alternatives": [
+        "Saw",
+        "Seated axial-length breathing"
+      ]
+    },
+    {
+      "name": "Open Leg Rocker",
+      "aliases": [
+        "Rocker with Open Legs",
+        "Open Leg Rocker"
+      ],
+      "description": "Balanced rolling exercise with both legs extended in a V, maintaining trunk control and returning to the same balanced position.",
+      "difficulty_level": "intermediate",
+      "body_focus": [
+        "abdominals",
+        "balance",
+        "hamstrings",
+        "spine"
+      ],
+      "position": "seated",
+      "possiple_equipment": [
+        "mat",
+        "resistance_band"
+      ],
+      "intensity": 3,
+      "min_duration_seconds": 45,
+      "max_duration_seconds": 70,
+      "min_reps": 6,
+      "max_reps": 6,
+      "teaching_cues": [
+        "Maintain the relationship between trunk and legs as you roll.",
+        "Roll to the shoulder blades, not the neck.",
+        "Use the abdominals to stop and balance at the top.",
+        "Keep the legs active and evenly spaced."
+      ],
+      "common_mistakes": [
+        "Throwing the legs to create momentum.",
+        "Collapsing the chest at the top.",
+        "Rolling onto the neck."
+      ],
+      "pilates_principles": [
+        "control",
+        "balance",
+        "flow",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "neck_sensitivity",
+          "compatibility": "modify",
+          "modification": "Reduce the roll range and avoid cervical loading."
+        },
+        {
+          "key": "spinal_flexion_restriction",
+          "compatibility": "avoid",
+          "modification": "Use a seated balance alternative."
+        },
+        {
+          "key": "hamstring_tightness",
+          "compatibility": "modify",
+          "modification": "Keep the knees slightly bent."
+        }
+      ],
+      "progressions": [
+        "Straighten the knees fully and reduce reliance on the hands."
+      ],
+      "regressions": [
+        "Bent-knee open-leg balance.",
+        "Small rocking range."
+      ],
+      "alternatives": [
+        "Rolling Like a Ball",
+        "Teaser 1"
+      ]
+    },
+    {
+      "name": "Corkscrew w/Hips over",
+      "aliases": [
+        "Corkscrew",
+        "Corkscrew with Hips Over"
+      ],
+      "description": "Advanced supine/inverted leg-circle exercise combining abdominal control, spinal articulation, and a controlled hip lift.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "abdominals",
+        "obliques",
+        "spine",
+        "hips"
+      ],
+      "position": "inverted",
+      "possiple_equipment": [
+        "mat"
+      ],
+      "intensity": 5,
+      "min_duration_seconds": 45,
+      "max_duration_seconds": 75,
+      "min_reps": 3,
+      "max_reps": 5,
+      "teaching_cues": [
+        "Keep the shoulders grounded and the neck free of pressure.",
+        "Circle the legs from a stable trunk and lift the hips from the abdominals.",
+        "Make both sides of the circle even.",
+        "Articulate the spine back to the mat with control."
+      ],
+      "common_mistakes": [
+        "Dropping weight onto the neck.",
+        "Using momentum to lift the hips.",
+        "Making the circle larger than trunk control allows."
+      ],
+      "pilates_principles": [
+        "control",
+        "precision",
+        "centering",
+        "flow"
+      ],
+      "restrictions": [
+        {
+          "key": "neck_or_cervical_sensitivity",
+          "compatibility": "avoid",
+          "modification": "Choose a non-inverted corkscrew variation."
+        },
+        {
+          "key": "spinal_flexion_restriction",
+          "compatibility": "avoid",
+          "modification": "Use a neutral-spine alternative."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "Use low corkscrew without lifting the hips."
+        }
+      ],
+      "progressions": [
+        "Increase circle size only while maintaining shoulder support and symmetry."
+      ],
+      "regressions": [
+        "Low Corkscrew with the pelvis grounded.",
+        "Bent-knee hip circles."
+      ],
+      "alternatives": [
+        "Hip Circles",
+        "Single Leg Circles"
+      ]
+    },
+    {
+      "name": "Saw",
+      "aliases": [
+        "The Saw"
+      ],
+      "description": "Seated rotation and forward reach combining thoracic rotation with spinal flexion over an extended leg position.",
+      "difficulty_level": "intermediate",
+      "body_focus": [
+        "obliques",
+        "spine",
+        "hamstrings",
+        "shoulders"
+      ],
+      "position": "seated",
+      "possiple_equipment": [
+        "mat",
+        "yoga_block",
+        "resistance_band"
+      ],
+      "intensity": 2,
+      "min_duration_seconds": 40,
+      "max_duration_seconds": 70,
+      "min_reps": 4,
+      "max_reps": 4,
+      "teaching_cues": [
+        "Grow tall before rotating.",
+        "Keep both sit bones grounded as you reach forward.",
+        "Rotate from the rib cage rather than shifting the pelvis.",
+        "Reach opposite hand toward the outside of the foot without collapsing."
+      ],
+      "common_mistakes": [
+        "Shifting the pelvis during rotation.",
+        "Rounding the shoulders instead of articulating the spine.",
+        "Forcing the reach with the arms."
+      ],
+      "pilates_principles": [
+        "control",
+        "precision",
+        "breathing",
+        "flow"
+      ],
+      "restrictions": [
+        {
+          "key": "spinal_rotation_restriction",
+          "compatibility": "avoid",
+          "modification": "Use a non-rotational seated mobility exercise."
+        },
+        {
+          "key": "hamstring_tightness",
+          "compatibility": "modify",
+          "modification": "Bend the knees slightly or sit on a small elevation."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "Reduce rotation and forward range."
+        }
+      ],
+      "progressions": [
+        "Increase the rotation and reach while keeping the pelvis anchored."
+      ],
+      "regressions": [
+        "Smaller rotation.",
+        "Bent knees.",
+        "Spine Twist without forward flexion."
+      ],
+      "alternatives": [
+        "Spine Twist",
+        "Spine Stretch Forward"
+      ]
+    },
+    {
+      "name": "Neck Roll/Swan",
+      "aliases": [
+        "Neck Roll",
+        "Swan",
+        "Swan with Neck Roll"
+      ],
+      "description": "Prone spinal-extension sequence that lifts the chest through back-extensor control and may add gentle cervical rotation/neck roll at the top.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "back_extensors",
+        "glutes",
+        "thoracic_spine",
+        "shoulder_stabilizers"
+      ],
+      "position": "prone",
+      "possiple_equipment": [
+        "mat",
+        "small_ball",
+        "towel"
+      ],
+      "intensity": 4,
+      "min_duration_seconds": 40,
+      "max_duration_seconds": 70,
+      "min_reps": 3,
+      "max_reps": 5,
+      "teaching_cues": [
+        "Lengthen the spine before lifting into extension.",
+        "Keep the abdominals supportive and the pelvis organized.",
+        "Distribute extension through the thoracic spine rather than hinging only in the low back.",
+        "If adding neck roll, keep the movement smooth and pain-free."
+      ],
+      "common_mistakes": [
+        "Collapsing into the lumbar spine.",
+        "Shrugging the shoulders.",
+        "Throwing the head back or forcing neck rotation."
+      ],
+      "pilates_principles": [
+        "control",
+        "precision",
+        "centering",
+        "breathing"
+      ],
+      "restrictions": [
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "Use Swan Prep with a smaller extension range."
+        },
+        {
+          "key": "neck_sensitivity",
+          "compatibility": "modify",
+          "modification": "Omit the neck roll and keep the cervical spine long."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "modify",
+          "modification": "Use forearm support or reduce arm loading."
+        }
+      ],
+      "progressions": [
+        "Swan Dive when extension control is established."
+      ],
+      "regressions": [
+        "Swan Prep.",
+        "Forearm-supported thoracic extension."
+      ],
+      "alternatives": [
+        "Swimming",
+        "Single Leg Kicks"
+      ]
+    },
+    {
+      "name": "Single Leg Kicks",
+      "aliases": [
+        "Single Leg Kick",
+        "One Leg Kick"
+      ],
+      "description": "Prone forearm-supported exercise alternating knee flexion while the trunk remains lifted and stable.",
+      "difficulty_level": "beginner",
+      "body_focus": [
+        "hamstrings",
+        "glutes",
+        "back_extensors",
+        "shoulder_stabilizers"
+      ],
+      "position": "prone",
+      "possiple_equipment": [
+        "mat",
+        "small_ball"
+      ],
+      "intensity": 3,
+      "min_duration_seconds": 35,
+      "max_duration_seconds": 60,
+      "min_reps": 5,
+      "max_reps": 5,
+      "teaching_cues": [
+        "Press the forearms down and lift the chest away from the mat.",
+        "Keep the pelvis stable as the heel kicks toward the seat.",
+        "Lengthen the front of the hips.",
+        "Maintain a long neck and broad collarbones."
+      ],
+      "common_mistakes": [
+        "Sinking into the shoulders.",
+        "Rocking the pelvis with each kick.",
+        "Overextending the lower back."
+      ],
+      "pilates_principles": [
+        "control",
+        "precision",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "knee_sensitivity",
+          "compatibility": "modify",
+          "modification": "Reduce the knee-flexion range and avoid forceful kicking."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "Lower the chest or use a smaller extension."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "modify",
+          "modification": "Use lower support or a prone leg-kick preparation."
+        }
+      ],
+      "progressions": [
+        "Increase trunk lift while keeping the pelvis quiet."
+      ],
+      "regressions": [
+        "Prone single knee bend with the chest lower.",
+        "Smaller kick range."
+      ],
+      "alternatives": [
+        "Double Leg Kicks",
+        "Swimming"
+      ]
+    },
+    {
+      "name": "Double Leg Kicks",
+      "aliases": [
+        "Double Leg Kick"
+      ],
+      "description": "Prone exercise combining three heel kicks toward the seat with a chest-opening extension and arm reach behind the body.",
+      "difficulty_level": "intermediate",
+      "body_focus": [
+        "hamstrings",
+        "glutes",
+        "back_extensors",
+        "shoulders",
+        "chest"
+      ],
+      "position": "prone",
+      "possiple_equipment": [
+        "mat",
+        "resistance_band",
+        "towel"
+      ],
+      "intensity": 3,
+      "min_duration_seconds": 40,
+      "max_duration_seconds": 65,
+      "min_reps": 3,
+      "max_reps": 3,
+      "teaching_cues": [
+        "Keep the pelvis grounded as both knees bend.",
+        "Use the back body to extend the chest rather than throwing the head back.",
+        "Reach the arms long behind you during the extension.",
+        "Alternate the cheek resting position without compressing the neck."
+      ],
+      "common_mistakes": [
+        "Lifting the pelvis during the kicks.",
+        "Overextending the neck or lower back.",
+        "Shrugging the shoulders during the arm reach."
+      ],
+      "pilates_principles": [
+        "control",
+        "flow",
+        "precision",
+        "breathing"
+      ],
+      "restrictions": [
+        {
+          "key": "knee_sensitivity",
+          "compatibility": "modify",
+          "modification": "Reduce knee flexion and kick amplitude."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "Use a smaller chest lift or omit the extension."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "modify",
+          "modification": "Keep the arms lower or separate the arm movement."
+        }
+      ],
+      "progressions": [
+        "Increase the chest lift and arm reach while maintaining abdominal support."
+      ],
+      "regressions": [
+        "Single Leg Kicks.",
+        "Prone chest lift without the kicks."
+      ],
+      "alternatives": [
+        "Single Leg Kicks",
+        "Swimming"
+      ]
+    },
+    {
+      "name": "Neck Pull",
+      "aliases": [
+        "The Neck Pull"
+      ],
+      "description": "Advanced roll-up variation performed with hands behind the head, requiring strong abdominal control, spinal articulation, and a controlled hip hinge.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "abdominals",
+        "spine",
+        "back_extensors",
+        "hamstrings"
+      ],
+      "position": "supine_to_seated",
+      "possiple_equipment": [
+        "mat",
+        "resistance_band"
+      ],
+      "intensity": 4,
+      "min_duration_seconds": 45,
+      "max_duration_seconds": 75,
+      "min_reps": 3,
+      "max_reps": 5,
+      "teaching_cues": [
+        "Keep the hands light and avoid pulling the head forward.",
+        "Articulate the spine with the abdominals as in Roll Up.",
+        "Sit tall before hinging back as one long line.",
+        "Control the descent through the spine."
+      ],
+      "common_mistakes": [
+        "Pulling on the neck.",
+        "Using momentum to roll up.",
+        "Collapsing the lumbar spine during the hinge."
+      ],
+      "pilates_principles": [
+        "control",
+        "centering",
+        "precision",
+        "flow"
+      ],
+      "restrictions": [
+        {
+          "key": "neck_sensitivity",
+          "compatibility": "modify",
+          "modification": "Use Roll Up or keep the hands forward instead of behind the head."
+        },
+        {
+          "key": "spinal_flexion_restriction",
+          "compatibility": "avoid",
+          "modification": "Choose a neutral-spine alternative."
+        },
+        {
+          "key": "hamstring_tightness",
+          "compatibility": "modify",
+          "modification": "Slightly bend the knees or reduce forward range."
+        }
+      ],
+      "progressions": [
+        "Increase hinge range while maintaining a long spine and controlled return."
+      ],
+      "regressions": [
+        "Roll Up.",
+        "Hands crossed over chest or reaching forward."
+      ],
+      "alternatives": [
+        "Roll Up",
+        "Spine Stretch Forward"
+      ]
+    },
+    {
+      "name": "High Scissors",
+      "aliases": [
+        "Scissors",
+        "High Scissors"
+      ],
+      "description": "Shoulder-supported inverted exercise alternately reaching one straight leg toward the mat and the other toward the body while the pelvis stays lifted.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "abdominals",
+        "hips",
+        "hamstrings",
+        "shoulder_stabilizers"
+      ],
+      "position": "inverted",
+      "possiple_equipment": [
+        "mat"
+      ],
+      "intensity": 4,
+      "min_duration_seconds": 40,
+      "max_duration_seconds": 65,
+      "min_reps": 3,
+      "max_reps": 5,
+      "teaching_cues": [
+        "Support the pelvis with the hands while keeping weight off the neck.",
+        "Keep the pelvis high and steady as the legs switch.",
+        "Reach both legs long in opposite directions.",
+        "Maintain space across the collarbones."
+      ],
+      "common_mistakes": [
+        "Loading the cervical spine.",
+        "Letting the pelvis drop as the legs switch.",
+        "Bending the knees or rushing the scissor."
+      ],
+      "pilates_principles": [
+        "control",
+        "precision",
+        "centering",
+        "flow"
+      ],
+      "restrictions": [
+        {
+          "key": "neck_or_cervical_sensitivity",
+          "compatibility": "avoid",
+          "modification": "Use low Single Straight Leg Stretch instead."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "modify",
+          "modification": "Choose a non-inverted alternative."
+        },
+        {
+          "key": "hamstring_tightness",
+          "compatibility": "modify",
+          "modification": "Reduce the leg split."
+        }
+      ],
+      "progressions": [
+        "Increase the split without lowering the pelvis.",
+        "Transition smoothly into High Bicycle."
+      ],
+      "regressions": [
+        "Single Straight Leg Stretch.",
+        "Supported scissors with a smaller range."
+      ],
+      "alternatives": [
+        "Single Straight Leg Stretch",
+        "High Bicycle"
+      ]
+    },
+    {
+      "name": "High Bicycle",
+      "aliases": [
+        "Bicycle",
+        "High Bicycle"
+      ],
+      "description": "Shoulder-supported inverted cycling pattern that alternates hip and knee motion while the pelvis remains elevated and stable.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "abdominals",
+        "hips",
+        "hamstrings",
+        "glutes",
+        "shoulder_stabilizers"
+      ],
+      "position": "inverted",
+      "possiple_equipment": [
+        "mat"
+      ],
+      "intensity": 4,
+      "min_duration_seconds": 40,
+      "max_duration_seconds": 65,
+      "min_reps": 3,
+      "max_reps": 5,
+      "teaching_cues": [
+        "Keep the pelvis supported and lifted throughout the cycling action.",
+        "Reach each leg long through the bottom of the cycle.",
+        "Move smoothly from the hips without rocking the torso.",
+        "Keep weight on the shoulders rather than the neck."
+      ],
+      "common_mistakes": [
+        "Dropping the pelvis.",
+        "Making small rushed circles with the feet.",
+        "Loading the neck or collapsing the chest."
+      ],
+      "pilates_principles": [
+        "flow",
+        "control",
+        "precision",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "neck_or_cervical_sensitivity",
+          "compatibility": "avoid",
+          "modification": "Use a low bicycle variation or non-inverted leg exercise."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "modify",
+          "modification": "Choose a non-inverted alternative."
+        },
+        {
+          "key": "hip_sensitivity",
+          "compatibility": "modify",
+          "modification": "Reduce the cycling range."
+        }
+      ],
+      "progressions": [
+        "Increase leg reach and fluidity while keeping the pelvis still."
+      ],
+      "regressions": [
+        "High Scissors.",
+        "Low bicycle with pelvis on the mat."
+      ],
+      "alternatives": [
+        "High Scissors",
+        "Side Kicks - Bicycle"
+      ]
+    },
+    {
+      "name": "Shoulder Bridge",
+      "aliases": [
+        "Shoulder Bridge Kicks",
+        "Bridge with Leg Kicks"
+      ],
+      "description": "Supine bridge held through the posterior chain while one leg extends and performs controlled kicks without dropping or rotating the pelvis.",
+      "difficulty_level": "intermediate",
+      "body_focus": [
+        "glutes",
+        "hamstrings",
+        "core",
+        "spine"
+      ],
+      "position": "supine",
+      "possiple_equipment": [
+        "mat",
+        "small_ball",
+        "magic_circle",
+        "resistance_band"
+      ],
+      "intensity": 3,
+      "min_duration_seconds": 40,
+      "max_duration_seconds": 70,
+      "min_reps": 3,
+      "max_reps": 5,
+      "teaching_cues": [
+        "Keep the pelvis level as one leg lifts.",
+        "Press evenly through the supporting foot and shoulder girdle.",
+        "Reach the moving leg long from the hip.",
+        "Keep the ribs organized rather than flaring."
+      ],
+      "common_mistakes": [
+        "Pelvis dropping or rotating.",
+        "Overarching the lower back.",
+        "Pushing into the neck instead of the upper back."
+      ],
+      "pilates_principles": [
+        "control",
+        "centering",
+        "precision"
+      ],
+      "restrictions": [
+        {
+          "key": "neck_sensitivity",
+          "compatibility": "modify",
+          "modification": "Keep the bridge lower and avoid pressure into the cervical spine."
+        },
+        {
+          "key": "knee_sensitivity",
+          "compatibility": "modify",
+          "modification": "Adjust foot position and bridge height to a comfortable range."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "Use a smaller bridge or basic pelvic curl."
+        }
+      ],
+      "progressions": [
+        "Increase single-leg challenge while preserving pelvic alignment."
+      ],
+      "regressions": [
+        "Basic Bridge/Pelvic Curl.",
+        "Bridge without leg kicks."
+      ],
+      "alternatives": [
+        "High Bridge",
+        "Pelvic Curl"
+      ]
+    },
+    {
+      "name": "High Bridge",
+      "aliases": [
+        "High Shoulder Bridge",
+        "High Bridge"
+      ],
+      "description": "Advanced high bridge variation with a larger hip and spinal extension demand, often performed with strong posterior-chain and shoulder support.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "glutes",
+        "hamstrings",
+        "back_extensors",
+        "shoulder_stabilizers"
+      ],
+      "position": "supine",
+      "possiple_equipment": [
+        "mat"
+      ],
+      "intensity": 5,
+      "min_duration_seconds": 20,
+      "max_duration_seconds": 45,
+      "min_reps": 1,
+      "max_reps": 1,
+      "teaching_cues": [
+        "Lift through the hips while keeping the chest open and the neck unloaded.",
+        "Maintain even weight through both feet and shoulders.",
+        "Lengthen the knees away from the shoulders.",
+        "Keep the movement controlled rather than forcing height."
+      ],
+      "common_mistakes": [
+        "Compressing the neck.",
+        "Overarching only through the lumbar spine.",
+        "Feet or knees drifting out of alignment."
+      ],
+      "pilates_principles": [
+        "control",
+        "precision",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "neck_or_cervical_sensitivity",
+          "compatibility": "avoid",
+          "modification": "Use a lower bridge variation."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "modify",
+          "modification": "Use Shoulder Bridge or basic bridge."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "Use a smaller extension range."
+        }
+      ],
+      "progressions": [
+        "Sustain the position with greater control and even posterior-chain engagement."
+      ],
+      "regressions": [
+        "Shoulder Bridge.",
+        "Basic Bridge/Pelvic Curl."
+      ],
+      "alternatives": [
+        "Shoulder Bridge",
+        "Rocking"
+      ]
+    },
+    {
+      "name": "Spine Twist",
+      "aliases": [
+        "The Spine Twist",
+        "Spine Twist"
+      ],
+      "description": "Seated axial-rotation exercise with the legs extended and pelvis grounded while the torso rotates around a tall vertical axis.",
+      "difficulty_level": "intermediate",
+      "body_focus": [
+        "obliques",
+        "thoracic_spine",
+        "back_extensors",
+        "posture"
+      ],
+      "position": "seated",
+      "possiple_equipment": [
+        "mat",
+        "yoga_block",
+        "small_ball"
+      ],
+      "intensity": 2,
+      "min_duration_seconds": 35,
+      "max_duration_seconds": 60,
+      "min_reps": 3,
+      "max_reps": 3,
+      "teaching_cues": [
+        "Grow taller before and during the rotation.",
+        "Keep both sit bones anchored and the legs still.",
+        "Rotate through the rib cage rather than swinging the arms.",
+        "Maintain a long neutral neck."
+      ],
+      "common_mistakes": [
+        "Shifting the hips.",
+        "Leading with the arms instead of the torso.",
+        "Collapsing or leaning backward."
+      ],
+      "pilates_principles": [
+        "precision",
+        "control",
+        "breathing",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "spinal_rotation_restriction",
+          "compatibility": "avoid",
+          "modification": "Use axial-length work without rotation."
+        },
+        {
+          "key": "hamstring_tightness",
+          "compatibility": "modify",
+          "modification": "Bend the knees slightly or sit on a small elevation."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "Reduce rotation range."
+        }
+      ],
+      "progressions": [
+        "Increase rotation while keeping the pelvis completely still."
+      ],
+      "regressions": [
+        "Bent-knee seated twist.",
+        "Smaller rotation range."
+      ],
+      "alternatives": [
+        "Saw",
+        "Mermaid"
+      ]
+    },
+    {
+      "name": "Jackknife",
+      "aliases": [
+        "Jack Knife",
+        "The Jackknife"
+      ],
+      "description": "Advanced inversion that rolls the legs overhead and then lifts them vertically before articulating the spine back to the mat.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "abdominals",
+        "spine",
+        "hamstrings",
+        "shoulder_stabilizers"
+      ],
+      "position": "inverted",
+      "possiple_equipment": [
+        "mat"
+      ],
+      "intensity": 5,
+      "min_duration_seconds": 30,
+      "max_duration_seconds": 55,
+      "min_reps": 3,
+      "max_reps": 3,
+      "teaching_cues": [
+        "Roll overhead with abdominal control before lifting the legs upward.",
+        "Keep the weight on the shoulders and upper back, not the neck.",
+        "Reach the legs up as the pelvis lifts.",
+        "Articulate the spine down slowly."
+      ],
+      "common_mistakes": [
+        "Kicking the legs to get overhead.",
+        "Loading the neck.",
+        "Dropping the spine quickly on the return."
+      ],
+      "pilates_principles": [
+        "control",
+        "precision",
+        "centering",
+        "flow"
+      ],
+      "restrictions": [
+        {
+          "key": "neck_or_cervical_sensitivity",
+          "compatibility": "avoid",
+          "modification": "Choose a non-inverted abdominal exercise."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "modify",
+          "modification": "Use a lower-level rollover preparation."
+        },
+        {
+          "key": "spinal_flexion_restriction",
+          "compatibility": "avoid",
+          "modification": "Use a neutral-spine alternative."
+        }
+      ],
+      "progressions": [
+        "Increase vertical lift and control without changing shoulder support."
+      ],
+      "regressions": [
+        "Roll Over.",
+        "Hip lift preparation."
+      ],
+      "alternatives": [
+        "Roll Over",
+        "Control Balance"
+      ]
+    },
+    {
+      "name": "Side Kicks - Front/Back",
+      "aliases": [
+        "Side Kick Front/Back",
+        "Front and Back"
+      ],
+      "description": "Side-lying hip exercise swinging the top leg forward and back while the trunk and pelvis remain stable.",
+      "difficulty_level": "beginner",
+      "body_focus": [
+        "hips",
+        "glutes",
+        "hamstrings",
+        "core"
+      ],
+      "position": "side_lying",
+      "possiple_equipment": [
+        "mat",
+        "small_ball",
+        "ankle_weights"
+      ],
+      "intensity": 3,
+      "min_duration_seconds": 30,
+      "max_duration_seconds": 60,
+      "min_reps": 3,
+      "max_reps": 10,
+      "teaching_cues": [
+        "Keep the pelvis stacked and the waist lifted.",
+        "Move the leg freely from the hip without moving the torso.",
+        "Reach long through the heel or toes.",
+        "Use abdominal control to limit the backward swing."
+      ],
+      "common_mistakes": [
+        "Rocking the pelvis.",
+        "Collapsing into the bottom waist.",
+        "Arching the lower back on the back swing."
+      ],
+      "pilates_principles": [
+        "control",
+        "precision",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "hip_sensitivity",
+          "compatibility": "modify",
+          "modification": "Reduce swing range and keep the movement pain-free."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "Limit the backward range and stabilize the pelvis."
+        },
+        {
+          "key": "balance_difficulty",
+          "compatibility": "modify",
+          "modification": "Use the lower arm/hand for more support."
+        }
+      ],
+      "progressions": [
+        "Increase range while keeping the torso completely still."
+      ],
+      "regressions": [
+        "Smaller front/back swing.",
+        "Bent supporting leg for stability."
+      ],
+      "alternatives": [
+        "Kneeling Side Kicks",
+        "Side Kicks - Circles"
+      ]
+    },
+    {
+      "name": "Side Kicks - Up/Down",
+      "aliases": [
+        "Side Kick Up/Down",
+        "Side Kick Lift/Lower"
+      ],
+      "description": "Side-lying leg lift and controlled lowering emphasizing lateral hip strength, length, and pelvic stability.",
+      "difficulty_level": "beginner",
+      "body_focus": [
+        "hip_abductors",
+        "glutes",
+        "inner_thighs",
+        "core"
+      ],
+      "position": "side_lying",
+      "possiple_equipment": [
+        "mat",
+        "small_ball",
+        "resistance_band",
+        "ankle_weights"
+      ],
+      "intensity": 3,
+      "min_duration_seconds": 30,
+      "max_duration_seconds": 55,
+      "min_reps": 3,
+      "max_reps": 10,
+      "teaching_cues": [
+        "Keep the pelvis stacked as the top leg lifts.",
+        "Lengthen the leg away from the hip throughout.",
+        "Control the lowering rather than letting the leg drop.",
+        "Keep the bottom waist lifted."
+      ],
+      "common_mistakes": [
+        "Hiking the top hip.",
+        "Rolling the pelvis backward.",
+        "Using momentum to lift the leg."
+      ],
+      "pilates_principles": [
+        "control",
+        "precision",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "hip_sensitivity",
+          "compatibility": "modify",
+          "modification": "Use a smaller lift range."
+        },
+        {
+          "key": "balance_difficulty",
+          "compatibility": "modify",
+          "modification": "Increase arm support or bend the bottom knee."
+        }
+      ],
+      "progressions": [
+        "Add resistance while maintaining pelvic alignment."
+      ],
+      "regressions": [
+        "Smaller lift.",
+        "Bent bottom knee for stability."
+      ],
+      "alternatives": [
+        "Side Kicks - Circles",
+        "Inner Thigh Lifts, Beats & Circles"
+      ]
+    },
+    {
+      "name": "Side Kicks - Circles",
+      "aliases": [
+        "Side Leg Circles",
+        "Side Kick Circles"
+      ],
+      "description": "Side-lying small or moderate circles of the top leg from the hip while the trunk remains stable.",
+      "difficulty_level": "intermediate",
+      "body_focus": [
+        "hips",
+        "glutes",
+        "core"
+      ],
+      "position": "side_lying",
+      "possiple_equipment": [
+        "mat",
+        "small_ball",
+        "ankle_weights"
+      ],
+      "intensity": 3,
+      "min_duration_seconds": 30,
+      "max_duration_seconds": 55,
+      "min_reps": 3,
+      "max_reps": 10,
+      "teaching_cues": [
+        "Draw clean circles from the hip socket.",
+        "Keep the pelvis quiet and stacked.",
+        "Maintain length through the working leg.",
+        "Make both circle directions equally controlled."
+      ],
+      "common_mistakes": [
+        "Circling from the knee or foot.",
+        "Moving the pelvis with the leg.",
+        "Making circles too large."
+      ],
+      "pilates_principles": [
+        "precision",
+        "control",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "hip_sensitivity",
+          "compatibility": "modify",
+          "modification": "Reduce circle size."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "Keep the trunk stable and the circle small."
+        }
+      ],
+      "progressions": [
+        "Larger circles without pelvic movement.",
+        "Add light ankle resistance."
+      ],
+      "regressions": [
+        "Small circles.",
+        "Single Leg Circles in supine."
+      ],
+      "alternatives": [
+        "Single Leg Circles",
+        "Side Kicks - Up/Down"
+      ]
+    },
+    {
+      "name": "Side Kicks - Bicycle",
+      "aliases": [
+        "Side Bicycle",
+        "Side Kick Bicycle"
+      ],
+      "description": "Side-lying bicycle pattern combining hip flexion, knee flexion, hip extension, and leg reach while the pelvis remains stable.",
+      "difficulty_level": "intermediate",
+      "body_focus": [
+        "hips",
+        "glutes",
+        "hamstrings",
+        "quadriceps",
+        "core"
+      ],
+      "position": "side_lying",
+      "possiple_equipment": [
+        "mat"
+      ],
+      "intensity": 4,
+      "min_duration_seconds": 35,
+      "max_duration_seconds": 60,
+      "min_reps": 3,
+      "max_reps": 10,
+      "teaching_cues": [
+        "Keep the pelvis stacked while the leg traces the bicycle pathway.",
+        "Reach the leg long through the extended phases.",
+        "Move from the hip and knee without moving the torso.",
+        "Reverse the pattern with equal control."
+      ],
+      "common_mistakes": [
+        "Rolling the pelvis.",
+        "Shortening the top waist.",
+        "Moving quickly through the difficult back phase."
+      ],
+      "pilates_principles": [
+        "flow",
+        "control",
+        "precision"
+      ],
+      "restrictions": [
+        {
+          "key": "hip_sensitivity",
+          "compatibility": "modify",
+          "modification": "Reduce the size of the bicycle pathway."
+        },
+        {
+          "key": "knee_sensitivity",
+          "compatibility": "modify",
+          "modification": "Use a comfortable knee-flexion range."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "Limit hip extension behind the body."
+        }
+      ],
+      "progressions": [
+        "Increase the pathway size while preserving pelvic stability."
+      ],
+      "regressions": [
+        "Side Kicks - Front/Back.",
+        "Smaller bent-knee bicycle."
+      ],
+      "alternatives": [
+        "High Bicycle",
+        "Side Kicks - Front/Back"
+      ]
+    },
+    {
+      "name": "Inner Thigh Lifts, Beats & Circles",
+      "aliases": [
+        "Inner Thigh Series",
+        "Inner Thigh Lifts and Beats",
+        "Inner Thigh Circles"
+      ],
+      "description": "Side-lying inner-thigh series in which the lower leg lifts, pulses/beats, and circles while the top leg is positioned for support.",
+      "difficulty_level": "intermediate",
+      "body_focus": [
+        "adductors",
+        "inner_thighs",
+        "core",
+        "hips"
+      ],
+      "position": "side_lying",
+      "possiple_equipment": [
+        "mat",
+        "small_ball",
+        "ankle_weights"
+      ],
+      "intensity": 3,
+      "min_duration_seconds": 45,
+      "max_duration_seconds": 90,
+      "min_reps": 3,
+      "max_reps": 10,
+      "teaching_cues": [
+        "Lengthen the lower leg before lifting.",
+        "Keep the pelvis stacked and trunk still.",
+        "Initiate from the inner thigh rather than the foot.",
+        "Keep circles small and controlled."
+      ],
+      "common_mistakes": [
+        "Rolling backward onto the pelvis.",
+        "Bending the working knee.",
+        "Using the upper body to create the lift."
+      ],
+      "pilates_principles": [
+        "control",
+        "precision",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "hip_sensitivity",
+          "compatibility": "modify",
+          "modification": "Reduce lift and circle range."
+        },
+        {
+          "key": "knee_sensitivity",
+          "compatibility": "modify",
+          "modification": "Adjust the top-leg support position to avoid knee strain."
+        }
+      ],
+      "progressions": [
+        "Add small controlled beats and circles without losing alignment."
+      ],
+      "regressions": [
+        "Inner-thigh lifts only.",
+        "Smaller range with more upper-body support."
+      ],
+      "alternatives": [
+        "Side Kicks - Up/Down",
+        "Side Kicks - Circles"
+      ]
+    },
+    {
+      "name": "Side Kicks - Big Circles",
+      "aliases": [
+        "Big Circles",
+        "Grande Ronde Jambe",
+        "Side Kick Big Circles"
+      ],
+      "description": "Advanced side-lying large leg circles demanding hip mobility and strong trunk stability throughout a broad range.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "hips",
+        "glutes",
+        "adductors",
+        "core"
+      ],
+      "position": "side_lying",
+      "possiple_equipment": [
+        "mat"
+      ],
+      "intensity": 4,
+      "min_duration_seconds": 35,
+      "max_duration_seconds": 65,
+      "min_reps": 3,
+      "max_reps": 10,
+      "teaching_cues": [
+        "Keep the pelvis stacked as the leg travels through the large circle.",
+        "Lengthen the leg continuously from the hip.",
+        "Control the back and bottom portions of the circle.",
+        "Make the reverse direction equally precise."
+      ],
+      "common_mistakes": [
+        "Rolling the pelvis to gain range.",
+        "Bending the knee.",
+        "Letting the leg drop through the bottom of the circle."
+      ],
+      "pilates_principles": [
+        "control",
+        "precision",
+        "flow"
+      ],
+      "restrictions": [
+        {
+          "key": "hip_sensitivity",
+          "compatibility": "modify",
+          "modification": "Use smaller Side Kicks circles."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "Reduce the backward portion of the circle."
+        }
+      ],
+      "progressions": [
+        "Increase circle size while preserving complete trunk stability."
+      ],
+      "regressions": [
+        "Side Kicks - Circles.",
+        "Side Kicks - Up/Down."
+      ],
+      "alternatives": [
+        "Side Kicks - Circles",
+        "Single Leg Circles"
+      ]
+    },
+    {
+      "name": "Side Kicks - Hot Potato",
+      "aliases": [
+        "Hot Potato",
+        "Side Kick Hot Potato"
+      ],
+      "description": "Fast but controlled side-lying leg pattern tapping the foot in front of and behind the supporting leg while maintaining lifted trunk alignment.",
+      "difficulty_level": "intermediate",
+      "body_focus": [
+        "hips",
+        "glutes",
+        "core",
+        "coordination"
+      ],
+      "position": "side_lying",
+      "possiple_equipment": [
+        "mat"
+      ],
+      "intensity": 4,
+      "min_duration_seconds": 30,
+      "max_duration_seconds": 55,
+      "min_reps": 3,
+      "max_reps": 10,
+      "teaching_cues": [
+        "Keep the pelvis and torso still as the leg moves quickly.",
+        "Lift the working leg from the hip rather than the foot.",
+        "Maintain length through the bottom waist.",
+        "Keep the taps light and controlled."
+      ],
+      "common_mistakes": [
+        "Rocking the pelvis with the taps.",
+        "Dropping the torso into the mat.",
+        "Using speed instead of control."
+      ],
+      "pilates_principles": [
+        "flow",
+        "control",
+        "precision"
+      ],
+      "restrictions": [
+        {
+          "key": "hip_sensitivity",
+          "compatibility": "modify",
+          "modification": "Reduce speed and range."
+        },
+        {
+          "key": "balance_difficulty",
+          "compatibility": "modify",
+          "modification": "Use additional hand support."
+        }
+      ],
+      "progressions": [
+        "Increase tempo only if pelvic stability remains unchanged."
+      ],
+      "regressions": [
+        "Slow front/back taps.",
+        "Side Kicks - Front/Back."
+      ],
+      "alternatives": [
+        "Side Kicks - Front/Back",
+        "Side Kicks - Big Scissors"
+      ]
+    },
+    {
+      "name": "Side Kicks - Big Scissors",
+      "aliases": [
+        "Big Scissors",
+        "Side Kick Big Scissors"
+      ],
+      "description": "Advanced side-lying scissor action with both legs moving in opposition, demanding strong lateral trunk control and hip mobility.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "hips",
+        "glutes",
+        "hamstrings",
+        "core",
+        "balance"
+      ],
+      "position": "side_lying",
+      "possiple_equipment": [
+        "mat"
+      ],
+      "intensity": 5,
+      "min_duration_seconds": 30,
+      "max_duration_seconds": 55,
+      "min_reps": 3,
+      "max_reps": 10,
+      "teaching_cues": [
+        "Keep the trunk long and stable as both legs move.",
+        "Reach the legs away from each other rather than forcing range.",
+        "Maintain pelvic alignment throughout the split.",
+        "Control the return through center."
+      ],
+      "common_mistakes": [
+        "Rolling the pelvis.",
+        "Collapsing the waist.",
+        "Using momentum to create the split."
+      ],
+      "pilates_principles": [
+        "control",
+        "precision",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "hip_sensitivity",
+          "compatibility": "modify",
+          "modification": "Use single-leg side kicks instead."
+        },
+        {
+          "key": "hamstring_tightness",
+          "compatibility": "modify",
+          "modification": "Reduce the split range."
+        },
+        {
+          "key": "balance_difficulty",
+          "compatibility": "modify",
+          "modification": "Use a more supported side-lying variation."
+        }
+      ],
+      "progressions": [
+        "Increase split and tempo without trunk movement."
+      ],
+      "regressions": [
+        "Side Kicks - Front/Back.",
+        "Single-leg side scissors."
+      ],
+      "alternatives": [
+        "Side Kicks - Hot Potato",
+        "Single Straight Leg Stretch"
+      ]
+    },
+    {
+      "name": "Teaser 1",
+      "aliases": [
+        "Teaser I",
+        "The Teaser 1"
+      ],
+      "description": "Advanced V-sit roll-up in which the legs remain lifted while the trunk rolls up to balance and returns with control.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "abdominals",
+        "hip_flexors",
+        "balance",
+        "spine"
+      ],
+      "position": "supine_to_seated",
+      "possiple_equipment": [
+        "mat",
+        "small_ball",
+        "magic_circle",
+        "resistance_band"
+      ],
+      "intensity": 4,
+      "min_duration_seconds": 30,
+      "max_duration_seconds": 55,
+      "min_reps": 3,
+      "max_reps": 3,
+      "teaching_cues": [
+        "Reach the legs long and keep them steady as the spine rolls up.",
+        "Lift through the chest at the top without losing abdominal support.",
+        "Balance behind the sit bones rather than collapsing into the low back.",
+        "Roll down with the same control used to come up."
+      ],
+      "common_mistakes": [
+        "Throwing the arms or legs for momentum.",
+        "Collapsing the lumbar spine at the top.",
+        "Holding the breath."
+      ],
+      "pilates_principles": [
+        "centering",
+        "control",
+        "balance",
+        "flow"
+      ],
+      "restrictions": [
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "Use bent knees or a lower teaser preparation."
+        },
+        {
+          "key": "spinal_flexion_restriction",
+          "compatibility": "avoid",
+          "modification": "Choose a neutral-spine balance alternative."
+        },
+        {
+          "key": "hip_flexor_sensitivity",
+          "compatibility": "modify",
+          "modification": "Use tabletop or bent knees."
+        }
+      ],
+      "progressions": [
+        "Teaser 2",
+        "Teaser 3"
+      ],
+      "regressions": [
+        "Bent-knee Teaser.",
+        "One-leg Teaser.",
+        "Open Leg Rocker balance."
+      ],
+      "alternatives": [
+        "Open Leg Rocker",
+        "Roll Up"
+      ]
+    },
+    {
+      "name": "Teaser 2",
+      "aliases": [
+        "Teaser II",
+        "The Teaser 2"
+      ],
+      "description": "Teaser variation holding the trunk in V-sit while the straight legs lower and lift with control.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "abdominals",
+        "hip_flexors",
+        "balance",
+        "core"
+      ],
+      "position": "seated",
+      "possiple_equipment": [
+        "mat",
+        "small_ball",
+        "magic_circle"
+      ],
+      "intensity": 5,
+      "min_duration_seconds": 25,
+      "max_duration_seconds": 50,
+      "min_reps": 3,
+      "max_reps": 3,
+      "teaching_cues": [
+        "Keep the trunk lifted and still as the legs lower.",
+        "Lower the legs only as far as balance and trunk control allow.",
+        "Reach through the legs instead of gripping the hip flexors.",
+        "Keep the chest open and shoulders relaxed."
+      ],
+      "common_mistakes": [
+        "Leaning the torso back as the legs lower.",
+        "Dropping the legs too far.",
+        "Tensing the neck and shoulders."
+      ],
+      "pilates_principles": [
+        "control",
+        "centering",
+        "precision",
+        "balance"
+      ],
+      "restrictions": [
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "Use Teaser 1 or bent knees."
+        },
+        {
+          "key": "hip_flexor_sensitivity",
+          "compatibility": "modify",
+          "modification": "Reduce leg-lowering range."
+        },
+        {
+          "key": "spinal_flexion_restriction",
+          "compatibility": "avoid",
+          "modification": "Choose a neutral-spine balance alternative."
+        }
+      ],
+      "progressions": [
+        "Teaser 3"
+      ],
+      "regressions": [
+        "Teaser 1.",
+        "Bent-knee leg lowers in Teaser."
+      ],
+      "alternatives": [
+        "Teaser 1",
+        "Double Straight Leg Stretch"
+      ]
+    },
+    {
+      "name": "Teaser 3",
+      "aliases": [
+        "Teaser III",
+        "The Teaser 3"
+      ],
+      "description": "Full teaser variation in which the arms, trunk, and legs lower and lift together as one coordinated unit.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "abdominals",
+        "hip_flexors",
+        "balance",
+        "spine"
+      ],
+      "position": "supine_to_seated",
+      "possiple_equipment": [
+        "mat",
+        "small_ball",
+        "magic_circle"
+      ],
+      "intensity": 5,
+      "min_duration_seconds": 30,
+      "max_duration_seconds": 55,
+      "min_reps": 3,
+      "max_reps": 3,
+      "teaching_cues": [
+        "Move the trunk and legs together without losing the long V shape.",
+        "Use the abdominals to control both directions.",
+        "Reach through the limbs as you lower and lift.",
+        "Avoid collapsing through the low back at the balance point."
+      ],
+      "common_mistakes": [
+        "Legs and trunk moving at different speeds.",
+        "Using momentum to return.",
+        "Holding the breath or gripping the neck."
+      ],
+      "pilates_principles": [
+        "control",
+        "flow",
+        "centering",
+        "precision"
+      ],
+      "restrictions": [
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "Use Teaser 1 or a bent-knee teaser."
+        },
+        {
+          "key": "spinal_flexion_restriction",
+          "compatibility": "avoid",
+          "modification": "Use a neutral-spine alternative."
+        },
+        {
+          "key": "hip_flexor_sensitivity",
+          "compatibility": "modify",
+          "modification": "Shorten the leg lever."
+        }
+      ],
+      "progressions": [
+        "Add controlled arm variations or props without changing trunk control."
+      ],
+      "regressions": [
+        "Teaser 2.",
+        "Teaser 1.",
+        "Bent-knee Teaser."
+      ],
+      "alternatives": [
+        "Teaser 1",
+        "Open Leg Rocker"
+      ]
+    },
+    {
+      "name": "Hip Circles",
+      "aliases": [
+        "Hip Circle",
+        "Hip Circles"
+      ],
+      "description": "Seated, arm-supported exercise circling both legs together while the trunk remains lifted and stable.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "abdominals",
+        "obliques",
+        "hips",
+        "shoulder_stabilizers"
+      ],
+      "position": "seated",
+      "possiple_equipment": [
+        "mat"
+      ],
+      "intensity": 5,
+      "min_duration_seconds": 30,
+      "max_duration_seconds": 55,
+      "min_reps": 3,
+      "max_reps": 3,
+      "teaching_cues": [
+        "Press the arms into the mat to keep the chest lifted.",
+        "Circle the legs together from the hips.",
+        "Keep the trunk as still as possible.",
+        "Make the reverse circle equal in size and control."
+      ],
+      "common_mistakes": [
+        "Collapsing into the shoulders.",
+        "Rocking the torso with the legs.",
+        "Separating or bending the legs."
+      ],
+      "pilates_principles": [
+        "control",
+        "precision",
+        "centering",
+        "flow"
+      ],
+      "restrictions": [
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "modify",
+          "modification": "Use a more upright or forearm-supported variation."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "Reduce circle size or use bent knees."
+        },
+        {
+          "key": "hip_sensitivity",
+          "compatibility": "modify",
+          "modification": "Use smaller circles."
+        }
+      ],
+      "progressions": [
+        "Increase circle size without trunk movement."
+      ],
+      "regressions": [
+        "Bent-knee hip circles.",
+        "Low Corkscrew."
+      ],
+      "alternatives": [
+        "Corkscrew w/Hips over",
+        "Single Leg Circles"
+      ]
+    },
+    {
+      "name": "Swimming",
+      "aliases": [
+        "Swimming"
+      ],
+      "description": "Prone alternating arm-and-leg lift pattern emphasizing long spinal extension, posterior-chain endurance, and rhythmic coordination.",
+      "difficulty_level": "intermediate",
+      "body_focus": [
+        "back_extensors",
+        "glutes",
+        "shoulders",
+        "posterior_chain"
+      ],
+      "position": "prone",
+      "possiple_equipment": [
+        "mat",
+        "small_ball"
+      ],
+      "intensity": 4,
+      "min_duration_seconds": 30,
+      "max_duration_seconds": 60,
+      "min_reps": 3,
+      "max_reps": 3,
+      "teaching_cues": [
+        "Reach the limbs long before lifting them.",
+        "Keep the abdominals supportive and the pelvis stable.",
+        "Alternate opposite arm and leg with a steady rhythm.",
+        "Keep the neck long and gaze down."
+      ],
+      "common_mistakes": [
+        "Overarching the lower back.",
+        "Lifting the head too high.",
+        "Moving from the elbows and knees instead of the shoulders and hips."
+      ],
+      "pilates_principles": [
+        "flow",
+        "control",
+        "breathing",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "Lift one limb at a time or keep the range small."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "modify",
+          "modification": "Reduce arm lift or keep the arms alongside the body."
+        },
+        {
+          "key": "neck_sensitivity",
+          "compatibility": "modify",
+          "modification": "Keep the forehead closer to the mat and the cervical spine neutral."
+        }
+      ],
+      "progressions": [
+        "Increase tempo and limb reach without losing trunk stability."
+      ],
+      "regressions": [
+        "Opposite arm/leg lifts one pair at a time.",
+        "Prone arm or leg lifts separately."
+      ],
+      "alternatives": [
+        "Single Leg Kicks",
+        "Neck Roll/Swan"
+      ]
+    },
+    {
+      "name": "Leg Pull Front",
+      "aliases": [
+        "Leg Pull Front",
+        "Front Leg Pull"
+      ],
+      "description": "Plank-based exercise alternating straight-leg lifts while maintaining a long, stable trunk and shoulder girdle.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "core",
+        "shoulders",
+        "glutes",
+        "hamstrings",
+        "triceps"
+      ],
+      "position": "plank",
+      "possiple_equipment": [
+        "mat",
+        "small_ball"
+      ],
+      "intensity": 5,
+      "min_duration_seconds": 30,
+      "max_duration_seconds": 55,
+      "min_reps": 3,
+      "max_reps": 3,
+      "teaching_cues": [
+        "Maintain one long line from head to heels.",
+        "Press the floor away through the shoulder girdle.",
+        "Lift the leg from the hip without rotating the pelvis.",
+        "Keep the abdominals active as the leg changes."
+      ],
+      "common_mistakes": [
+        "Sagging or piking the pelvis.",
+        "Collapsing into the shoulders.",
+        "Rotating the pelvis during the leg lift."
+      ],
+      "pilates_principles": [
+        "control",
+        "centering",
+        "precision"
+      ],
+      "restrictions": [
+        {
+          "key": "wrist_sensitivity",
+          "compatibility": "modify",
+          "modification": "Use forearm support or an approved wrist-neutral variation."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "modify",
+          "modification": "Reduce load or use quadruped leg reach."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "Use knees-down plank or quadruped."
+        }
+      ],
+      "progressions": [
+        "Increase leg lift or add controlled rocking without losing plank alignment."
+      ],
+      "regressions": [
+        "Knees-down plank with leg reach.",
+        "Quadruped leg reach."
+      ],
+      "alternatives": [
+        "Push Ups",
+        "Swimming"
+      ]
+    },
+    {
+      "name": "Leg Pull Back",
+      "aliases": [
+        "Leg Pull Back",
+        "Back Leg Pull"
+      ],
+      "description": "Reverse-support exercise lifting one straight leg at a time while the hips remain elevated and the shoulder girdle supports the trunk.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "glutes",
+        "hamstrings",
+        "shoulders",
+        "triceps",
+        "core"
+      ],
+      "position": "reverse_support",
+      "possiple_equipment": [
+        "mat"
+      ],
+      "intensity": 5,
+      "min_duration_seconds": 30,
+      "max_duration_seconds": 55,
+      "min_reps": 3,
+      "max_reps": 3,
+      "teaching_cues": [
+        "Press the floor away and keep the chest open.",
+        "Maintain hip height as one leg lifts.",
+        "Reach long through the supporting leg and heel.",
+        "Keep the neck neutral rather than dropping the head back."
+      ],
+      "common_mistakes": [
+        "Hips dropping during the leg lift.",
+        "Collapsing into the shoulders or wrists.",
+        "Hyperextending the neck."
+      ],
+      "pilates_principles": [
+        "control",
+        "precision",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "wrist_sensitivity",
+          "compatibility": "modify",
+          "modification": "Use a forearm-supported reverse plank or alternate posterior-chain exercise."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "modify",
+          "modification": "Use Shoulder Bridge instead."
+        },
+        {
+          "key": "neck_sensitivity",
+          "compatibility": "modify",
+          "modification": "Keep the head neutral and reduce support demand."
+        }
+      ],
+      "progressions": [
+        "Increase leg lift or sustain the reverse support longer."
+      ],
+      "regressions": [
+        "Bent-knee reverse tabletop.",
+        "Shoulder Bridge."
+      ],
+      "alternatives": [
+        "Shoulder Bridge",
+        "Leg Pull Front"
+      ]
+    },
+    {
+      "name": "Kneeling Side Kicks",
+      "aliases": [
+        "Kneeling Side Kick",
+        "Kneeling Side Kicks"
+      ],
+      "description": "Kneeling side-support exercise moving the free leg through front/back or lift patterns while the trunk stays stable over one supporting arm and knee.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "hips",
+        "glutes",
+        "obliques",
+        "shoulder_stabilizers",
+        "core"
+      ],
+      "position": "kneeling",
+      "possiple_equipment": [
+        "mat",
+        "small_ball"
+      ],
+      "intensity": 5,
+      "min_duration_seconds": 35,
+      "max_duration_seconds": 65,
+      "min_reps": 4,
+      "max_reps": 4,
+      "teaching_cues": [
+        "Press the supporting hand and knee firmly into the mat.",
+        "Keep the trunk long and lifted away from the supporting shoulder.",
+        "Move the free leg from the hip without shifting the pelvis.",
+        "Maintain a stable side-body line."
+      ],
+      "common_mistakes": [
+        "Collapsing into the supporting shoulder.",
+        "Rotating the pelvis.",
+        "Leaning the trunk to increase leg range."
+      ],
+      "pilates_principles": [
+        "control",
+        "precision",
+        "centering",
+        "balance"
+      ],
+      "restrictions": [
+        {
+          "key": "wrist_sensitivity",
+          "compatibility": "modify",
+          "modification": "Use forearm support or a side-lying variation."
+        },
+        {
+          "key": "knee_sensitivity",
+          "compatibility": "modify",
+          "modification": "Pad the supporting knee or use side-lying kicks."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "modify",
+          "modification": "Use Side Kicks in side lying."
+        }
+      ],
+      "progressions": [
+        "Increase leg range and speed without changing trunk alignment."
+      ],
+      "regressions": [
+        "Side Kicks - Front/Back.",
+        "Quadruped leg reach."
+      ],
+      "alternatives": [
+        "Side Kicks - Front/Back",
+        "Side Bend"
+      ]
+    },
+    {
+      "name": "Mermaid",
+      "aliases": [
+        "Mermaid Stretch",
+        "Mermaid"
+      ],
+      "description": "Seated side-bending exercise emphasizing lateral spinal mobility, axial length, and controlled return from a side-flexed position.",
+      "difficulty_level": "intermediate",
+      "body_focus": [
+        "side_body",
+        "spine",
+        "obliques",
+        "shoulders"
+      ],
+      "position": "seated",
+      "possiple_equipment": [
+        "mat",
+        "small_ball",
+        "yoga_block"
+      ],
+      "intensity": 2,
+      "min_duration_seconds": 30,
+      "max_duration_seconds": 60,
+      "min_reps": 3,
+      "max_reps": 3,
+      "teaching_cues": [
+        "Grow tall before moving into side bend.",
+        "Keep both sides of the waist long as you arc.",
+        "Anchor the pelvis as much as the leg position allows.",
+        "Return through axial length rather than collapsing."
+      ],
+      "common_mistakes": [
+        "Rotating instead of side bending.",
+        "Shrugging the shoulder toward the ear.",
+        "Forcing the hip down at the expense of spinal length."
+      ],
+      "pilates_principles": [
+        "breathing",
+        "control",
+        "precision",
+        "flow"
+      ],
+      "restrictions": [
+        {
+          "key": "knee_or_hip_sensitivity",
+          "compatibility": "modify",
+          "modification": "Choose a more comfortable seated leg position or sit on a support."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "modify",
+          "modification": "Keep the top arm lower."
+        },
+        {
+          "key": "spinal_side_bend_restriction",
+          "compatibility": "avoid",
+          "modification": "Use axial-length breathing without side flexion."
+        }
+      ],
+      "progressions": [
+        "Add a deeper side-support transition when appropriate."
+      ],
+      "regressions": [
+        "Cross-legged seated side bend.",
+        "Reduce the side-bend range."
+      ],
+      "alternatives": [
+        "Side Bend",
+        "Spine Twist"
+      ]
+    },
+    {
+      "name": "Side Bend",
+      "aliases": [
+        "Side Bend",
+        "Side Lift"
+      ],
+      "description": "Advanced side-support exercise lifting the pelvis into a long lateral arc and lowering with control.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "obliques",
+        "shoulders",
+        "hips",
+        "side_body",
+        "core"
+      ],
+      "position": "side_support",
+      "possiple_equipment": [
+        "mat"
+      ],
+      "intensity": 5,
+      "min_duration_seconds": 25,
+      "max_duration_seconds": 50,
+      "min_reps": 3,
+      "max_reps": 3,
+      "teaching_cues": [
+        "Press the supporting hand firmly into the mat.",
+        "Lift the underside waist and pelvis as one connected line.",
+        "Reach through the top arm and legs to create length.",
+        "Lower with control without collapsing into the shoulder."
+      ],
+      "common_mistakes": [
+        "Sinking into the supporting shoulder.",
+        "Letting the hips rotate.",
+        "Using momentum to lift."
+      ],
+      "pilates_principles": [
+        "control",
+        "precision",
+        "centering",
+        "balance"
+      ],
+      "restrictions": [
+        {
+          "key": "wrist_sensitivity",
+          "compatibility": "modify",
+          "modification": "Use forearm side support or Mermaid."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "modify",
+          "modification": "Use Mermaid or a supported side-bend variation."
+        },
+        {
+          "key": "balance_difficulty",
+          "compatibility": "modify",
+          "modification": "Keep one knee down or use a seated variation."
+        }
+      ],
+      "progressions": [
+        "Increase the arc and add controlled transitions into Twist."
+      ],
+      "regressions": [
+        "Mermaid.",
+        "Knee-supported side plank."
+      ],
+      "alternatives": [
+        "Mermaid",
+        "Snake/Twist"
+      ]
+    },
+    {
+      "name": "Snake/Twist",
+      "aliases": [
+        "Snake Twist",
+        "Snake and Twist",
+        "Snake/Twist"
+      ],
+      "description": "Advanced side-support sequence combining pike, plank-like extension, rotation, and side-body control.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "core",
+        "obliques",
+        "shoulders",
+        "spine",
+        "hips"
+      ],
+      "position": "side_support",
+      "possiple_equipment": [
+        "mat"
+      ],
+      "intensity": 5,
+      "min_duration_seconds": 35,
+      "max_duration_seconds": 70,
+      "min_reps": 3,
+      "max_reps": 3,
+      "teaching_cues": [
+        "Press strongly through both supporting points before moving.",
+        "Lift the pelvis from the center and keep the shoulder girdle organized.",
+        "Sequence the rotation through the trunk rather than forcing the arm.",
+        "Move between pike, extension, and twist with control."
+      ],
+      "common_mistakes": [
+        "Collapsing into the supporting shoulder or wrist.",
+        "Rotating the pelvis without trunk control.",
+        "Moving too quickly through the transition."
+      ],
+      "pilates_principles": [
+        "control",
+        "flow",
+        "precision",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "wrist_sensitivity",
+          "compatibility": "modify",
+          "modification": "Use forearm-supported preparation or Side Bend/Mermaid."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "avoid",
+          "modification": "Choose a lower-load side-body exercise unless specifically cleared."
+        },
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "Reduce extension and rotation range."
+        }
+      ],
+      "progressions": [
+        "Increase fluidity and range while keeping shoulder and trunk control."
+      ],
+      "regressions": [
+        "Side Bend.",
+        "Mermaid.",
+        "Knee-supported snake preparation."
+      ],
+      "alternatives": [
+        "Side Bend",
+        "Mermaid"
+      ]
+    },
+    {
+      "name": "Boomerang",
+      "aliases": [
+        "The Boomerang"
+      ],
+      "description": "Advanced flowing sequence combining rollover, leg crossing, teaser balance, arm sweep, and forward spinal flexion.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "abdominals",
+        "spine",
+        "hamstrings",
+        "shoulders",
+        "balance"
+      ],
+      "position": "seated_to_inverted",
+      "possiple_equipment": [
+        "mat"
+      ],
+      "intensity": 5,
+      "min_duration_seconds": 45,
+      "max_duration_seconds": 80,
+      "min_reps": 3,
+      "max_reps": 3,
+      "teaching_cues": [
+        "Keep the sequence continuous but controlled.",
+        "Use the abdominals to roll overhead rather than momentum.",
+        "Find a stable Teaser before moving the arms.",
+        "Maintain even leg crossing and spinal articulation."
+      ],
+      "common_mistakes": [
+        "Rushing the transitions.",
+        "Loading the neck during the rollover.",
+        "Losing balance in the teaser phase."
+      ],
+      "pilates_principles": [
+        "flow",
+        "control",
+        "precision",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "neck_or_cervical_sensitivity",
+          "compatibility": "avoid",
+          "modification": "Use a non-inverted flowing sequence."
+        },
+        {
+          "key": "spinal_flexion_restriction",
+          "compatibility": "avoid",
+          "modification": "Choose a neutral-spine sequence."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "modify",
+          "modification": "Reduce or simplify the arm sweep."
+        }
+      ],
+      "progressions": [
+        "Increase continuity and precision between phases."
+      ],
+      "regressions": [
+        "Practice Roll Over and Teaser separately.",
+        "Simplified Boomerang without full rollover."
+      ],
+      "alternatives": [
+        "Teaser 1",
+        "Roll Over"
+      ]
+    },
+    {
+      "name": "Seal",
+      "aliases": [
+        "The Seal"
+      ],
+      "description": "Seated rolling exercise in a rounded shape with the soles together, adding controlled claps before rolling back and returning to balance.",
+      "difficulty_level": "intermediate",
+      "body_focus": [
+        "abdominals",
+        "spine",
+        "balance",
+        "hips"
+      ],
+      "position": "seated",
+      "possiple_equipment": [
+        "mat"
+      ],
+      "intensity": 3,
+      "min_duration_seconds": 35,
+      "max_duration_seconds": 65,
+      "min_reps": 6,
+      "max_reps": 6,
+      "teaching_cues": [
+        "Maintain the rounded shape and balance behind the sit bones.",
+        "Clap the feet without losing trunk position.",
+        "Roll to the shoulder blades rather than the neck.",
+        "Return to the same balanced shape with abdominal control."
+      ],
+      "common_mistakes": [
+        "Throwing the legs for momentum.",
+        "Rolling onto the neck.",
+        "Losing the C-curve during the claps."
+      ],
+      "pilates_principles": [
+        "flow",
+        "control",
+        "centering",
+        "balance"
+      ],
+      "restrictions": [
+        {
+          "key": "neck_sensitivity",
+          "compatibility": "modify",
+          "modification": "Use a smaller rolling range."
+        },
+        {
+          "key": "spinal_flexion_restriction",
+          "compatibility": "avoid",
+          "modification": "Choose a non-rolling balance exercise."
+        },
+        {
+          "key": "hip_or_knee_sensitivity",
+          "compatibility": "modify",
+          "modification": "Adjust the leg position if the diamond shape is uncomfortable."
+        }
+      ],
+      "progressions": [
+        "Stand up from the final repetition when appropriate to the sequence."
+      ],
+      "regressions": [
+        "Rolling Like a Ball.",
+        "Seal balance without rolling."
+      ],
+      "alternatives": [
+        "Rolling Like a Ball",
+        "Crab"
+      ]
+    },
+    {
+      "name": "Crab",
+      "aliases": [
+        "The Crab"
+      ],
+      "description": "Advanced rolling exercise with crossed legs that combines spinal rolling, leg change, and controlled weight shift toward the crown of the head.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "abdominals",
+        "spine",
+        "balance",
+        "hips"
+      ],
+      "position": "seated",
+      "possiple_equipment": [
+        "mat"
+      ],
+      "intensity": 4,
+      "min_duration_seconds": 35,
+      "max_duration_seconds": 65,
+      "min_reps": 3,
+      "max_reps": 6,
+      "teaching_cues": [
+        "Maintain a compact rounded shape through the roll.",
+        "Change the leg cross with control rather than momentum.",
+        "Keep the cervical spine protected and the weight carefully distributed.",
+        "Use the abdominals to return to balance."
+      ],
+      "common_mistakes": [
+        "Placing excessive weight on the head or neck.",
+        "Losing the compact shape.",
+        "Rushing the leg-cross change."
+      ],
+      "pilates_principles": [
+        "control",
+        "precision",
+        "flow",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "neck_or_cervical_sensitivity",
+          "compatibility": "avoid",
+          "modification": "Use Seal or Rolling Like a Ball instead."
+        },
+        {
+          "key": "spinal_flexion_restriction",
+          "compatibility": "avoid",
+          "modification": "Choose a non-rolling alternative."
+        },
+        {
+          "key": "knee_or_hip_sensitivity",
+          "compatibility": "modify",
+          "modification": "Use a comfortable leg position or substitute Seal."
+        }
+      ],
+      "progressions": [
+        "Increase smoothness of the leg change and transitions while maintaining cervical safety."
+      ],
+      "regressions": [
+        "Seal.",
+        "Rolling Like a Ball."
+      ],
+      "alternatives": [
+        "Seal",
+        "Rolling Like a Ball"
+      ]
+    },
+    {
+      "name": "Rocking",
+      "aliases": [
+        "The Rocking",
+        "Rocking"
+      ],
+      "description": "Prone advanced extension exercise holding the ankles and rocking the whole body over the abdomen while maintaining a strong bow shape.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "back_extensors",
+        "glutes",
+        "hamstrings",
+        "shoulders",
+        "quadriceps"
+      ],
+      "position": "prone",
+      "possiple_equipment": [
+        "mat",
+        "resistance_band"
+      ],
+      "intensity": 5,
+      "min_duration_seconds": 30,
+      "max_duration_seconds": 55,
+      "min_reps": 5,
+      "max_reps": 5,
+      "teaching_cues": [
+        "Kick the feet into the hands to open the chest and create the bow.",
+        "Lengthen through the spine rather than compressing the low back.",
+        "Keep the knees from spreading excessively.",
+        "Let the rocking come from the changing balance of the bow shape."
+      ],
+      "common_mistakes": [
+        "Forcing lumbar extension.",
+        "Pulling the feet with the arms instead of kicking into the hands.",
+        "Knees separating widely."
+      ],
+      "pilates_principles": [
+        "control",
+        "flow",
+        "centering",
+        "breathing"
+      ],
+      "restrictions": [
+        {
+          "key": "lower_back_sensitivity",
+          "compatibility": "modify",
+          "modification": "Use Swan or a smaller prone extension."
+        },
+        {
+          "key": "knee_sensitivity",
+          "compatibility": "modify",
+          "modification": "Reduce knee flexion or use a strap; avoid forcing the ankle hold."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "modify",
+          "modification": "Use a strap or choose Swan/Swimming."
+        }
+      ],
+      "progressions": [
+        "Increase smooth rocking amplitude without changing the bow shape."
+      ],
+      "regressions": [
+        "Single-leg rocking preparation.",
+        "Swan.",
+        "Double Leg Kicks."
+      ],
+      "alternatives": [
+        "Neck Roll/Swan",
+        "Swimming"
+      ]
+    },
+    {
+      "name": "Control Balance",
+      "aliases": [
+        "Balance Control",
+        "Roll Over Balance Control",
+        "Control Balance"
+      ],
+      "description": "Advanced inverted balance transitioning from an overhead position to alternating long leg reaches while maintaining shoulder-supported pelvic control.",
+      "difficulty_level": "advanced",
+      "body_focus": [
+        "abdominals",
+        "hamstrings",
+        "hips",
+        "shoulder_stabilizers",
+        "balance"
+      ],
+      "position": "inverted",
+      "possiple_equipment": [
+        "mat"
+      ],
+      "intensity": 5,
+      "min_duration_seconds": 30,
+      "max_duration_seconds": 55,
+      "min_reps": 3,
+      "max_reps": 3,
+      "teaching_cues": [
+        "Keep weight on the shoulders and upper back, never the neck.",
+        "Maintain a lifted pelvis as the legs exchange.",
+        "Reach one leg long toward the mat while the other extends upward.",
+        "Switch the legs with control rather than momentum."
+      ],
+      "common_mistakes": [
+        "Loading the cervical spine.",
+        "Dropping the pelvis during the switch.",
+        "Grabbing or pulling the leg aggressively."
+      ],
+      "pilates_principles": [
+        "control",
+        "precision",
+        "balance",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "neck_or_cervical_sensitivity",
+          "compatibility": "avoid",
+          "modification": "Use a non-inverted alternative."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "avoid",
+          "modification": "Choose low scissors or another non-inverted exercise."
+        },
+        {
+          "key": "hamstring_tightness",
+          "compatibility": "modify",
+          "modification": "Reduce the leg split."
+        }
+      ],
+      "progressions": [
+        "Increase range and fluidity while preserving shoulder-supported stability."
+      ],
+      "regressions": [
+        "High Scissors.",
+        "Roll Over."
+      ],
+      "alternatives": [
+        "High Scissors",
+        "Jackknife"
+      ]
+    },
+    {
+      "name": "Push Ups",
+      "aliases": [
+        "Push Up",
+        "Push-Ups",
+        "Pilates Push Up"
+      ],
+      "description": "Standing-to-plank sequence that rolls down, walks the hands to plank, performs narrow-elbow push-ups, and returns to standing through spinal articulation.",
+      "difficulty_level": "intermediate",
+      "body_focus": [
+        "triceps",
+        "chest",
+        "shoulders",
+        "core",
+        "spine"
+      ],
+      "position": "standing_to_plank",
+      "possiple_equipment": [
+        "mat",
+        "yoga_block"
+      ],
+      "intensity": 4,
+      "min_duration_seconds": 40,
+      "max_duration_seconds": 80,
+      "min_reps": 3,
+      "max_reps": 10,
+      "teaching_cues": [
+        "Articulate through the spine on the roll down and up.",
+        "Walk the hands to a stable plank with shoulders over wrists.",
+        "Keep the elbows tracking toward the ribs during the push-up.",
+        "Maintain one long trunk line without sagging or piking."
+      ],
+      "common_mistakes": [
+        "Collapsing into the shoulders.",
+        "Letting the pelvis sag during push-ups.",
+        "Using momentum on the roll up."
+      ],
+      "pilates_principles": [
+        "control",
+        "flow",
+        "precision",
+        "centering"
+      ],
+      "restrictions": [
+        {
+          "key": "wrist_sensitivity",
+          "compatibility": "modify",
+          "modification": "Use elevated hands, handles, or a forearm-based alternative."
+        },
+        {
+          "key": "shoulder_sensitivity",
+          "compatibility": "modify",
+          "modification": "Reduce push-up depth or use knees-down/elevated support."
+        },
+        {
+          "key": "spinal_flexion_restriction",
+          "compatibility": "modify",
+          "modification": "Use a hip hinge or enter plank without a loaded roll down."
+        }
+      ],
+      "progressions": [
+        "Increase push-up repetitions or reduce support while maintaining alignment."
+      ],
+      "regressions": [
+        "Knees-down push-up.",
+        "Elevated push-up.",
+        "Walkout without push-ups."
+      ],
+      "alternatives": [
+        "Leg Pull Front",
+        "Standing roll down"
+      ]
+    }
+  ]

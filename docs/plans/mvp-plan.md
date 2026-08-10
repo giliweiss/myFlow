@@ -13,24 +13,78 @@
 
 **Scope:** Single instructor, manual lessons, mat Pilates only, group-level tracking (no individual participants).
 
-**Technology:** Free tier (Expo, Supabase, FastAPI + Vercel). LLM generation deferred to Phase 3+.
+**Technology:** Free tier (Expo, Supabase, FastAPI on Vercel). LLM generation deferred to Phase 3+.
 
 ---
 
 ## Architecture
 
+### Responsibility Split
+
+**Expo / React Native**
+- UI rendering
+- User interactions
+- Supabase Auth (login/signup/session)
+- Call FastAPI for all product operations
+- No direct Supabase CRUD (except auth)
+
+**FastAPI (Main Backend)**
+- Authorization & ownership verification
+- Groups CRUD
+- Lessons CRUD + history
+- Lesson reviews
+- Progress calculations
+- Exercise retrieval + filtering (internal service)
+- Lesson generation orchestration (Phase 3)
+- LLM integration (Phase 3)
+- Validation (internal service)
+
+**Supabase**
+- JWT Authentication
+- PostgreSQL storage
+- RLS policies (defense in depth)
+
+### Data Flow
+
 ```
-Mobile (Expo/React Native + TypeScript)
-  ├─ Supabase JS Client  → CRUD for groups, lessons, reviews, exercises
-  └─ FastAPI Client      → Exercise filtering, lesson validation
-
-FastAPI (Vercel / Railway)
-  └─ Supabase Postgres
-
-Supabase Auth (JWT)
+Mobile (Expo)
+  │ (product-level API calls + Authorization header)
+  └─ FastAPI
+       ├─ verify JWT, load group, check ownership
+       ├─ business logic (filter, validate, save)
+       └─ Supabase (auth + database)
 ```
 
-**Key principle:** Groups are the hub. All lesson creation/viewing happens within group context. Group history, level, equipment, and considerations automatically passed as context.
+---
+
+## API Design
+
+### Group Endpoints
+```
+GET    /groups                          → list instructor's groups
+POST   /groups                          → create group
+GET    /groups/{group_id}               → get group detail
+PATCH  /groups/{group_id}               → update group
+
+GET    /groups/{group_id}/lessons       → list group's lessons
+POST   /groups/{group_id}/lessons/generate  → generate lesson (Phase 3+)
+
+GET    /groups/{group_id}/progress      → get group progress summary
+```
+
+### Lesson Endpoints
+```
+GET    /lessons/{lesson_id}             → get lesson detail
+PATCH  /lessons/{lesson_id}             → update lesson (status, etc)
+
+POST   /lessons/{lesson_id}/exercises/{item_id}/replace  → swap exercise in lesson
+POST   /lessons/{lesson_id}/review      → submit post-lesson review
+```
+
+### Health Check
+```
+GET    /health → {"status": "ok"}
+```
 
 ---
 
@@ -96,121 +150,101 @@ group_exercise_history (aggregated from taught lessons)
 
 ---
 
-## Project Structure
+## Mobile API Client
 
-```
-myFlow/
-├── docs/
-│   └── mvp-plan.md
-│
-├── mobile/
-│   ├── app/                       # Expo Router (file-based)
-│   │   ├── (auth)/
-│   │   │   ├── login.tsx
-│   │   │   └── signup.tsx
-│   │   ├── (tabs)/
-│   │   │   └── index.tsx          # Groups list (home)
-│   │   ├── groups/
-│   │   │   ├── new.tsx
-│   │   │   └── [groupId]/
-│   │   │       ├── index.tsx      # Group hub
-│   │   │       ├── settings.tsx
-│   │   │       ├── history.tsx
-│   │   │       ├── progress.tsx
-│   │   │       └── lessons/
-│   │   │           ├── new.tsx
-│   │   │           └── [lessonId]/
-│   │   │               ├── index.tsx
-│   │   │               └── review.tsx
-│   │   └── _layout.tsx
-│   ├── src/
-│   │   ├── features/              # Feature modules
-│   │   │   ├── auth/
-│   │   │   ├── groups/
-│   │   │   ├── lessons/
-│   │   │   └── progress/
-│   │   ├── components/
-│   │   │   └── ui/
-│   │   ├── lib/
-│   │   │   ├── api-client.ts
-│   │   │   ├── supabase.ts
-│   │   │   └── utils.ts
-│   │   └── types/
-│   ├── app.json
-│   ├── package.json
-│   └── tsconfig.json
-│
-├── backend/
-│   ├── app/
-│   │   ├── main.py
-│   │   ├── api/
-│   │   │   ├── dependencies.py
-│   │   │   └── routers/
-│   │   │       ├── groups.py
-│   │   │       ├── lessons.py
-│   │   │       ├── exercises.py
-│   │   │       └── reviews.py
-│   │   ├── core/
-│   │   │   ├── config.py
-│   │   │   └── auth.py
-│   │   ├── db/
-│   │   │   ├── session.py
-│   │   │   └── models/
-│   │   ├── schemas/
-│   │   ├── repositories/
-│   │   ├── services/
-│   │   │   ├── exercise_filter.py
-│   │   │   ├── lesson_validator.py
-│   │   │   ├── llm_service.py
-│   │   │   └── progress_service.py
-│   │   └── data/
-│   │       └── exercises.json
-│   ├── scripts/
-│   │   └── seed_exercises.py
-│   ├── tests/
-│   ├── alembic/
-│   ├── pyproject.toml
-│   ├── .env.example
-│   └── Dockerfile
-│
-├── .env.example
-├── .gitignore
-└── README.md
+**Product-level operations only** (no internal `/filter` or `/validate` calls):
+
+```typescript
+// Groups
+apiClient.groups.getGroups(): Group[]
+apiClient.groups.getGroup(id: string): Group
+apiClient.groups.createGroup(data: CreateGroupInput): Group
+apiClient.groups.updateGroup(id: string, data: UpdateGroupInput): Group
+
+// Lessons
+apiClient.lessons.getGroupLessons(groupId: string): Lesson[]
+apiClient.lessons.generateLesson(groupId: string, params: GenerateLessonParams): Lesson
+apiClient.lessons.getLesson(id: string): Lesson
+apiClient.lessons.updateLesson(id: string, data: UpdateLessonInput): Lesson
+
+// Lesson editing
+apiClient.lessons.replaceExercise(lessonId: string, itemId: string, newExerciseId: string): Lesson
+apiClient.lessons.submitReview(lessonId: string, review: ReviewInput): Review
+
+// Progress
+apiClient.progress.getGroupProgress(groupId: string): ProgressSummary
 ```
 
 ---
 
-## API Design
+## Project Structure
 
-### FastAPI Endpoints
-
+### Backend
 ```
-POST /exercises/filter
-  Body: { group_id, level, available_equipment[], group_considerations[] }
-  Returns: { exercises[], restrictions }
-  Purpose: Get filtered exercise pool for lesson builder
-
-POST /lessons/validate
-  Body: { lesson_exercises[], requested_duration_minutes }
-  Returns: { valid: bool, issues: [], total_seconds: int }
-  Purpose: Validate lesson before saving
-
-POST /exercises/seed
-  Body: exercises data (CSV/JSON)
-  Purpose: Seed exercise database (admin)
-
-GET /health
+backend/
+├── app/
+│   ├── main.py                 # FastAPI app
+│   ├── api/
+│   │   ├── dependencies.py
+│   │   └── routers/
+│   │       ├── health.py       # GET /health
+│   │       ├── groups.py       # Groups CRUD + lessons
+│   │       └── lessons.py      # Lesson detail + reviews
+│   ├── core/
+│   │   ├── config.py           # Settings
+│   │   └── auth.py             # JWT verification
+│   ├── db/
+│   │   ├── session.py          # Supabase client factory
+│   │   └── models.py           # Data models
+│   ├── repositories/           # Data access layer
+│   │   ├── base_repo.py
+│   │   ├── group_repo.py
+│   │   ├── lesson_repo.py
+│   │   ├── review_repo.py
+│   │   └── exercise_repo.py
+│   ├── services/               # Business logic
+│   │   ├── exercise_filter.py       # Deterministic filtering
+│   │   ├── lesson_validator.py      # Validation
+│   │   ├── llm_service.py           # LLM (Phase 3)
+│   │   ├── lesson_generator.py      # Orchestration
+│   │   └── progress_service.py      # Progress calculations
+│   ├── schemas/                # Pydantic models
+│   │   ├── group.py
+│   │   ├── lesson.py
+│   │   ├── review.py
+│   │   └── exercise.py
+│   └── data/
+│       └── exercises.json
+├── tests/
+├── scripts/
+├── pyproject.toml
+└── Dockerfile
 ```
 
-### Supabase (Direct from Mobile, all CRUD)
-
-Tables with full read/write:
-- `instructor_profiles`, `groups`, `lessons`, `lesson_exercises`, `lesson_reviews`
-
-Tables with read-only:
-- `exercises`, `exercise_restrictions`, `exercise_relations`, `group_exercise_history` (view)
-
-**RLS:** All tables filtered by `auth.uid()` matching `instructor_profiles.id` (cascade to groups, then to lessons via group).
+### Mobile
+```
+mobile/
+├── app/                        # Expo Router (file-based)
+│   ├── (auth)/
+│   ├── (tabs)/
+│   ├── groups/
+│   └── _layout.tsx
+├── src/
+│   ├── features/              # Feature modules
+│   │   ├── auth/
+│   │   ├── groups/
+│   │   ├── lessons/
+│   │   └── progress/
+│   ├── components/
+│   │   └── ui/
+│   ├── lib/
+│   │   ├── api-client.ts      # Product-level API
+│   │   ├── supabase.ts        # Auth-only client
+│   │   └── utils.ts
+│   └── types/
+│       └── database.types.ts
+└── package.json
+```
 
 ---
 
@@ -219,37 +253,37 @@ Tables with read-only:
 ### 1. Onboarding
 1. Sign up (Supabase Auth)
 2. Create `instructor_profiles` (display_name)
-3. Redirect to Groups List (empty state)
+3. Redirect to Groups List
 
 ### 2. Create Group
 1. Tap "New Group"
 2. Fill: name, level, studio_name, weekday, start_time, typical_duration_minutes
 3. Set: goals[], available_equipment[], group_considerations[]
-4. Save → `groups` row
+4. Save → FastAPI POST /groups → Supabase
 
 ### 3. Create Lesson (Manual)
 1. Open group → "Create Lesson"
 2. Pre-filled: level, duration, equipment
 3. Adjust: duration, intensity_target, goals, notes
-4. FastAPI `/exercises/filter` → browse exercises (hidden/flagged by restrictions)
-5. Drag-and-drop into warmup/main/cooldown
-6. FastAPI `/lessons/validate` → check duration
+4. Browse exercises (filtered by FastAPI `/exercises/filter` internally)
+5. Drag into warmup/main/cooldown sections
+6. Validate (FastAPI internal validation)
 7. Save as `draft` or `planned`
 
 ### 4. Mark as Taught
 1. Open lesson from history
 2. Set `actual_duration_minutes` (optional)
-3. For each exercise: set `completion_status` (completed/shortened/skipped)
-4. Save → `status` = `taught`, `taught_at` recorded
+3. For each exercise: set `completion_status`
+4. Save → PATCH /lessons/{id} → `status` = `taught`
 
 ### 5. Add Review
-1. After teaching or anytime from lesson detail
+1. After teaching (or anytime from lesson detail)
 2. Fill: `perceived_difficulty`, `group_response`, `goals_achieved[]`, issues, notes
-3. Save → `lesson_reviews` row
+3. Save → POST /lessons/{id}/review
 
 ### 6. View Progress
 1. Open group → "Progress"
-2. Show: difficulty trend, group_response pattern, goals covered, exercise exposure, completion quality
+2. Show: difficulty trend, group_response pattern, goals, exercise exposure, completion quality
 
 ---
 
@@ -258,16 +292,19 @@ Tables with read-only:
 ### In ✓
 - `instructor_profiles` linked to auth.users
 - Groups CRUD (+ studio, weekday, time, considerations)
-- Exercises database (seeded, `exercise_restrictions`, `exercise_relations`)
+- Exercises database (seeded)
+  - `exercise_restrictions` (structured)
+  - `exercise_relations` (progressions/regressions)
 - Manual lesson creation with section builder
-- Lesson status: draft/planned/taught/cancelled
-- Per-exercise completion tracking + actual durations
+- Lesson status tracking (draft → planned → taught → cancelled)
+- Per-exercise completion tracking
 - `lesson_reviews` (post-lesson feedback)
 - Group progress screen (text-based, multi-dimensional)
 - `group_exercise_history` view
-- BFF: Supabase CRUD + FastAPI filter/validate
+- FastAPI as main backend
+- Supabase auth + database only
+- Authorization on all endpoints
 - RLS from day one
-- Free tier (Vercel/Supabase)
 
 ### Out ✗ (Phase 3+)
 - LLM lesson generation
@@ -275,29 +312,21 @@ Tables with read-only:
 - Individual participant profiles
 - Multi-instructor / billing
 - Custom exercises by instructor
-- Reformer/apparatus Pilates
-- Scheduling/calendar
+- Reformer / apparatus Pilates
+- Scheduling / calendar management
 - Payments
 - Medical tracking
-- Lesson export/PDF
+- Lesson export / PDF
 - Notifications
 
 ---
 
 ## Phased Development
 
-### Phase 0: Foundation (1–2 weeks)
-- Monorepo setup (`/mobile`, `/backend`, `/docs`)
-- Supabase schema + RLS + exercises seed
-- FastAPI on Vercel: `/health`, `/exercises/filter`, `/exercises/seed`
-- Auth flow + profile creation
-- Basic navigation shell
-
-**Deliverable:** Auth works, exercises seeded, groups list (empty)
-
----
-
 ### Phase 1: Group & Lesson CRUD (2–3 weeks)
+- Implement JWT verification
+- Implement repositories (Supabase queries)
+- Implement router endpoints
 - Group create/edit/list/detail
 - Lesson builder (exercise selector, section organizer)
 - Mark as taught + completion status
@@ -306,24 +335,18 @@ Tables with read-only:
 
 **Deliverable:** End-to-end manual lesson workflow
 
----
-
 ### Phase 2: Progress Layer (1–2 weeks)
 - `group_exercise_history` view
 - Progress screen (difficulty trend, goals, exposure, completion quality)
 
 **Deliverable:** Meaningful progress tracking
 
----
-
 ### Phase 3: LLM Generation (2–3 weeks) — *requires paid API*
-- Migrate FastAPI to Railway/Render
+- Migrate FastAPI to Railway/Render (longer timeout)
 - LLM integration + auto-generate endpoint
 - UI: "Auto-generate" button
 
 **Deliverable:** Auto-generated lessons from group context
-
----
 
 ### Phase 4: SaaS Prep (post-MVP)
 - Multi-instructor auth
@@ -334,32 +357,30 @@ Tables with read-only:
 
 ---
 
-## Environment Variables
+## Environment Setup
 
-### Frontend (.env.local)
-```
-EXPO_PUBLIC_SUPABASE_URL=https://xxx.supabase.co
-EXPO_PUBLIC_SUPABASE_ANON_KEY=xxx
-EXPO_PUBLIC_API_URL=https://your-project.vercel.app
-```
-
-### Backend (Vercel)
+### Backend .env
 ```
 SUPABASE_URL=https://xxx.supabase.co
 SUPABASE_SERVICE_KEY=xxx
+ANTHROPIC_API_KEY=  (Phase 3+)
+CLAUDE_MODEL=claude-haiku-4-5-20251001
 ```
 
-### Phase 3+ (LLM)
+### Mobile .env.local
 ```
-ANTHROPIC_API_KEY=xxx
-CLAUDE_MODEL=claude-haiku-4-5-20251001
+EXPO_PUBLIC_SUPABASE_URL=https://xxx.supabase.co
+EXPO_PUBLIC_SUPABASE_ANON_KEY=xxx
+EXPO_PUBLIC_API_URL=http://localhost:8000
 ```
 
 ---
 
 ## Next Steps
 
-1. Approve plan
-2. Set up Supabase project
-3. Create monorepo structure
-4. Initialize Phase 0 (foundation)
+1. Implement JWT verification in `app/core/auth.py`
+2. Implement repositories (Supabase queries)
+3. Implement router endpoints (call repositories + services)
+4. Seed exercise database
+5. Implement mobile hooks (React Query)
+6. End-to-end test: create group → create lesson → mark taught → view progress

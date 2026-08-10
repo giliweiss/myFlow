@@ -6,6 +6,8 @@ class Settings(BaseSettings):
     supabase_service_key: str
     anthropic_api_key: str = ""
     claude_model: str = "claude-haiku-4-5-20251001"
+    environment: str = "production"
+    dev_auth_bypass: bool = False
 
     class Config:
         env_file = ".env"
