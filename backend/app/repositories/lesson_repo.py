@@ -9,34 +9,55 @@ class LessonRepository(BaseRepository):
     def __init__(self, supabase_client):
         super().__init__(supabase_client, "lessons")
 
-    async def get_by_id(self, lesson_id: str):
-        """Get a lesson by ID."""
-        # Stub: fetch from Supabase including lesson_exercises
-        return None
+    def get_by_id(self, lesson_id: str) -> dict | None:
+        result = (
+            self.client.table(self.table_name)
+            .select("*")
+            .eq("id", lesson_id)
+            .maybe_single()
+            .execute()
+        )
+        return result.data
 
-    async def list_by_group(self, group_id: str, limit: int = 50):
-        """List lessons for a group."""
-        # Stub: query WHERE group_id = group_id, ordered by date
-        return []
+    def list_summaries_by_group(self, group_id: str, limit: int = 50) -> list[dict]:
+        result = (
+            self.client.table(self.table_name)
+            .select("id, group_id, title, status, scheduled_for, created_at, updated_at, lesson_reviews(id)")
+            .eq("group_id", group_id)
+            .order("created_at", desc=True)
+            .limit(limit)
+            .execute()
+        )
+        return result.data or []
 
-    async def get_recent_history(self, group_id: str, limit: int = 10):
-        """Get recent taught lessons for a group."""
-        # Stub: query WHERE group_id AND status = 'taught', limit, desc order
-        return []
+    def list_by_group_and_status(self, group_id: str, status: str) -> list[dict]:
+        result = (
+            self.client.table(self.table_name)
+            .select("*")
+            .eq("group_id", group_id)
+            .eq("status", status)
+            .execute()
+        )
+        return result.data or []
 
-    async def create_draft(self, group_id: str, lesson_data: dict):
-        """Create a lesson as draft with exercises."""
-        lesson_data["group_id"] = group_id
-        lesson_data["status"] = "draft"
-        # Stub: insert lesson + lesson_exercises
-        return lesson_data
+    def create(self, group_id: str, lesson_data: dict) -> dict:
+        row = {
+            "group_id": group_id,
+            "status": "draft",
+            **lesson_data,
+        }
+        result = self.client.table(self.table_name).insert(row).execute()
+        if not result.data:
+            raise RuntimeError("Failed to create lesson")
+        return result.data[0]
 
-    async def update_status(self, lesson_id: str, status: str):
-        """Update lesson status (draft -> planned -> taught -> cancelled)."""
-        # Stub: update status in Supabase
-        return {"lesson_id": lesson_id, "status": status}
-
-    async def add_exercises(self, lesson_id: str, exercises: list):
-        """Add exercises to a lesson."""
-        # Stub: insert into lesson_exercises
-        pass
+    def update(self, lesson_id: str, lesson_data: dict) -> dict:
+        result = (
+            self.client.table(self.table_name)
+            .update(lesson_data)
+            .eq("id", lesson_id)
+            .execute()
+        )
+        if not result.data:
+            raise RuntimeError(f"Failed to update lesson: {lesson_id}")
+        return result.data[0]

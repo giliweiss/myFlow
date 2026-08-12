@@ -7,15 +7,17 @@ from app.core.config import settings
 
 security = HTTPBearer(auto_error=False)
 
-DEV_USER = {
-    "user_id": "dev-user",
-    "email": "dev@local.test",
-    "token": None,
-}
-
 
 def is_dev_auth_bypass_enabled() -> bool:
     return settings.dev_auth_bypass and settings.environment == "development"
+
+
+def get_dev_user() -> dict:
+    return {
+        "user_id": settings.dev_user_id,
+        "email": "dev@local.test",
+        "token": None,
+    }
 
 
 def _get_supabase_auth_client():
@@ -29,7 +31,7 @@ async def get_current_user(
 ) -> dict:
     """Verify a Supabase access token and return the authenticated user."""
     if is_dev_auth_bypass_enabled():
-        return DEV_USER.copy()
+        return get_dev_user()
 
     if credentials is None:
         raise HTTPException(

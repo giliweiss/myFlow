@@ -42,3 +42,19 @@ class ExerciseRepository(BaseRepository):
             .execute()
         )
         return result.data or []
+
+    def get_restrictions_by_exercise_ids(self, exercise_ids: list[str]) -> dict[str, list[dict]]:
+        if not exercise_ids:
+            return {}
+
+        result = (
+            self.client.table("exercise_restrictions")
+            .select("*")
+            .in_("exercise_id", exercise_ids)
+            .execute()
+        )
+        restrictions_by_exercise: dict[str, list[dict]] = {}
+        for restriction in result.data or []:
+            exercise_id = restriction["exercise_id"]
+            restrictions_by_exercise.setdefault(exercise_id, []).append(restriction)
+        return restrictions_by_exercise

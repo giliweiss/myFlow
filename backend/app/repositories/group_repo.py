@@ -9,23 +9,45 @@ class GroupRepository(BaseRepository):
     def __init__(self, supabase_client):
         super().__init__(supabase_client, "groups")
 
-    async def get_by_id(self, group_id: str):
-        """Get a group by ID (Phase 1: verify ownership via caller)."""
-        # Stub: fetch from Supabase
-        return None
+    def list_by_instructor(self, instructor_id: str) -> list[dict]:
+        result = (
+            self.client.table(self.table_name)
+            .select("*")
+            .eq("instructor_id", instructor_id)
+            .eq("is_active", True)
+            .order("weekday")
+            .order("start_time")
+            .execute()
+        )
+        return result.data or []
 
-    async def list_by_instructor(self, instructor_id: str):
-        """List all groups for an instructor."""
-        # Stub: query groups WHERE instructor_id = instructor_id
-        return []
+    def get_by_id(self, group_id: str) -> dict | None:
+        result = (
+            self.client.table(self.table_name)
+            .select("*")
+            .eq("id", group_id)
+            .maybe_single()
+            .execute()
+        )
+        return result.data
 
-    async def create(self, instructor_id: str, group_data: dict):
-        """Create a new group."""
-        group_data["instructor_id"] = instructor_id
-        # Stub: insert into Supabase
-        return group_data
+    def create(self, instructor_id: str, group_data: dict) -> dict:
+        row = {
+            "instructor_id": instructor_id,
+            **group_data,
+        }
+        result = self.client.table(self.table_name).insert(row).execute()
+        if not result.data:
+            raise RuntimeError("Failed to create group")
+        return result.data[0]
 
-    async def update(self, group_id: str, data: dict):
-        """Update a group."""
-        # Stub: update in Supabase
-        return data
+    def update(self, group_id: str, group_data: dict) -> dict:
+        result = (
+            self.client.table(self.table_name)
+            .update(group_data)
+            .eq("id", group_id)
+            .execute()
+        )
+        if not result.data:
+            raise RuntimeError(f"Failed to update group: {group_id}")
+        return result.data[0]

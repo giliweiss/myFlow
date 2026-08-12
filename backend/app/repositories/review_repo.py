@@ -9,13 +9,26 @@ class ReviewRepository(BaseRepository):
     def __init__(self, supabase_client):
         super().__init__(supabase_client, "lesson_reviews")
 
-    async def get_recent_by_group(self, group_id: str, limit: int = 10):
-        """Get recent reviews for a group."""
-        # Stub: query reviews for group's lessons, ordered desc
-        return []
-
-    async def create(self, lesson_id: str, review_data: dict):
-        """Create a lesson review."""
-        review_data["lesson_id"] = lesson_id
-        # Stub: insert into Supabase
-        return review_data
+    def get_by_lesson_id(self, lesson_id: str) -> dict | None:
+        result = (
+            self.client.table(self.table_name)
+            .select("*")
+            .eq("lesson_id", lesson_id)
+            .limit(1)
+            .execute()
+        )
+        rows = result.data or []
+        return rows[0] if rows else None
+    def upsert_for_lesson(self, lesson_id: str, review_data: dict) -> dict:
+        row = {
+            "lesson_id": lesson_id,
+            **review_data,
+        }
+        result = (
+            self.client.table(self.table_name)
+            .upsert(row, on_conflict="lesson_id")
+            .execute()
+        )
+        if not result.data:
+            raise RuntimeError(f"Failed to upsert review for lesson: {lesson_id}")
+        return result.data[0]

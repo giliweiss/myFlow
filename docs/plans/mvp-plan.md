@@ -66,19 +66,25 @@ POST   /groups                          → create group
 GET    /groups/{group_id}               → get group detail
 PATCH  /groups/{group_id}               → update group
 
-GET    /groups/{group_id}/lessons       → list group's lessons
+GET    /groups/{group_id}/members       → list group roster
+POST   /groups/{group_id}/members       → add roster member (name only)
+PATCH  /groups/{group_id}/members/{member_id} → rename / deactivate member
+
+GET    /groups/{group_id}/lessons       → list group's lessons (with has_review)
+POST   /groups/{group_id}/lessons       → create draft lesson with lesson_exercises[]
 POST   /groups/{group_id}/lessons/generate  → generate lesson (Phase 3+)
 
-GET    /groups/{group_id}/progress      → get group progress summary
+GET    /groups/{group_id}/progress      → get group progress summary (Phase 2)
 ```
 
 ### Lesson Endpoints
 ```
-GET    /lessons/{lesson_id}             → get lesson detail
-PATCH  /lessons/{lesson_id}             → update lesson (status, etc)
+GET    /lessons/{lesson_id}             → get lesson detail (+ exercises, attendance, review)
+PATCH  /lessons/{lesson_id}             → update lesson (metadata, exercises, status transitions)
+PATCH  /lessons/{lesson_id}/attendance  → batch update registered/attended (upsert late joiners)
 
 POST   /lessons/{lesson_id}/exercises/{item_id}/replace  → swap exercise in lesson
-POST   /lessons/{lesson_id}/review      → submit post-lesson review
+POST   /lessons/{lesson_id}/review      → upsert post-lesson review (create or edit)
 ```
 
 ### Health Check
@@ -97,28 +103,36 @@ auth.users (Supabase managed)
 instructor_profiles (id, display_name, created_at, updated_at)
 ```
 
-### Groups & Lessons
+### Groups, Members & Lessons
 ```
 groups
   id, instructor_id, name, level (beginner/intermediate/advanced)
   studio_name, location_notes, weekday, start_time, typical_duration_minutes
   goals[], available_equipment[], group_considerations[], is_active
 
+group_members (lightweight roster — no participant accounts)
+  id, group_id, name, is_active
+  member UUID is identity; duplicate names within a group are allowed
+
 lessons
   id, group_id, title, status (draft/planned/taught/cancelled)
-  scheduled_for, requested_duration_minutes, planned_duration_minutes, actual_duration_minutes
-  intensity_target (1-5), goals[], generation_params (Phase 3+), generated_at, taught_at
+  scheduled_for, primary_goal, secondary_goals[], level
+  planned_duration_minutes, actual_duration_minutes, instructor_notes
 
 lesson_exercises
-  id, lesson_id, exercise_id, order_index, section (warmup/main/cooldown)
+  id, lesson_id, exercise_id, order_index (unique per lesson_id), section (warmup/main/cooldown)
   planned_duration_seconds, actual_duration_seconds, sets, reps
-  instructor_notes, placement_reason, selected_modification
-  completion_status (completed/shortened/skipped), exercise_snapshot (denormalized)
+  selected_modification, instructor_notes
+  completion_status (completed/shortened/skipped)
 
-lesson_reviews
+lesson_attendance
+  id, lesson_id, group_member_id, registered, attended
+  seeded on draft → planned for all active members; late joiners via member create or attendance PATCH
+
+lesson_reviews (one per lesson, upsert on POST)
   id, lesson_id, perceived_difficulty (1-5)
   group_response (too_easy/appropriate/too_hard/mixed)
-  goals_achieved[], issues, instructor_notes, created_at
+  goals_achieved[], issues[] (text[]), instructor_notes
 ```
 
 ### Exercises (Curated)
@@ -141,7 +155,7 @@ exercise_relations
   notes
 ```
 
-### View
+### View (Phase 2)
 ```
 group_exercise_history (aggregated from taught lessons)
   group_id, exercise_id, times_taught, last_taught, first_taught
@@ -160,18 +174,23 @@ apiClient.groups.getGroups(): Group[]
 apiClient.groups.getGroup(id: string): Group
 apiClient.groups.createGroup(data: CreateGroupInput): Group
 apiClient.groups.updateGroup(id: string, data: UpdateGroupInput): Group
+apiClient.groups.getMembers(groupId: string): GroupMember[]
+apiClient.groups.addMember(groupId: string, data: CreateMemberInput): GroupMember
+apiClient.groups.updateMember(groupId: string, memberId: string, data: UpdateMemberInput): GroupMember
 
 // Lessons
-apiClient.lessons.getGroupLessons(groupId: string): Lesson[]
+apiClient.lessons.getGroupLessons(groupId: string): LessonSummary[]
+apiClient.lessons.createLesson(groupId: string, data: CreateLessonInput): Lesson
 apiClient.lessons.generateLesson(groupId: string, params: GenerateLessonParams): Lesson
 apiClient.lessons.getLesson(id: string): Lesson
 apiClient.lessons.updateLesson(id: string, data: UpdateLessonInput): Lesson
+apiClient.lessons.updateAttendance(lessonId: string, data: AttendanceUpdateInput): Attendance[]
 
 // Lesson editing
 apiClient.lessons.replaceExercise(lessonId: string, itemId: string, newExerciseId: string): Lesson
 apiClient.lessons.submitReview(lessonId: string, review: ReviewInput): Review
 
-// Progress
+// Progress (Phase 2)
 apiClient.progress.getGroupProgress(groupId: string): ProgressSummary
 ```
 
@@ -263,23 +282,22 @@ mobile/
 
 ### 3. Create Lesson (Manual)
 1. Open group → "Create Lesson"
-2. Pre-filled: level, duration, equipment
-3. Adjust: duration, intensity_target, goals, notes
-4. Browse exercises (filtered by FastAPI `/exercises/filter` internally)
-5. Drag into warmup/main/cooldown sections
-6. Validate (FastAPI internal validation)
-7. Save as `draft` or `planned`
+2. Pre-filled: level, duration, goals from group defaults
+3. Browse exercises (filtered internally by level, equipment, considerations)
+4. Add exercises to warmup/main/cooldown with global order_index
+5. Save as `draft` → transition to `planned` (seeds attendance for active members)
 
 ### 4. Mark as Taught
-1. Open lesson from history
-2. Set `actual_duration_minutes` (optional)
-3. For each exercise: set `completion_status`
-4. Save → PATCH /lessons/{id} → `status` = `taught`
+1. Open planned lesson
+2. Update attendance (registered before, attended after)
+3. Set `actual_duration_minutes` (optional)
+4. For each exercise: set `completion_status`
+5. PATCH /lessons/{id} with `status` = `taught`
 
 ### 5. Add Review
 1. After teaching (or anytime from lesson detail)
-2. Fill: `perceived_difficulty`, `group_response`, `goals_achieved[]`, issues, notes
-3. Save → POST /lessons/{id}/review
+2. Fill: `perceived_difficulty`, `group_response`, `goals_achieved[]`, `issues[]`, notes
+3. Save → POST /lessons/{id}/review (upsert — edit later with same endpoint)
 
 ### 6. View Progress
 1. Open group → "Progress"
@@ -292,19 +310,24 @@ mobile/
 ### In ✓
 - `instructor_profiles` linked to auth.users
 - Groups CRUD (+ studio, weekday, time, considerations)
+- `group_members` roster (name-only, no accounts)
 - Exercises database (seeded)
   - `exercise_restrictions` (structured)
   - `exercise_relations` (progressions/regressions)
-- Manual lesson creation with section builder
+- Manual lesson creation with structured `lesson_exercises` (no JSON blob)
 - Lesson status tracking (draft → planned → taught → cancelled)
+- Attendance on plan + batch PATCH (late joiners supported)
 - Per-exercise completion tracking
-- `lesson_reviews` (post-lesson feedback)
-- Group progress screen (text-based, multi-dimensional)
-- `group_exercise_history` view
+- `lesson_reviews` (post-lesson feedback, upsert)
+- Lesson history list with `has_review`
 - FastAPI as main backend
 - Supabase auth + database only
 - Authorization on all endpoints
 - RLS from day one
+
+### Out ✗ (Phase 2+)
+- Group progress screen / `group_exercise_history` view
+- Progress graphs
 
 ### Out ✗ (Phase 3+)
 - LLM lesson generation
@@ -323,17 +346,14 @@ mobile/
 
 ## Phased Development
 
-### Phase 1: Group & Lesson CRUD (2–3 weeks)
-- Implement JWT verification
-- Implement repositories (Supabase queries)
-- Implement router endpoints
-- Group create/edit/list/detail
-- Lesson builder (exercise selector, section organizer)
-- Mark as taught + completion status
-- Review form
-- Lesson history
+### Phase 1: Group Hub Backend (done — backend Swagger E2E)
+1. **Slice 1:** `group_members` + GET/POST/PATCH member endpoints
+2. **Slice 2:** `lessons` + `lesson_exercises` + draft lesson builder
+3. **Slice 3:** `lesson_attendance` + seed on draft→planned + teach flow
+4. **Slice 4:** `lesson_reviews` upsert + lesson history summaries
+5. **Slice 5 (follow-on):** Mobile group hub UI
 
-**Deliverable:** End-to-end manual lesson workflow
+**Deliverable:** End-to-end manual lesson workflow in Swagger (members → draft → plan → teach → review → history)
 
 ### Phase 2: Progress Layer (1–2 weeks)
 - `group_exercise_history` view
