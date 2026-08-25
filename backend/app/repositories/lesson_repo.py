@@ -22,7 +22,10 @@ class LessonRepository(BaseRepository):
     def list_summaries_by_group(self, group_id: str, limit: int = 50) -> list[dict]:
         result = (
             self.client.table(self.table_name)
-            .select("id, group_id, title, status, scheduled_for, created_at, updated_at, lesson_reviews(id)")
+            .select(
+                "id, group_id, title, status, scheduled_for, planned_duration_minutes, "
+                "created_at, updated_at, lesson_reviews(id)"
+            )
             .eq("group_id", group_id)
             .order("created_at", desc=True)
             .limit(limit)

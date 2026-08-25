@@ -43,12 +43,13 @@ def filter_exercises(
     exercises: list[dict],
     group: dict,
     restrictions_by_exercise: dict[str, list[dict]] | None = None,
+    check_level: bool = True,
 ) -> list[dict]:
     restrictions_by_exercise = restrictions_by_exercise or {}
     filtered = []
 
     for exercise in exercises:
-        if not exercise_level_allowed(exercise["difficulty_level"], group["level"]):
+        if check_level and not exercise_level_allowed(exercise["difficulty_level"], group["level"]):
             continue
         if not exercise_equipment_allowed(exercise, group):
             continue
@@ -67,9 +68,15 @@ def find_unsuitable_exercise_ids(
     exercises: list[dict],
     group: dict,
     restrictions_by_exercise: dict[str, list[dict]] | None = None,
+    check_level: bool = True,
 ) -> list[str]:
     suitable_ids = {
         exercise["id"]
-        for exercise in filter_exercises(exercises, group, restrictions_by_exercise)
+        for exercise in filter_exercises(
+            exercises,
+            group,
+            restrictions_by_exercise,
+            check_level=check_level,
+        )
     }
     return [exercise["id"] for exercise in exercises if exercise["id"] not in suitable_ids]

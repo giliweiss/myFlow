@@ -60,6 +60,7 @@ class CreateLessonRequest(BaseModel):
     secondary_goals: list[str] = Field(default_factory=list)
     level: Literal["beginner", "intermediate", "advanced"] | None = None
     planned_duration_minutes: int | None = Field(default=None, gt=0)
+    scheduled_for: datetime | None = None
     instructor_notes: str | None = None
     lesson_exercises: list[LessonExerciseInput] = Field(default_factory=list)
 
@@ -84,6 +85,7 @@ class LessonSummary(BaseModel):
     title: str
     status: str
     scheduled_for: datetime | None = None
+    planned_duration_minutes: int | None = None
     created_at: datetime
     updated_at: datetime
     has_review: bool

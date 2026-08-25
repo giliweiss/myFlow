@@ -14,7 +14,6 @@ class GroupResponse(BaseModel):
     weekday: int | None = None
     start_time: time | None = None
     typical_duration_minutes: int
-    goals: list[str]
     available_equipment: list[str]
     group_considerations: list[str]
     notes: str | None = None
@@ -36,7 +35,6 @@ class CreateGroupRequest(BaseModel):
     weekday: int | None = Field(default=None, ge=0, le=6)
     start_time: time | None = None
     typical_duration_minutes: int = Field(default=60, gt=0)
-    goals: list[str] = Field(default_factory=list)
     available_equipment: list[str] = Field(default_factory=list)
     group_considerations: list[str] = Field(default_factory=list)
     notes: str | None = None
@@ -50,7 +48,6 @@ class UpdateGroupRequest(BaseModel):
     weekday: int | None = Field(default=None, ge=0, le=6)
     start_time: time | None = None
     typical_duration_minutes: int | None = Field(default=None, gt=0)
-    goals: list[str] | None = None
     available_equipment: list[str] | None = None
     group_considerations: list[str] | None = None
     notes: str | None = None

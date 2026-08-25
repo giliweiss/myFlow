@@ -51,6 +51,7 @@ async def list_group_lessons(
                 title=lesson["title"],
                 status=lesson["status"],
                 scheduled_for=lesson.get("scheduled_for"),
+                planned_duration_minutes=lesson.get("planned_duration_minutes"),
                 created_at=lesson["created_at"],
                 updated_at=lesson["updated_at"],
                 has_review=has_review,
@@ -80,11 +81,6 @@ async def create_group_lesson(
     exercise_items = exercise_items_from_input(request.lesson_exercises)
     lesson_data = request.model_dump(mode="json", exclude={"lesson_exercises"})
     lesson_data["level"] = request.level or group["level"]
-
-    if group.get("goals") and not lesson_data.get("primary_goal"):
-        lesson_data["primary_goal"] = group["goals"][0]
-    if group.get("goals") and not lesson_data.get("secondary_goals"):
-        lesson_data["secondary_goals"] = group["goals"][1:]
 
     if lesson_data.get("planned_duration_minutes") is None:
         lesson_data["planned_duration_minutes"] = group["typical_duration_minutes"]

@@ -12,6 +12,6 @@ class LessonGeneratorProtocol:
         Context includes:
         - group level, duration, equipment, considerations
         - recent exercises (to avoid repetition)
-        - goals
+        - lesson goals (primary_goal, secondary_goals)
         """
         raise NotImplementedError("To be implemented in Phase 3")

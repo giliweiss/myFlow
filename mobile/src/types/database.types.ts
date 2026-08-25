@@ -23,7 +23,6 @@ export type Database = {
           weekday: string | null;
           start_time: string | null;
           typical_duration_minutes: number;
-          goals: string[];
           available_equipment: string[];
           group_considerations: string[];
           notes: string | null;

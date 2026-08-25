@@ -1,9 +1,17 @@
-import { View, Text } from 'react-native';
+import {
+  ScreenContainer,
+  EmptyState,
+} from '../../../src/components/ui';
+import { strings } from '../../../src/i18n/he';
 
 export default function GroupProgressScreen() {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Group Progress (Phase 1)</Text>
-    </View>
+    <ScreenContainer>
+      <EmptyState
+        title={strings.progress.progress}
+        message={strings.progress.comingSoonMessage}
+        iconName="TrendingUp"
+      />
+    </ScreenContainer>
   );
 }

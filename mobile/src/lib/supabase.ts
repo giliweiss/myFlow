@@ -1,12 +1,3 @@
-"""Supabase client for authentication only.
-
-The mobile app uses Supabase for:
-- User authentication (signup, login, session)
-- JWT tokens
-
-All product CRUD operations go through FastAPI backend instead.
-"""
-
 import { createClient } from '@supabase/supabase-js';
 
 const supabaseUrl = process.env.EXPO_PUBLIC_SUPABASE_URL || '';

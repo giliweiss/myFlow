@@ -1,22 +1,15 @@
-"""Product-level API client for FastAPI backend.
+// Product-level API client for FastAPI backend.
 
-Exposes high-level operations:
-- Groups CRUD
-- Lesson generation (orchestrated)
-- Lesson operations
-- Reviews
-- Progress
+import type { Exercise } from '../types/exercise';
+import type { Group, UpdateGroupInput } from '../types/group';
+import type { CreateLessonInput, Lesson, LessonSummary, UpdateLessonInput } from '../types/lesson';
+import { getApiUrl } from './api-config';
+import { fetchWithTimeout } from './fetch-with-timeout';
 
-Does NOT expose internal endpoints like /exercises/filter or /lessons/validate.
-"""
+const apiUrl = getApiUrl();
 
-const apiUrl = process.env.EXPO_PUBLIC_API_URL || 'http://localhost:8000';
-
-/**
- * Groups API
- */
 export const groupsApi = {
-  async getGroups(): Promise<any[]> {
+  async getGroups(): Promise<Group[]> {
     const res = await fetch(`${apiUrl}/groups`, {
       method: 'GET',
       headers: { 'Content-Type': 'application/json' },
@@ -26,44 +19,60 @@ export const groupsApi = {
     return data.groups || [];
   },
 
-  async getGroup(groupId: string): Promise<any> {
+  async getGroup(groupId: string): Promise<Group> {
     const res = await fetch(`${apiUrl}/groups/${groupId}`, {
       method: 'GET',
       headers: { 'Content-Type': 'application/json' },
     });
     if (!res.ok) throw new Error(`GET /groups/${groupId} failed: ${res.status}`);
-    const data = await res.json();
-    return data.group || {};
+    return res.json();
   },
 
-  async createGroup(groupData: any): Promise<any> {
+  async createGroup(groupData: UpdateGroupInput & { name: string; level: Group['level'] }): Promise<Group> {
     const res = await fetch(`${apiUrl}/groups`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(groupData),
     });
     if (!res.ok) throw new Error(`POST /groups failed: ${res.status}`);
-    const data = await res.json();
-    return data.group || {};
+    return res.json();
   },
 
-  async updateGroup(groupId: string, updates: any): Promise<any> {
+  async updateGroup(groupId: string, updates: UpdateGroupInput): Promise<Group> {
     const res = await fetch(`${apiUrl}/groups/${groupId}`, {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(updates),
     });
     if (!res.ok) throw new Error(`PATCH /groups/${groupId} failed: ${res.status}`);
-    const data = await res.json();
-    return data.group || {};
+    return res.json();
   },
 };
 
-/**
- * Lessons API
- */
+export const exercisesApi = {
+  async listExercises(): Promise<Exercise[]> {
+    const res = await fetch(`${apiUrl}/exercises`, {
+      method: 'GET',
+      headers: { 'Content-Type': 'application/json' },
+    });
+    if (!res.ok) throw new Error(`GET /exercises failed: ${res.status}`);
+    const data = await res.json();
+    return data.exercises || [];
+  },
+};
+
 export const lessonsApi = {
-  async getGroupLessons(groupId: string): Promise<any[]> {
+  async createLesson(groupId: string, input: CreateLessonInput): Promise<Lesson> {
+    const res = await fetch(`${apiUrl}/groups/${groupId}/lessons`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(input),
+    });
+    if (!res.ok) throw new Error(`POST /groups/${groupId}/lessons failed: ${res.status}`);
+    return res.json();
+  },
+
+  async getGroupLessons(groupId: string): Promise<LessonSummary[]> {
     const res = await fetch(`${apiUrl}/groups/${groupId}/lessons`, {
       method: 'GET',
       headers: { 'Content-Type': 'application/json' },
@@ -84,25 +93,23 @@ export const lessonsApi = {
     return data.lesson || {};
   },
 
-  async getLesson(lessonId: string): Promise<any> {
+  async getLesson(lessonId: string): Promise<Lesson> {
     const res = await fetch(`${apiUrl}/lessons/${lessonId}`, {
       method: 'GET',
       headers: { 'Content-Type': 'application/json' },
     });
     if (!res.ok) throw new Error(`GET /lessons/${lessonId} failed: ${res.status}`);
-    const data = await res.json();
-    return data.lesson || {};
+    return res.json();
   },
 
-  async updateLesson(lessonId: string, updates: any): Promise<any> {
+  async updateLesson(lessonId: string, updates: UpdateLessonInput): Promise<Lesson> {
     const res = await fetch(`${apiUrl}/lessons/${lessonId}`, {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(updates),
     });
     if (!res.ok) throw new Error(`PATCH /lessons/${lessonId} failed: ${res.status}`);
-    const data = await res.json();
-    return data.lesson || {};
+    return res.json();
   },
 
   async replaceExercise(lessonId: string, itemId: string, newExerciseId: string): Promise<any> {
@@ -128,9 +135,6 @@ export const lessonsApi = {
   },
 };
 
-/**
- * Progress API
- */
 export const progressApi = {
   async getGroupProgress(groupId: string): Promise<any> {
     const res = await fetch(`${apiUrl}/groups/${groupId}/progress`, {
@@ -143,11 +147,9 @@ export const progressApi = {
   },
 };
 
-/**
- * Convenience client that combines all APIs
- */
 export const apiClient = {
   groups: groupsApi,
+  exercises: exercisesApi,
   lessons: lessonsApi,
   progress: progressApi,
 };

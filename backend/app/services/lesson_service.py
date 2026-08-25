@@ -85,7 +85,12 @@ def validate_exercises_for_group(
         )
 
     restrictions = exercise_repository.get_restrictions_by_exercise_ids(exercise_ids)
-    unsuitable_ids = find_unsuitable_exercise_ids(exercises, group, restrictions)
+    unsuitable_ids = find_unsuitable_exercise_ids(
+        exercises,
+        group,
+        restrictions,
+        check_level=False,
+    )
     if unsuitable_ids:
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
