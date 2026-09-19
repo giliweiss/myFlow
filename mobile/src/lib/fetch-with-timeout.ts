@@ -1,4 +1,5 @@
-const defaultTimeoutMs = 10_000;
+export const defaultTimeoutMs = 30_000;
+export const generateLessonTimeoutMs = 120_000;
 
 export async function fetchWithTimeout(
   url: string,

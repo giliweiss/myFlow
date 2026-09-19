@@ -16,8 +16,13 @@ function getMetroHost(): string | null {
 }
 
 export function getApiUrl(): string {
+  const configuredUrl = process.env.EXPO_PUBLIC_API_URL?.trim();
+  if (configuredUrl) {
+    return configuredUrl;
+  }
+
   if (Platform.OS === 'web') {
-    return process.env.EXPO_PUBLIC_API_URL || 'http://localhost:8000';
+    return 'http://localhost:8000';
   }
 
   const metroHost = getMetroHost();
@@ -25,5 +30,5 @@ export function getApiUrl(): string {
     return `http://${metroHost}:8000`;
   }
 
-  return process.env.EXPO_PUBLIC_API_URL || 'http://localhost:8000';
+  return 'http://localhost:8000';
 }

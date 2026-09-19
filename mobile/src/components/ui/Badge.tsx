@@ -4,9 +4,8 @@ import { theme } from '../../theme';
 
 export type BadgeVariant =
   | 'default'
-  | 'status-draft'
-  | 'status-planned'
-  | 'status-taught'
+  | 'status-upcoming'
+  | 'status-completed'
   | 'status-cancelled';
 
 interface BadgeProps {
@@ -35,15 +34,11 @@ const styles = StyleSheet.create({
     backgroundColor: theme.colors.primaryLight,
   },
 
-  'status-draft': {
+  'status-upcoming': {
     backgroundColor: theme.colors.accent,
   },
 
-  'status-planned': {
-    backgroundColor: theme.colors.primaryLight,
-  },
-
-  'status-taught': {
+  'status-completed': {
     backgroundColor: theme.colors.primary,
   },
 

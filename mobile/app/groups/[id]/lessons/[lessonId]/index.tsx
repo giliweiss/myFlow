@@ -28,6 +28,7 @@ import { levelToDisplay } from '../../../../../src/lib/group-form';
 import {
   getSelectableStatuses,
   isLessonEditable,
+  normalizeLessonStatus,
   STATUS_LABELS,
   STATUS_VARIANTS,
 } from '../../../../../src/lib/lesson-status';
@@ -56,7 +57,7 @@ export default function LessonDetailScreen() {
   const [notes, setNotes] = useState('');
   const [duration, setDuration] = useState('');
   const [scheduledDate, setScheduledDate] = useState('');
-  const [status, setStatus] = useState<LessonStatus>('draft');
+  const [status, setStatus] = useState<LessonStatus>('upcoming');
   const [exercises, setExercises] = useState<BuilderExercise[]>([]);
   const [pickerSection, setPickerSection] = useState<LessonSection | null>(null);
   const [titleError, setTitleError] = useState('');
@@ -87,7 +88,7 @@ export default function LessonDetailScreen() {
     setIsFormInitialized(true);
   }, [lesson, catalogExercises, isFormInitialized]);
 
-  const editable = lesson ? isLessonEditable(lesson.status) : false;
+  const editable = lesson ? isLessonEditable(normalizeLessonStatus(lesson.status)) : false;
   const plannedDurationMinutes =
     Number(duration) || lesson?.planned_duration_minutes || 45;
 
@@ -164,7 +165,7 @@ export default function LessonDetailScreen() {
     );
   }
 
-  const statusOptions = getSelectableStatuses(lesson.status);
+  const statusOptions = getSelectableStatuses(normalizeLessonStatus(lesson.status));
 
   return (
     <ScreenContainer paddingHorizontal={false}>
@@ -188,8 +189,8 @@ export default function LessonDetailScreen() {
             />
           ) : (
             <Badge
-              label={STATUS_LABELS[lesson.status]}
-              variant={STATUS_VARIANTS[lesson.status]}
+              label={STATUS_LABELS[normalizeLessonStatus(lesson.status)]}
+              variant={STATUS_VARIANTS[normalizeLessonStatus(lesson.status)]}
             />
           )}
         </View>

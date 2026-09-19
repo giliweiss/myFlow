@@ -1,17 +1,24 @@
-# LLM service (to be implemented in Phase 3)
-# Generates lessons using Claude or GPT-4o
+from typing import Protocol
+
+from app.schemas.lesson_generation import GenerateLessonRequest
+from app.schemas.llm_lesson_plan import LLMClarificationOutput, LLMPlanningOutput
+from app.services.clarification_rules import ForcedClarification
+from app.services.lesson_planning_context import LessonPlanningContext
 
 
-class LessonGeneratorProtocol:
-    """Protocol for LLM-based lesson generation."""
+class LessonGenerationLLM(Protocol):
+    def formulate_clarification_questions(
+        self,
+        group: dict,
+        request: GenerateLessonRequest,
+        forced_clarifications: list[ForcedClarification],
+    ) -> LLMClarificationOutput:
+        ...
 
-    def generate(self, context: dict) -> dict:
-        """
-        Generate a lesson plan from group context.
-
-        Context includes:
-        - group level, duration, equipment, considerations
-        - recent exercises (to avoid repetition)
-        - lesson goals (primary_goal, secondary_goals)
-        """
-        raise NotImplementedError("To be implemented in Phase 3")
+    def generate_lesson_plan(
+        self,
+        group: dict,
+        request: GenerateLessonRequest,
+        planning_context: LessonPlanningContext,
+    ) -> LLMPlanningOutput:
+        ...

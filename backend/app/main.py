@@ -4,7 +4,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.api.routers import exercises, group_lessons, groups, instructor_profile, lessons, health
+from app.api.routers import exercises, group_lessons, groups, instructor_exercises, instructor_profile, lessons, health
 from app.core.auth import is_dev_auth_bypass_enabled
 from app.core.config import settings, validate_dev_auth_settings
 
@@ -50,6 +50,11 @@ app.include_router(
     tags=["instructor-profile"],
 )
 app.include_router(exercises.router, prefix="/exercises", tags=["exercises"])
+app.include_router(
+    instructor_exercises.router,
+    prefix="/instructor-exercises",
+    tags=["instructor-exercises"],
+)
 app.include_router(groups.router, prefix="/groups", tags=["groups"])
 app.include_router(group_lessons.router, prefix="/groups", tags=["lessons"])
 app.include_router(lessons.router, prefix="/lessons", tags=["lessons"])

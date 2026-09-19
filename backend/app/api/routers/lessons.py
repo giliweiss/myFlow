@@ -32,6 +32,7 @@ from app.schemas.lesson import (
 )
 from app.schemas.review import ReviewResponse, SubmitReviewRequest
 from app.services.attendance_service import AttendanceService
+from app.services.lesson_validator import normalize_lesson_status
 from app.services.lesson_service import (
     apply_status_transition,
     exercise_items_from_input,
@@ -84,7 +85,7 @@ async def update_lesson(
     """Update a lesson."""
     lesson, group = get_owned_lesson(lesson_id, user, lesson_repository, group_repository)
 
-    if lesson["status"] in {"taught", "cancelled"}:
+    if normalize_lesson_status(lesson["status"]) in {"completed", "cancelled"}:
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail=f"Cannot update a {lesson['status']} lesson",
@@ -112,10 +113,11 @@ async def update_lesson(
         lesson_exercise_repository.replace_for_lesson(lesson_id, exercise_items)
 
     if exercise_completions:
-        if lesson["status"] != "planned" and new_status != "taught":
+        normalized_status = normalize_lesson_status(lesson["status"])
+        if normalized_status != "upcoming" and new_status != "completed":
             raise HTTPException(
                 status_code=status.HTTP_400_BAD_REQUEST,
-                detail="Exercise completions can only be set when marking a lesson as taught",
+                detail="Exercise completions can only be set when marking a lesson as completed",
             )
         for completion in exercise_completions:
             lesson_exercise_repository.update_completion_status(
@@ -163,10 +165,10 @@ async def update_lesson_attendance(
     """Batch update attendance for a lesson."""
     lesson, _group = get_owned_lesson(lesson_id, user, lesson_repository, group_repository)
 
-    if lesson["status"] not in {"planned", "taught"}:
+    if normalize_lesson_status(lesson["status"]) not in {"upcoming", "completed"}:
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
-            detail="Attendance can only be updated for planned or taught lessons",
+            detail="Attendance can only be updated for upcoming or completed lessons",
         )
 
     existing_rows = {
@@ -240,10 +242,10 @@ async def replace_exercise(
     """Replace an exercise in a lesson."""
     lesson, group = get_owned_lesson(lesson_id, user, lesson_repository, group_repository)
 
-    if lesson["status"] not in {"draft", "planned"}:
+    if normalize_lesson_status(lesson["status"]) != "upcoming":
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
-            detail="Exercises can only be replaced on draft or planned lessons",
+            detail="Exercises can only be replaced on upcoming lessons",
         )
 
     item = lesson_exercise_repository.get_by_id_for_lesson(lesson_id, item_id)
@@ -282,10 +284,10 @@ async def submit_lesson_review(
     """Create or update a review for a lesson."""
     lesson, _group = get_owned_lesson(lesson_id, user, lesson_repository, group_repository)
 
-    if lesson["status"] != "taught":
+    if normalize_lesson_status(lesson["status"]) != "completed":
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
-            detail="Reviews can only be submitted for taught lessons",
+            detail="Reviews can only be submitted for completed lessons",
         )
 
     review = review_repository.upsert_for_lesson(

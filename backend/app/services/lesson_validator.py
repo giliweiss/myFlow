@@ -1,11 +1,20 @@
 VALID_SECTIONS = {"warmup", "main", "cooldown"}
 
+LEGACY_STATUS_MAP = {
+    "draft": "upcoming",
+    "planned": "upcoming",
+    "taught": "completed",
+}
+
 ALLOWED_STATUS_TRANSITIONS = {
-    "draft": {"planned", "cancelled"},
-    "planned": {"taught", "cancelled"},
-    "taught": set(),
+    "upcoming": {"completed", "cancelled"},
+    "completed": set(),
     "cancelled": set(),
 }
+
+
+def normalize_lesson_status(status: str) -> str:
+    return LEGACY_STATUS_MAP.get(status, status)
 
 
 def validate_exercise_items(exercise_items: list[dict]) -> dict:
@@ -64,6 +73,8 @@ def validate_lesson_for_plan(
 
 
 def validate_status_transition(current_status: str, new_status: str) -> dict:
+    current_status = normalize_lesson_status(current_status)
+
     if current_status == new_status:
         return {"valid": True, "issues": []}
 

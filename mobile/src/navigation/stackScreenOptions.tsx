@@ -1,4 +1,4 @@
-import type { NativeStackNavigationOptions } from '@react-navigation/native-stack';
+import type { NativeStackNavigationOptions } from 'expo-router/build/react-navigation/native-stack/types';
 import { theme } from '../theme';
 import { HeaderBackButton } from './HeaderBackButton';
 
@@ -28,7 +28,6 @@ export function stackScreenOptions(
   return {
     ...baseStackScreenOptions,
     headerBackVisible: false,
-    headerBackTitleVisible: false,
     headerLeft: () => <HeaderBackButton />,
   };
 }

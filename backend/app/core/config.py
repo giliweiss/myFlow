@@ -9,6 +9,8 @@ class Settings(BaseSettings):
     supabase_service_key: str
     anthropic_api_key: str = ""
     claude_model: str = "claude-haiku-4-5-20251001"
+    openai_api_key: str = ""
+    openai_model: str = "gpt-5.6-luna"
     environment: str = "production"
     dev_auth_bypass: bool = False
     dev_user_id: str | None = None

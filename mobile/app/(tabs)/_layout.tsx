@@ -1,6 +1,7 @@
 import { Tabs } from 'expo-router';
 import { theme } from '../../src/theme';
 import { strings } from '../../src/i18n/he';
+import { GroupsHeaderMenu } from '../../src/components/GroupsHeaderMenu';
 
 export default function TabsLayout() {
   return (
@@ -26,6 +27,7 @@ export default function TabsLayout() {
           title: strings.groups.myGroups,
           headerShown: true,
           headerTitleAlign: 'center',
+          headerRight: () => <GroupsHeaderMenu />,
         }}
       />
     </Tabs>

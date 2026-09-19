@@ -67,7 +67,7 @@ class CreateLessonRequest(BaseModel):
 
 class UpdateLessonRequest(BaseModel):
     title: str | None = Field(default=None, min_length=1)
-    status: Literal["draft", "planned", "taught", "cancelled"] | None = None
+    status: Literal["upcoming", "completed", "cancelled"] | None = None
     scheduled_for: datetime | None = None
     primary_goal: str | None = None
     secondary_goals: list[str] | None = None

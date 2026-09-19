@@ -3,27 +3,23 @@ import type { LessonStatus } from '../types/lesson';
 import { strings } from '../i18n/he';
 
 export const STATUS_LABELS: Record<LessonStatus, string> = {
-  draft: strings.lessons.draft,
-  planned: strings.lessons.planned,
-  taught: strings.lessons.taught,
+  upcoming: strings.lessons.upcoming,
+  completed: strings.lessons.completed,
   cancelled: strings.lessons.cancelled,
 };
 
 export const STATUS_VARIANTS: Record<LessonStatus, BadgeVariant> = {
-  draft: 'status-draft',
-  planned: 'status-planned',
-  taught: 'status-taught',
+  upcoming: 'status-upcoming',
+  completed: 'status-completed',
   cancelled: 'status-cancelled',
 };
 
 export function getSelectableStatuses(currentStatus: LessonStatus): LessonStatus[] {
   switch (currentStatus) {
-    case 'draft':
-      return ['draft', 'planned', 'cancelled'];
-    case 'planned':
-      return ['planned', 'taught', 'cancelled'];
-    case 'taught':
-      return ['taught'];
+    case 'upcoming':
+      return ['upcoming', 'completed', 'cancelled'];
+    case 'completed':
+      return ['completed'];
     case 'cancelled':
       return ['cancelled'];
     default:
@@ -32,5 +28,21 @@ export function getSelectableStatuses(currentStatus: LessonStatus): LessonStatus
 }
 
 export function isLessonEditable(status: LessonStatus): boolean {
-  return status === 'draft' || status === 'planned';
+  return status === 'upcoming';
+}
+
+export function normalizeLessonStatus(status: string): LessonStatus {
+  switch (status) {
+    case 'upcoming':
+    case 'completed':
+    case 'cancelled':
+      return status;
+    case 'draft':
+    case 'planned':
+      return 'upcoming';
+    case 'taught':
+      return 'completed';
+    default:
+      return 'upcoming';
+  }
 }

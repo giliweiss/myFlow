@@ -1,7 +1,16 @@
 // Product-level API client for FastAPI backend.
 
 import type { Exercise } from '../types/exercise';
+import type {
+  CreateInstructorExerciseInput,
+  InstructorExercise,
+  UpdateInstructorExerciseInput,
+} from '../types/instructor-exercise';
 import type { Group, UpdateGroupInput } from '../types/group';
+import type {
+  GenerateLessonRequest,
+  GenerateLessonResponse,
+} from '../types/lesson-generation';
 import type { CreateLessonInput, Lesson, LessonSummary, UpdateLessonInput } from '../types/lesson';
 import { getApiUrl } from './api-config';
 import { fetchWithTimeout } from './fetch-with-timeout';
@@ -59,6 +68,68 @@ export const exercisesApi = {
     const data = await res.json();
     return data.exercises || [];
   },
+
+  async getExercise(exerciseId: string): Promise<Exercise> {
+    const res = await fetch(`${apiUrl}/exercises/${exerciseId}`, {
+      method: 'GET',
+      headers: { 'Content-Type': 'application/json' },
+    });
+    if (!res.ok) throw new Error(`GET /exercises/${exerciseId} failed: ${res.status}`);
+    return res.json();
+  },
+};
+
+export const instructorExercisesApi = {
+  async listExercises(): Promise<InstructorExercise[]> {
+    const res = await fetch(`${apiUrl}/instructor-exercises`, {
+      method: 'GET',
+      headers: { 'Content-Type': 'application/json' },
+    });
+    if (!res.ok) throw new Error(`GET /instructor-exercises failed: ${res.status}`);
+    const data = await res.json();
+    return data.exercises || [];
+  },
+
+  async getExercise(exerciseId: string): Promise<InstructorExercise> {
+    const res = await fetch(`${apiUrl}/instructor-exercises/${exerciseId}`, {
+      method: 'GET',
+      headers: { 'Content-Type': 'application/json' },
+    });
+    if (!res.ok) throw new Error(`GET /instructor-exercises/${exerciseId} failed: ${res.status}`);
+    return res.json();
+  },
+
+  async createExercise(input: CreateInstructorExerciseInput): Promise<InstructorExercise> {
+    const res = await fetch(`${apiUrl}/instructor-exercises`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(input),
+    });
+    if (!res.ok) throw new Error(`POST /instructor-exercises failed: ${res.status}`);
+    return res.json();
+  },
+
+  async updateExercise(
+    exerciseId: string,
+    input: UpdateInstructorExerciseInput,
+  ): Promise<InstructorExercise> {
+    const res = await fetch(`${apiUrl}/instructor-exercises/${exerciseId}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(input),
+    });
+    if (!res.ok) throw new Error(`PATCH /instructor-exercises/${exerciseId} failed: ${res.status}`);
+    return res.json();
+  },
+
+  async archiveExercise(exerciseId: string): Promise<InstructorExercise> {
+    const res = await fetch(`${apiUrl}/instructor-exercises/${exerciseId}`, {
+      method: 'DELETE',
+      headers: { 'Content-Type': 'application/json' },
+    });
+    if (!res.ok) throw new Error(`DELETE /instructor-exercises/${exerciseId} failed: ${res.status}`);
+    return res.json();
+  },
 };
 
 export const lessonsApi = {
@@ -82,15 +153,17 @@ export const lessonsApi = {
     return data.lessons || [];
   },
 
-  async generateLesson(groupId: string, params: any): Promise<any> {
+  async generateLesson(
+    groupId: string,
+    input: GenerateLessonRequest,
+  ): Promise<GenerateLessonResponse> {
     const res = await fetch(`${apiUrl}/groups/${groupId}/lessons/generate`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(params),
+      body: JSON.stringify(input),
     });
     if (!res.ok) throw new Error(`POST /groups/${groupId}/lessons/generate failed: ${res.status}`);
-    const data = await res.json();
-    return data.lesson || {};
+    return res.json();
   },
 
   async getLesson(lessonId: string): Promise<Lesson> {
@@ -150,6 +223,7 @@ export const progressApi = {
 export const apiClient = {
   groups: groupsApi,
   exercises: exercisesApi,
+  instructorExercises: instructorExercisesApi,
   lessons: lessonsApi,
   progress: progressApi,
 };

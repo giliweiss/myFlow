@@ -2,12 +2,15 @@ from app.core.config import settings
 from app.repositories.exercise_repo import ExerciseRepository
 from app.repositories.group_member_repo import GroupMemberRepository
 from app.repositories.group_repo import GroupRepository
+from app.repositories.instructor_exercise_repo import InstructorExerciseRepository
 from app.repositories.instructor_profile_repo import InstructorProfileRepository
 from app.repositories.lesson_attendance_repo import LessonAttendanceRepository
 from app.repositories.lesson_exercise_repo import LessonExerciseRepository
 from app.repositories.lesson_repo import LessonRepository
 from app.repositories.review_repo import ReviewRepository
 from app.services.attendance_service import AttendanceService
+from app.services.lesson_generator import LessonGeneratorService
+from app.services.openai_service import OpenAIService
 
 
 def get_supabase_client():
@@ -22,6 +25,10 @@ def get_exercise_repository() -> ExerciseRepository:
 
 def get_group_repository() -> GroupRepository:
     return GroupRepository(get_supabase_client())
+
+
+def get_instructor_exercise_repository() -> InstructorExerciseRepository:
+    return InstructorExerciseRepository(get_supabase_client())
 
 
 def get_instructor_profile_repository() -> InstructorProfileRepository:
@@ -53,4 +60,18 @@ def get_attendance_service() -> AttendanceService:
         get_lesson_repository(),
         get_group_member_repository(),
         get_lesson_attendance_repository(),
+    )
+
+
+def get_openai_service() -> OpenAIService:
+    return OpenAIService(
+        api_key=settings.openai_api_key,
+        model=settings.openai_model,
+    )
+
+
+def get_lesson_generator_service() -> LessonGeneratorService:
+    return LessonGeneratorService(
+        get_exercise_repository(),
+        get_openai_service(),
     )

@@ -46,7 +46,7 @@ class LessonRepository(BaseRepository):
     def create(self, group_id: str, lesson_data: dict) -> dict:
         row = {
             "group_id": group_id,
-            "status": "draft",
+            "status": "upcoming",
             **lesson_data,
         }
         result = self.client.table(self.table_name).insert(row).execute()

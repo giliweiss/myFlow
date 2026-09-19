@@ -1,12 +1,13 @@
 """Group-scoped lesson endpoints (list, create, generate)."""
 
-from fastapi import APIRouter, Depends, status
+from fastapi import APIRouter, Depends, HTTPException, status
 
 from app.api.access_helpers import get_owned_group
 from app.api.dependencies import (
     get_exercise_repository,
     get_group_repository,
     get_lesson_exercise_repository,
+    get_lesson_generator_service,
     get_lesson_repository,
 )
 from app.core.auth import get_current_user
@@ -20,6 +21,13 @@ from app.schemas.lesson import (
     LessonResponse,
     LessonSummary,
 )
+from app.schemas.lesson_generation import (
+    GenerateLessonClarificationResponse,
+    GenerateLessonReadyResponse,
+    GenerateLessonRequest,
+    GenerateLessonResponse,
+)
+from app.services.lesson_generator import LessonGeneratorService
 from app.services.lesson_service import (
     build_lesson_response,
     exercise_items_from_input,
@@ -75,7 +83,7 @@ async def create_group_lesson(
     lesson_exercise_repository: LessonExerciseRepository = Depends(get_lesson_exercise_repository),
     exercise_repository: ExerciseRepository = Depends(get_exercise_repository),
 ):
-    """Create a draft lesson with structured exercises."""
+    """Create an upcoming lesson with structured exercises."""
     group = get_owned_group(group_id, user, group_repository)
 
     exercise_items = exercise_items_from_input(request.lesson_exercises)
@@ -93,9 +101,17 @@ async def create_group_lesson(
     return build_lesson_response(lesson, exercises)
 
 
-@router.post("/{group_id}/lessons/generate")
+@router.post(
+    "/{group_id}/lessons/generate",
+    response_model=GenerateLessonClarificationResponse | GenerateLessonReadyResponse,
+)
 async def generate_lesson(
-    group_id: str, user: dict = Depends(get_current_user), duration_minutes: int = 60
-):
-    """Generate a lesson for a group."""
-    return {"lesson": {}, "message": "generate lesson - Phase 3"}
+    group_id: str,
+    request: GenerateLessonRequest,
+    user: dict = Depends(get_current_user),
+    group_repository: GroupRepository = Depends(get_group_repository),
+    lesson_generator_service: LessonGeneratorService = Depends(get_lesson_generator_service),
+) -> GenerateLessonResponse:
+    """Generate a lesson plan for a group without persisting it."""
+    group = get_owned_group(group_id, user, group_repository)
+    return lesson_generator_service.generate(group_id, group, request)

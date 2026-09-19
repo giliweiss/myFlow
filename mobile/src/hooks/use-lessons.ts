@@ -1,5 +1,6 @@
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { lessonsApi } from '../lib/api-client';
+import type { GenerateLessonRequest } from '../types/lesson-generation';
 import type { CreateLessonInput, Lesson, UpdateLessonInput } from '../types/lesson';
 
 export const lessonKeys = {
@@ -21,6 +22,17 @@ export function useLesson(lessonId: string | undefined) {
     queryKey: lessonKeys.detail(lessonId ?? ''),
     queryFn: () => lessonsApi.getLesson(lessonId!),
     enabled: Boolean(lessonId),
+  });
+}
+
+export function useGenerateLesson(groupId: string | undefined) {
+  return useMutation({
+    mutationFn: (input: GenerateLessonRequest) => {
+      if (!groupId) {
+        throw new Error('Group id is required');
+      }
+      return lessonsApi.generateLesson(groupId, input);
+    },
   });
 }
 

@@ -58,3 +58,15 @@ class ExerciseRepository(BaseRepository):
             exercise_id = restriction["exercise_id"]
             restrictions_by_exercise.setdefault(exercise_id, []).append(restriction)
         return restrictions_by_exercise
+
+    def get_relations_for_exercise_ids(self, exercise_ids: list[str]) -> list[dict]:
+        if not exercise_ids:
+            return []
+
+        result = (
+            self.client.table("exercise_relations")
+            .select("*")
+            .in_("exercise_id", exercise_ids)
+            .execute()
+        )
+        return result.data or []

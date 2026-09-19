@@ -84,16 +84,27 @@ def main():
         },
     )
     lesson_id = lesson["id"]
-    assert lesson["status"] == "draft"
+    assert lesson["status"] == "upcoming"
     assert len(lesson["lesson_exercises"]) == 2
 
-    planned = request(
+    exercise_item_id = lesson["lesson_exercises"][0]["id"]
+    completed = request(
         "PATCH",
         f"/lessons/{lesson_id}",
-        json={"status": "planned"},
+        json={
+            "status": "completed",
+            "actual_duration_minutes": 55,
+            "exercise_completions": [
+                {
+                    "id": exercise_item_id,
+                    "completion_status": "completed",
+                    "actual_duration_seconds": 280,
+                }
+            ],
+        },
     )
-    assert planned["status"] == "planned"
-    assert len(planned["attendance"]) >= 2
+    assert completed["status"] == "completed"
+    assert len(completed["attendance"]) >= 2
 
     request(
         "PATCH",
@@ -106,23 +117,7 @@ def main():
         },
     )
 
-    exercise_item_id = planned["lesson_exercises"][0]["id"]
-    taught = request(
-        "PATCH",
-        f"/lessons/{lesson_id}",
-        json={
-            "status": "taught",
-            "actual_duration_minutes": 55,
-            "exercise_completions": [
-                {
-                    "id": exercise_item_id,
-                    "completion_status": "completed",
-                    "actual_duration_seconds": 280,
-                }
-            ],
-        },
-    )
-    assert taught["status"] == "taught"
+    assert completed["status"] == "completed"
 
     review = request(
         "POST",

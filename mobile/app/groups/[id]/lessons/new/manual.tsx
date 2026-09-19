@@ -23,6 +23,7 @@ import {
   removeBuilderExercise,
   todayDateInput,
 } from '../../../../../src/lib/lesson-form';
+import { consumeLessonBuilderDraft } from '../../../../../src/lib/lesson-draft';
 import { levelToDisplay } from '../../../../../src/lib/group-form';
 import type { BuilderExercise, LessonSection } from '../../../../../src/types/lesson';
 
@@ -50,6 +51,19 @@ export default function ManualBuildLessonScreen() {
       setDuration((current) => current || String(group.typical_duration_minutes));
     }
   }, [group?.typical_duration_minutes]);
+
+  useEffect(() => {
+    const draft = consumeLessonBuilderDraft();
+    if (!draft) {
+      return;
+    }
+
+    setTitle(draft.title);
+    setPrimaryGoal(draft.primaryGoal);
+    setNotes(draft.notes);
+    setDuration(String(draft.plannedDurationMinutes));
+    setExercises(draft.exercises);
+  }, []);
   const [exercises, setExercises] = useState<BuilderExercise[]>([]);
   const [pickerSection, setPickerSection] = useState<LessonSection | null>(null);
   const [titleError, setTitleError] = useState('');

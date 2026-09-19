@@ -1,6 +1,8 @@
 import type { Exercise } from '../types/exercise';
 import type { GroupLevel } from '../types/group';
 import { strings } from '../i18n/he';
+import { normalizeLessonStatus } from './lesson-status';
+import type { GeneratedLessonExercise } from '../types/lesson-generation';
 import type {
   BuilderExercise,
   CreateLessonInput,
@@ -203,6 +205,31 @@ export function formatLessonDateDisplay(
   });
 }
 
+export function generatedLessonExercisesToBuilder(
+  lessonExercises: GeneratedLessonExercise[],
+  catalogExercises: Exercise[],
+): BuilderExercise[] {
+  const catalogById = new Map(
+    catalogExercises.map((exercise) => [exercise.id, exercise]),
+  );
+
+  return [...lessonExercises]
+    .sort((left, right) => left.order_index - right.order_index)
+    .map((item) => ({
+      localId: createLocalId(),
+      exerciseId: item.exercise_id,
+      nameHe: catalogById.get(item.exercise_id)?.name_he ?? item.exercise_id,
+      section: item.section,
+    }));
+}
+
+export function parseSecondaryGoalsInput(text: string): string[] {
+  return text
+    .split(',')
+    .map((goal) => goal.trim())
+    .filter(Boolean);
+}
+
 export function lessonExercisesToBuilder(
   lessonExercises: LessonExercise[],
   catalogExercises: Exercise[],
@@ -240,7 +267,7 @@ export function lessonToFormState(
     duration: String(lesson.planned_duration_minutes ?? ''),
     scheduledDate:
       formatIsoToDateInput(lesson.scheduled_for) || todayDateInput(),
-    status: lesson.status,
+    status: normalizeLessonStatus(lesson.status),
     exercises: lessonExercisesToBuilder(lesson.lesson_exercises, catalogExercises),
   };
 }

@@ -18,6 +18,7 @@ from app.schemas.review import ReviewResponse
 from app.services.attendance_service import AttendanceService
 from app.services.exercise_filter import find_unsuitable_exercise_ids
 from app.services.lesson_validator import (
+    normalize_lesson_status,
     validate_lesson_for_plan,
     validate_lesson_for_save,
     validate_status_transition,
@@ -129,7 +130,7 @@ def apply_status_transition(
     exercise_repository: ExerciseRepository,
     attendance_service: AttendanceService,
 ) -> dict:
-    current_status = lesson["status"]
+    current_status = normalize_lesson_status(lesson["status"])
     transition = validate_status_transition(current_status, new_status)
     if not transition["valid"]:
         raise HTTPException(
@@ -137,7 +138,7 @@ def apply_status_transition(
             detail={"message": "Invalid status transition", "issues": transition["issues"]},
         )
 
-    if new_status == "planned" and current_status == "draft":
+    if new_status == "completed" and current_status == "upcoming":
         exercises = lesson_exercise_repository.list_by_lesson(lesson["id"])
         exercise_items = [
             {
@@ -149,12 +150,12 @@ def apply_status_transition(
         ]
         validate_lesson_exercises(lesson, exercise_items, exercise_repository, for_plan=True)
 
-        update_data: dict = {"status": "planned"}
+        update_data: dict = {"status": "completed"}
         if lesson.get("scheduled_for") is None:
             update_data["scheduled_for"] = datetime.now(timezone.utc).isoformat()
 
         updated_lesson = lesson_repository.update(lesson["id"], update_data)
-        attendance_service.seed_attendance_for_planned_lesson(lesson["id"], group["id"])
+        attendance_service.seed_attendance_for_lesson(lesson["id"], group["id"])
         return updated_lesson
 
     return lesson_repository.update(lesson["id"], {"status": new_status})

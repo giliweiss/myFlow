@@ -12,8 +12,7 @@ import { theme } from '../../../src/theme';
 import { strings } from '../../../src/i18n/he';
 import { useGroupLessons } from '../../../src/hooks/use-lessons';
 import { formatLessonDateDisplay } from '../../../src/lib/lesson-form';
-import { STATUS_LABELS, STATUS_VARIANTS } from '../../../src/lib/lesson-status';
-import type { LessonStatus } from '../../../src/types/lesson';
+import { STATUS_LABELS, STATUS_VARIANTS, normalizeLessonStatus } from '../../../src/lib/lesson-status';
 
 export default function LessonHistoryScreen() {
   const router = useRouter();
@@ -76,7 +75,7 @@ export default function LessonHistoryScreen() {
           <RefreshControl refreshing={isRefetching} onRefresh={refetch} />
         }
         renderItem={({ item }) => {
-          const status = item.status as LessonStatus;
+          const status = normalizeLessonStatus(item.status);
           const dateLabel = formatLessonDateDisplay(
             item.scheduled_for,
             item.created_at,

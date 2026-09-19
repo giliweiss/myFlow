@@ -17,6 +17,10 @@ export default function NewLessonLayout() {
         name="ai"
         options={{ title: strings.lessons.buildModeAi }}
       />
+      <Stack.Screen
+        name="plan-review"
+        options={{ title: strings.lessons.planReviewTitle }}
+      />
     </Stack>
   );
 }

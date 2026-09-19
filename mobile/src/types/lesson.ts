@@ -1,6 +1,6 @@
 export type LessonSection = 'warmup' | 'main' | 'cooldown';
 
-export type LessonStatus = 'draft' | 'planned' | 'taught' | 'cancelled';
+export type LessonStatus = 'upcoming' | 'completed' | 'cancelled';
 
 export interface BuilderExercise {
   localId: string;

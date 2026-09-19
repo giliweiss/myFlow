@@ -4,15 +4,19 @@ import { theme } from '../../theme';
 
 interface LoadingStateProps {
   message?: string;
+  subtitle?: string;
 }
 
-export function LoadingState({ message = 'טוען...' }: LoadingStateProps) {
+export function LoadingState({ message = 'טוען...', subtitle }: LoadingStateProps) {
   return (
     <View style={styles.container}>
       <ActivityIndicator size="large" color={theme.colors.primary} />
-      {message && (
+      {message ? (
         <Text style={[theme.typography.body, styles.message]}>{message}</Text>
-      )}
+      ) : null}
+      {subtitle ? (
+        <Text style={[theme.typography.caption, styles.subtitle]}>{subtitle}</Text>
+      ) : null}
     </View>
   );
 }
@@ -28,5 +32,11 @@ const styles = StyleSheet.create({
   message: {
     marginTop: theme.spacing.md,
     textAlign: 'center',
+  },
+
+  subtitle: {
+    marginTop: theme.spacing.sm,
+    textAlign: 'center',
+    color: theme.colors.textSecondary,
   },
 });
